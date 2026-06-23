@@ -1,10 +1,8 @@
 **Bouquet Updater for Enigma2**
 
 ## Github status
-[![Lint Status](https://github.com/OwnerPlugins/bouquetupdater/actions/workflows/pylint.yml/badge.svg)](https://github.com/OwnerPlugins/bouquetupdater
-/actions/workflows/pylint.yml)
-[![Ruff Status](https://github.com/OwnerPlugins/bouquetupdater/actions/workflows/ruff.yml/badge.svg)](https://github.com/OwnerPlugins/bouquetupdater
-/actions/workflows/ruff.yml)
+[![Lint Status](https://github.com/OwnerPlugins/bouquetupdater/actions/workflows/pylint.yml/badge.svg)](https://github.com/OwnerPlugins/bouquetupdater/actions/workflows/pylint.yml)
+[![Ruff Status](https://github.com/OwnerPlugins/bouquetupdater/actions/workflows/ruff.yml/badge.svg)](https://github.com/OwnerPlugins/bouquetupdater/actions/workflows/ruff.yml)
 
 
 # ⭐️ BouquetUpdater
