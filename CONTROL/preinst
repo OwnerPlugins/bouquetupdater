@@ -1,0 +1,23 @@
+#!/bin/sh
+echo ""
+echo "***********************************"
+echo "*   BouquetUpdater                *"
+echo "***********************************"
+echo ""
+
+EXTDIR="/usr/lib/enigma2/python/Plugins/Extensions/BouquetUpdater"
+
+if [ -d "$EXTDIR" ]; then
+    echo "Removing previous version..."
+    rm -rf "$EXTDIR" > /dev/null 2>&1
+    echo "Old installation cleaned."
+else
+    echo "No previous installation found."
+fi
+
+echo ""
+echo "Ready for new installation."
+echo ""
+
+cd /
+exit 0

@@ -1,0 +1,21 @@
+#!/bin/sh
+echo ""
+echo "***********************************"
+echo "***********************************"
+echo "*    BouquetUpdater Installed     *"
+echo "***********************************"
+echo "***********************************"
+echo ""
+echo "  Please Restart Enigma2 Required"
+echo "*     Installed Successfully      *"
+echo "*     Please Restart Enigma2      *"
+echo "***********************************"
+echo ""
+
+# Set proper permissions for plugin files
+PLUGIN_DIR="/usr/lib/enigma2/python/Plugins/Extensions/BouquetUpdater"
+if [ -d "$PLUGIN_DIR" ]; then
+    chmod -R 755 "$PLUGIN_DIR" > /dev/null 2>&1
+    echo "Plugin permissions set."
+fi
+exit 0

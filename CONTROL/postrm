@@ -1,0 +1,29 @@
+﻿#!/bin/sh
+# <!-- **************************************  -->
+# <!-- Don't Remove this Disclaimer            -->
+# <!-- **************************************  -->
+echo ""
+echo "*****************************************"
+echo "*      BouquetUpdater  Uninstall        *"
+echo "*****************************************"
+echo ""
+
+EXTDIR="/usr/lib/enigma2/python/Plugins/Extensions/BouquetUpdater"
+
+if [ -d "$EXTDIR" ]; then
+    echo "Removing BouquetUpdater plugin files..."
+    rm -rf "$EXTDIR" > /dev/null 2>&1
+    echo "Plugin files removed."
+else
+    echo "No BouquetUpdater plugin installation found."
+fi
+
+# Clean up temporary files and cache
+echo "Cleaning up temporary files..."
+echo ""
+echo "*****************************************"
+echo "*        Uninstall Complete             *"
+echo "*****************************************"
+echo ""
+
+exit 0
