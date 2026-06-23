@@ -28,7 +28,13 @@ BASE_SITES = ["https://vavoo.to", "https://kool.to"]
 LOKKE_PING_URL = "https://www.lokke.app/api/app/ping"
 VAVOO_PING_URL = "https://www.vavoo.tv/api/app/ping"
 PING_URLS = [LOKKE_PING_URL, VAVOO_PING_URL]
-COUNTRY_SEPARATORS = [u"\u27be", u"\u27fe", "->", u"\u2192", u"\u00bb", u"\u203a"]
+COUNTRY_SEPARATORS = [
+    u"\u27be",
+    u"\u27fe",
+    "->",
+    u"\u2192",
+    u"\u00bb",
+    u"\u203a"]
 LANGUAGE = "it"
 REGION = "US"
 
@@ -153,7 +159,9 @@ def _now():
 
 def _post_json(url, payload, headers=None):
     data = json.dumps(payload).encode("utf-8")
-    req_headers = {"Content-Type": "application/json", "User-Agent": "MediaHubMX/2"}
+    req_headers = {
+        "Content-Type": "application/json",
+        "User-Agent": "MediaHubMX/2"}
     if headers:
         req_headers.update(headers)
     req = Request(url, data=data, headers=req_headers)
@@ -163,10 +171,14 @@ def _post_json(url, payload, headers=None):
         try:
             response_text = r.read().decode("utf-8", errors="ignore")
             if not response_text or not response_text.strip():
-                logging.debug("[vavoo] POST {} returned empty response (status: {})".format(url, status_code))
+                logging.debug(
+                    "[vavoo] POST {} returned empty response (status: {})".format(
+                        url, status_code))
                 return None
             if status_code != 200:
-                logging.debug("[vavoo] POST {} returned status {}".format(url, status_code))
+                logging.debug(
+                    "[vavoo] POST {} returned status {}".format(
+                        url, status_code))
                 return None
             return json.loads(response_text)
         finally:
@@ -196,11 +208,20 @@ def _get_addon_signature():
         "locale": LANGUAGE,
         "theme": "dark",
         "metadata": {
-            "device": {"type": "desktop", "uniqueId": "py-{}".format(ts)},
-            "os": {"name": "linux", "version": "Linux", "abis": ["x64"], "host": "node"},
-            "app": {"platform": "electron"},
-            "version": {"package": "tv.vavoo.app", "binary": "3.1.8", "js": "3.1.8"}
-        },
+            "device": {
+                "type": "desktop",
+                "uniqueId": "py-{}".format(ts)},
+            "os": {
+                "name": "linux",
+                "version": "Linux",
+                "abis": ["x64"],
+                "host": "node"},
+            "app": {
+                "platform": "electron"},
+            "version": {
+                "package": "tv.vavoo.app",
+                "binary": "3.1.8",
+                "js": "3.1.8"}},
         "appFocusTime": 0,
         "playerActive": False,
         "playDuration": 0,
@@ -214,9 +235,13 @@ def _get_addon_signature():
         "lastAppStart": ts,
         "ipLocation": None,
         "adblockEnabled": True,
-        "proxy": {"supported": ["ss"], "engine": "Mu", "enabled": False, "autoServer": True},
-        "iap": {"supported": False}
-    }
+        "proxy": {
+            "supported": ["ss"],
+            "engine": "Mu",
+            "enabled": False,
+            "autoServer": True},
+        "iap": {
+            "supported": False}}
 
     for ping_url in PING_URLS:
         logging.info("[vavoo] Trying ping: {}".format(ping_url))
@@ -226,13 +251,15 @@ def _get_addon_signature():
             if sig:
                 _sig_cache[0] = sig
                 _sig_cache[1] = _now()
-                logging.info("[vavoo] addonSig obtained successfully from {}".format(ping_url))
+                logging.info(
+                    "[vavoo] addonSig obtained successfully from {}".format(ping_url))
                 return sig
         logging.warning("[vavoo] No addonSig from {}".format(ping_url))
 
     logging.error("[vavoo] Unable to obtain addonSig from any server")
     logging.error("[vavoo] NOTE: Vavoo service may be temporarily unavailable")
-    logging.error("[vavoo] SUGGESTION: Use the non-resolved 'Vavoo Italia' bouquet which does not require signature")
+    logging.error(
+        "[vavoo] SUGGESTION: Use the non-resolved 'Vavoo Italia' bouquet which does not require signature")
     return None
 
 
@@ -293,7 +320,8 @@ def _load_catalog(base_url, sig):
 def _get_channels():
     logging.info("[vavoo] Requesting channel list")
     if _channels_cache[0] and (_now() - _channels_cache[1]) < CACHE_TTL:
-        logging.info("[vavoo] Channel list found in cache: {} channels".format(len(_channels_cache[0])))
+        logging.info("[vavoo] Channel list found in cache: {} channels".format(
+            len(_channels_cache[0])))
         return _channels_cache[0]
 
     logging.info("[vavoo] Downloading new channel list")
@@ -306,7 +334,9 @@ def _get_channels():
         try:
             channels = _load_catalog(base, sig)
             if channels:
-                logging.info("[vavoo] {} channels loaded from {}".format(len(channels), base))
+                logging.info(
+                    "[vavoo] {} channels loaded from {}".format(
+                        len(channels), base))
                 _channels_cache[0] = channels
                 _channels_cache[1] = _now()
                 return channels
@@ -364,10 +394,13 @@ def _resolve_stream(channel_url, sig):
                     prev_url = resolved_url
                     resolved_url = unquote(resolved_url)
 
-                logging.debug("[vavoo] Resolved stream: {}".format(resolved_url[:100]))
+                logging.debug(
+                    "[vavoo] Resolved stream: {}".format(resolved_url[:100]))
                 return resolved_url
         except Exception as e:
-            logging.warning("[vavoo] Resolve error from {}: {}".format(base, e))
+            logging.warning(
+                "[vavoo] Resolve error from {}: {}".format(
+                    base, e))
 
     return None
 
@@ -413,7 +446,9 @@ def _generate_bouquet(channels_by_group, bouquet_name=VAVOO_BOUQUET_NAME):
 
         for name, stream_url in channels:
             escaped_url = stream_url.replace(':', '%3a').replace('/', '%2f')
-            lines.append("#SERVICE 4097:0:1:0:0:0:0:0:0:0:{}:{}\n".format(escaped_url, name))
+            lines.append(
+                "#SERVICE 4097:0:1:0:0:0:0:0:0:0:{}:{}\n".format(
+                    escaped_url, name))
             lines.append("#DESCRIPTION {}\n".format(name))
 
     return "".join(lines)
@@ -431,7 +466,9 @@ def process_vavoo_italia(bouquet_filename):
         return False
 
     italy = [ch for ch in channels if ch["country"].lower() == "italy"]
-    logging.info("[vavoo] {} Italian channels found out of {}".format(len(italy), len(channels)))
+    logging.info(
+        "[vavoo] {} Italian channels found out of {}".format(
+            len(italy), len(channels)))
 
     if not italy:
         logging.warning("[vavoo] No Italian channels found")
@@ -447,7 +484,8 @@ def process_vavoo_italia(bouquet_filename):
         channels_by_group[group].append((ch["name"], ch["url"]))
         logging.debug("[vavoo] {} -> group {}".format(ch["name"], group))
 
-    total_channels = sum(len(channels) for channels in channels_by_group.values())
+    total_channels = sum(len(channels)
+                         for channels in channels_by_group.values())
 
     if total_channels == 0:
         logging.error("[vavoo] No channels found after classification")
@@ -455,7 +493,9 @@ def process_vavoo_italia(bouquet_filename):
 
     for group_name, channels in channels_by_group.items():
         if channels:
-            logging.info("[vavoo] Group '{}': {} channels".format(group_name, len(channels)))
+            logging.info(
+                "[vavoo] Group '{}': {} channels".format(
+                    group_name, len(channels)))
 
     logging.info("[vavoo] Sorting channels within each group")
     for group_name in channels_by_group:
@@ -468,7 +508,9 @@ def process_vavoo_italia(bouquet_filename):
     try:
         with open(filepath, "w", encoding="utf-8") as f:
             f.write(content)
-        logging.info("[vavoo] Bouquet written: {} ({} bytes)".format(filepath, len(content)))
+        logging.info(
+            "[vavoo] Bouquet written: {} ({} bytes)".format(
+                filepath, len(content)))
         logging.info("[vavoo] ===== PROCESS COMPLETED SUCCESSFULLY =====")
         return True
     except IOError as e:
@@ -482,8 +524,10 @@ def process_vavoo_italia_resolved(bouquet_filename):
     logging.info("[vavoo] ===== START VAVOO ITALIA RESOLVED PROCESS =====")
     logging.info("[vavoo] Bouquet: {}".format(bouquet_filename))
     logging.warning("[vavoo] WARNING: The Vavoo Resolved service may not work")
-    logging.warning("[vavoo] Vavoo servers no longer allow direct stream resolution")
-    logging.warning("[vavoo] SUGGESTION: Use the 'Vavoo Italia' (non-resolved) bouquet which works correctly")
+    logging.warning(
+        "[vavoo] Vavoo servers no longer allow direct stream resolution")
+    logging.warning(
+        "[vavoo] SUGGESTION: Use the 'Vavoo Italia' (non-resolved) bouquet which works correctly")
     logging.info("[vavoo] Attempting resolution...")
 
     try:
@@ -494,7 +538,9 @@ def process_vavoo_italia_resolved(bouquet_filename):
         return False
 
     italy = [ch for ch in channels if ch["country"].lower() == "italy"]
-    logging.info("[vavoo] {} Italian channels found out of {}".format(len(italy), len(channels)))
+    logging.info(
+        "[vavoo] {} Italian channels found out of {}".format(
+            len(italy), len(channels)))
 
     if not italy:
         logging.warning("[vavoo] No Italian channels found")
@@ -508,7 +554,8 @@ def process_vavoo_italia_resolved(bouquet_filename):
     sig = _get_addon_signature()
     if not sig:
         logging.error("[vavoo] Unable to obtain signature")
-        logging.error("[vavoo] Use the 'Vavoo Italia' (non-resolved) bouquet instead")
+        logging.error(
+            "[vavoo] Use the 'Vavoo Italia' (non-resolved) bouquet instead")
         return False
 
     resolved_count = 0
@@ -516,7 +563,9 @@ def process_vavoo_italia_resolved(bouquet_filename):
 
     # Test on first 5 channels
     test_channels = italy[:5]
-    logging.info("[vavoo] Testing resolution on {} channels...".format(len(test_channels)))
+    logging.info(
+        "[vavoo] Testing resolution on {} channels...".format(
+            len(test_channels)))
 
     for ch in test_channels:
         try:
@@ -532,11 +581,14 @@ def process_vavoo_italia_resolved(bouquet_filename):
     if resolved_count == 0:
         logging.error("[vavoo] Test failed: no stream resolved")
         logging.error("[vavoo] The Vavoo Resolved service is NOT available")
-        logging.error("[vavoo] Use the 'Vavoo Italia' (non-resolved) bouquet instead")
+        logging.error(
+            "[vavoo] Use the 'Vavoo Italia' (non-resolved) bouquet instead")
         return False
 
     logging.info("[vavoo] Test passed! Proceeding with full resolution...")
-    logging.info("[vavoo] This may take about {} seconds...".format(len(italy) * 2))
+    logging.info(
+        "[vavoo] This may take about {} seconds...".format(
+            len(italy) * 2))
 
     resolved_count = 0
     failed_count = 0
@@ -552,15 +604,22 @@ def process_vavoo_italia_resolved(bouquet_filename):
                 group = _classify_channel(ch["name"])
                 channels_by_group[group].append((ch["name"], stream_url))
                 resolved_count += 1
-                logging.debug("[vavoo] {} -> resolved and classified in {}".format(ch["name"], group))
+                logging.debug(
+                    "[vavoo] {} -> resolved and classified in {}".format(ch["name"], group))
             else:
                 failed_count += 1
-                logging.debug("[vavoo] Stream not resolved for: {}".format(ch["name"]))
+                logging.debug(
+                    "[vavoo] Stream not resolved for: {}".format(
+                        ch["name"]))
         except Exception as e:
             failed_count += 1
-            logging.debug("[vavoo] Resolution error for {}: {}".format(ch["name"], e))
+            logging.debug(
+                "[vavoo] Resolution error for {}: {}".format(
+                    ch["name"], e))
 
-    logging.info("[vavoo] Resolution completed: {} successes, {} failures".format(resolved_count, failed_count))
+    logging.info(
+        "[vavoo] Resolution completed: {} successes, {} failures".format(
+            resolved_count, failed_count))
 
     if resolved_count == 0:
         logging.error("[vavoo] No streams resolved - cannot create bouquet")
@@ -570,7 +629,8 @@ def process_vavoo_italia_resolved(bouquet_filename):
     logging.info("[vavoo] Summary by group:")
     for group_name, channels in channels_by_group.items():
         if channels:
-            logging.info("[vavoo]   - Group '{}': {} channels".format(group_name, len(channels)))
+            logging.info(
+                "[vavoo]   - Group '{}': {} channels".format(group_name, len(channels)))
 
     logging.info("[vavoo] Sorting channels within each group")
     for group_name in channels_by_group:
@@ -578,8 +638,12 @@ def process_vavoo_italia_resolved(bouquet_filename):
 
     logging.info("[vavoo] Generating bouquet content")
     try:
-        content = _generate_bouquet(channels_by_group, VAVOO_RESOLVED_BOUQUET_NAME)
-        logging.info("[vavoo] Content generated: {} bytes".format(len(content)))
+        content = _generate_bouquet(
+            channels_by_group,
+            VAVOO_RESOLVED_BOUQUET_NAME)
+        logging.info(
+            "[vavoo] Content generated: {} bytes".format(
+                len(content)))
     except Exception as e:
         logging.error("[vavoo] Error generating bouquet: {}".format(e))
         logging.exception("[vavoo] Stack trace:")
@@ -591,22 +655,27 @@ def process_vavoo_italia_resolved(bouquet_filename):
     try:
         directory = os.path.dirname(filepath)
         if not os.path.exists(directory):
-            logging.error("[vavoo] Directory does not exist: {}".format(directory))
+            logging.error(
+                "[vavoo] Directory does not exist: {}".format(directory))
             return False
 
         if not os.access(directory, os.W_OK):
-            logging.error("[vavoo] No write permission on: {}".format(directory))
+            logging.error(
+                "[vavoo] No write permission on: {}".format(directory))
             return False
 
         with open(filepath, "w", encoding="utf-8") as f:
             f.write(content)
 
         if not os.path.exists(filepath):
-            logging.error("[vavoo] File not found after writing: {}".format(filepath))
+            logging.error(
+                "[vavoo] File not found after writing: {}".format(filepath))
             return False
 
         file_size = os.path.getsize(filepath)
-        logging.info("[vavoo] Resolved bouquet written successfully: {} ({} bytes)".format(filepath, file_size))
+        logging.info(
+            "[vavoo] Resolved bouquet written successfully: {} ({} bytes)".format(
+                filepath, file_size))
 
         if file_size == 0:
             logging.error("[vavoo] File written but empty!")
@@ -620,7 +689,9 @@ def process_vavoo_italia_resolved(bouquet_filename):
         logging.exception("[vavoo] Stack trace:")
         return False
     except Exception as e:
-        logging.error("[vavoo] Generic error writing {}: {}".format(filepath, e))
+        logging.error(
+            "[vavoo] Generic error writing {}: {}".format(
+                filepath, e))
         logging.exception("[vavoo] Stack trace:")
         return False
 

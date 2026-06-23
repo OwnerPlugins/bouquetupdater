@@ -96,7 +96,8 @@ def setup_logging():
         _logging_initialized = True
 
         logging.info("=" * 60)
-        logging.info("{} v{} - LOG STARTED".format(PLUGIN_NAME, PLUGIN_VERSION))
+        logging.info(
+            "{} v{} - LOG STARTED".format(PLUGIN_NAME, PLUGIN_VERSION))
         logging.info("Plugin Path: {}".format(PLUGIN_PATH))
         logging.info("Config File: {}".format(CONFIG_FILE))
         logging.info("Log File: {}".format(LOG_FILE))
@@ -112,8 +113,10 @@ class M3UUpdaterLogic:
     def _read_config(self):
         logging.info("Reading configuration file")
         if not os.path.exists(CONFIG_FILE):
-            logging.error("Configuration file not found: {}".format(CONFIG_FILE))
-            logging.error("The plugin cannot work without a configuration file!")
+            logging.error(
+                "Configuration file not found: {}".format(CONFIG_FILE))
+            logging.error(
+                "The plugin cannot work without a configuration file!")
             return []
 
         custom_sources = []
@@ -125,28 +128,37 @@ class M3UUpdaterLogic:
 
                 for line_num, line in enumerate(lines, 1):
                     line = line.strip()
-                    logging.debug("Line {}: {}".format(line_num, line if line else "(empty)"))
+                    logging.debug(
+                        "Line {}: {}".format(
+                            line_num,
+                            line if line else "(empty)"))
 
                     if not line:
                         continue
                     if line.startswith('#'):
-                        logging.debug("Line {} ignored (comment)".format(line_num))
+                        logging.debug(
+                            "Line {} ignored (comment)".format(line_num))
                         continue
                     if '=' not in line:
-                        logging.warning("Line {} ignored (invalid format, missing '=')".format(line_num))
+                        logging.warning(
+                            "Line {} ignored (invalid format, missing '=')".format(line_num))
                         continue
 
-                    # Use rsplit to split only on the last '=' (handles URLs with parameters)
+                    # Use rsplit to split only on the last '=' (handles URLs
+                    # with parameters)
                     url, filename = line.rsplit('=', 1)
                     url = url.strip()
                     filename = filename.strip()
                     custom_sources.append((url, filename))
-                    logging.info("Added source: {} -> {}".format(url, filename))
+                    logging.info(
+                        "Added source: {} -> {}".format(url, filename))
 
             if not custom_sources:
                 logging.warning("No sources found in configuration file.")
             else:
-                logging.info("Configuration loaded successfully. {} sources to process.".format(len(custom_sources)))
+                logging.info(
+                    "Configuration loaded successfully. {} sources to process.".format(
+                        len(custom_sources)))
             return custom_sources
         except Exception as e:
             logging.error("Error reading configuration: {}".format(e))
@@ -176,7 +188,8 @@ class M3UUpdaterLogic:
                 logging.info("HTTP response: {}".format(status_code))
                 content = response.read().decode('utf-8', errors='ignore')
                 content_length = len(content)
-                logging.info("Download completed: {} bytes".format(content_length))
+                logging.info(
+                    "Download completed: {} bytes".format(content_length))
                 if content_length == 0:
                     logging.error("Received empty content!")
                     return None
@@ -193,7 +206,8 @@ class M3UUpdaterLogic:
             return []
 
         if not m3u_content.startswith('#EXTM3U'):
-            logging.error("Content is not a valid M3U file (missing #EXTM3U header)")
+            logging.error(
+                "Content is not a valid M3U file (missing #EXTM3U header)")
             logging.debug("First 100 characters: {}".format(m3u_content[:100]))
             return []
 
@@ -216,9 +230,12 @@ class M3UUpdaterLogic:
                     channel_name = name_match.group(1).strip()
                     stream_url = lines[i + 1].strip()
                     if stream_url and not stream_url.startswith('#'):
-                        channels.append((channel_name, stream_url, group_title))
+                        channels.append(
+                            (channel_name, stream_url, group_title))
 
-        logging.info("Parsing completed. {} channels found.".format(len(channels)))
+        logging.info(
+            "Parsing completed. {} channels found.".format(
+                len(channels)))
         if len(channels) == 0:
             logging.warning("No channels found in M3U file!")
         return channels
@@ -228,9 +245,11 @@ class M3UUpdaterLogic:
             return ""
 
         is_lista = 'lista' in bouquet_name.lower()
-        name = _("TV List") if is_lista else bouquet_name.replace('userbouquet.', '').replace('.tv', '').capitalize()
+        name = _("TV List") if is_lista else bouquet_name.replace(
+            'userbouquet.', '').replace('.tv', '').capitalize()
 
-        desc = _("Updated on {}").format(source_date) if source_date else _("Updated on {}").format(datetime.now().strftime("%d.%m.%Y"))
+        desc = _("Updated on {}").format(source_date) if source_date else _(
+            "Updated on {}").format(datetime.now().strftime("%d.%m.%Y"))
 
         lines = [
             "#NAME {}\n".format(name),
@@ -248,7 +267,9 @@ class M3UUpdaterLogic:
                 lines.append("#DESCRIPTION --- {} ---\n".format(group_title))
                 current_group = group_title
 
-            lines.append("#SERVICE 4097:0:1:0:0:0:0:0:0:0:{}:{}\n".format(quote(url), quote(channel_name)))
+            lines.append(
+                "#SERVICE 4097:0:1:0:0:0:0:0:0:0:{}:{}\n".format(
+                    quote(url), quote(channel_name)))
             lines.append("#DESCRIPTION {}\n".format(channel_name))
 
         return "".join(lines)
@@ -264,14 +285,16 @@ class M3UUpdaterLogic:
             grouped[group].append((channel_name, url, group_title))
 
         if 'Film - Serie TV' in grouped:
-            grouped['Film - Serie TV'] = self._sort_primafila(grouped['Film - Serie TV'])
+            grouped['Film - Serie TV'] = self._sort_primafila(
+                grouped['Film - Serie TV'])
 
         sorted_channels = []
         for group in priority_order:
             if group in grouped:
                 sorted_channels.extend(grouped[group])
 
-        other_groups = sorted([g for g in grouped.keys() if g not in priority_order])
+        other_groups = sorted(
+            [g for g in grouped.keys() if g not in priority_order])
         for group in other_groups:
             sorted_channels.extend(grouped[group])
 
@@ -304,17 +327,22 @@ class M3UUpdaterLogic:
                 return False
 
             logging.debug("Directory verified: {}".format(directory))
-            logging.debug("Content length to write: {} bytes".format(len(content)))
+            logging.debug(
+                "Content length to write: {} bytes".format(
+                    len(content)))
 
             with open(filepath, 'w', encoding='utf-8') as f:
                 f.write(content)
 
             if os.path.exists(filepath):
                 file_size = os.path.getsize(filepath)
-                logging.info("Bouquet written successfully: {} ({} bytes)".format(filepath, file_size))
+                logging.info(
+                    "Bouquet written successfully: {} ({} bytes)".format(
+                        filepath, file_size))
                 return True
             else:
-                logging.error("File not found after writing: {}".format(filepath))
+                logging.error(
+                    "File not found after writing: {}".format(filepath))
                 return False
 
         except IOError as e:
@@ -341,8 +369,10 @@ class M3UUpdaterLogic:
 
             for bouquet_filename in bouquet_filenames:
                 if '"{}"'.format(bouquet_filename) not in content:
-                    lines.append('#SERVICE 1:7:1:0:0:0:0:0:0:0:FROM BOUQUET "{}" ORDER BY bouquet'.format(bouquet_filename))
-                    logging.info("Added {} to bouquets.tv".format(bouquet_filename))
+                    lines.append(
+                        '#SERVICE 1:7:1:0:0:0:0:0:0:0:FROM BOUQUET "{}" ORDER BY bouquet'.format(bouquet_filename))
+                    logging.info(
+                        "Added {} to bouquets.tv".format(bouquet_filename))
                     modified = True
 
             if modified:
@@ -380,7 +410,9 @@ class M3UUpdaterLogic:
         logging.info("=" * 60)
 
         if selected_urls:
-            logging.info("Mode: Selective update ({} sources selected)".format(len(selected_urls)))
+            logging.info(
+                "Mode: Selective update ({} sources selected)".format(
+                    len(selected_urls)))
         else:
             logging.info("Mode: Full update (all sources)")
 
@@ -389,12 +421,15 @@ class M3UUpdaterLogic:
         if selected_urls is None:
             sources_to_process = self.sources
         else:
-            sources_to_process = [(url, fn) for url, fn in self.sources if (url + '|' + fn) in selected_urls]
+            sources_to_process = [
+                (url, fn) for url, fn in self.sources if (
+                    url + '|' + fn) in selected_urls]
 
         logging.info("Sources to process: {}".format(len(sources_to_process)))
         for idx, (url, filename) in enumerate(sources_to_process, 1):
             logging.info("-" * 60)
-            logging.info("[{}/{}] Processing: {}".format(idx, len(sources_to_process), url))
+            logging.info("[{}/{}] Processing: {}".format(idx,
+                         len(sources_to_process), url))
             logging.info("Destination bouquet: {}".format(filename))
 
             try:
@@ -419,8 +454,10 @@ class M3UUpdaterLogic:
                     continue
 
                 # Vavoo Resolved (check bouquet filename)
-                if is_vavoo_url(url) and filename == VAVOO_RESOLVED_BOUQUET_FILE:
-                    logging.info("Detected type: VAVOO RESOLVED (based on filename: {})".format(filename))
+                if is_vavoo_url(
+                        url) and filename == VAVOO_RESOLVED_BOUQUET_FILE:
+                    logging.info(
+                        "Detected type: VAVOO RESOLVED (based on filename: {})".format(filename))
                     if process_vavoo_italia_resolved(filename):
                         logging.info("Vavoo Resolved processed successfully")
                         updated_bouquets.append(filename)
@@ -442,7 +479,8 @@ class M3UUpdaterLogic:
                 logging.info("Detected type: STANDARD M3U")
                 source_date = self._get_github_last_modified(url)
                 if source_date:
-                    logging.info("GitHub last modified: {}".format(source_date))
+                    logging.info(
+                        "GitHub last modified: {}".format(source_date))
 
                 logging.info("Downloading M3U...")
                 m3u_content = self._download_m3u(url)
@@ -457,7 +495,8 @@ class M3UUpdaterLogic:
                     continue
 
                 logging.info("Generating bouquet...")
-                bouquet_content = self._generate_bouquet(filename, channels, source_date)
+                bouquet_content = self._generate_bouquet(
+                    filename, channels, source_date)
                 if self._write_bouquet_file(filename, bouquet_content):
                     logging.info("M3U bouquet written successfully")
                     updated_bouquets.append(filename)
@@ -465,12 +504,15 @@ class M3UUpdaterLogic:
                     logging.error("M3U bouquet write failed")
 
             except Exception as e:
-                logging.error("CRITICAL ERROR processing {}: {}".format(url, e))
+                logging.error(
+                    "CRITICAL ERROR processing {}: {}".format(
+                        url, e))
                 logging.exception("Full stack trace:")
 
         logging.info("=" * 60)
         logging.info("UPDATE SUMMARY")
-        logging.info("Bouquets updated: {}/{}".format(len(updated_bouquets), len(sources_to_process)))
+        logging.info(
+            "Bouquets updated: {}/{}".format(len(updated_bouquets), len(sources_to_process)))
         if updated_bouquets:
             for bouquet in updated_bouquets:
                 logging.info("  - {}".format(bouquet))
@@ -487,7 +529,8 @@ class M3UUpdaterLogic:
             self._save_last_run()
             logging.info("Post-update operations completed")
         else:
-            logging.warning("No bouquets updated, reloading servicelist anyway...")
+            logging.warning(
+                "No bouquets updated, reloading servicelist anyway...")
             self._reload_bouquets()
 
         logging.info("=" * 60)
@@ -515,7 +558,8 @@ class AutoUpdater:
 
         now = datetime.now()
         update_hour_str = config.plugins.BouquetUpdater.updatehour.value
-        update_hour = int(update_hour_str.split(':')[0]) if ':' in update_hour_str else int(update_hour_str)
+        update_hour = int(update_hour_str.split(
+            ':')[0]) if ':' in update_hour_str else int(update_hour_str)
 
         last_run_date = ""
         if os.path.exists(LAST_RUN_FILE):
@@ -528,7 +572,8 @@ class AutoUpdater:
         today = str(now.date())
 
         if now.hour == update_hour and last_run_date != today:
-            logging.info("Hour {}:00 - Starting automatic update.".format(now.hour))
+            logging.info(
+                "Hour {}:00 - Starting automatic update.".format(now.hour))
             self.updating = True
             try:
                 M3UUpdaterLogic().run_update()
@@ -558,14 +603,17 @@ class UpdateProgressScreen(Screen):
     def start_update(self):
         try:
             logic = M3UUpdaterLogic()
-            sources_to_process = [(url, fn) for url, fn in logic.sources if (url + '|' + fn) in self.selected_urls]
+            sources_to_process = [
+                (url, fn) for url, fn in logic.sources if (
+                    url + '|' + fn) in self.selected_urls]
             total = len(sources_to_process)
 
             for idx, (url, filename) in enumerate(sources_to_process, 1):
                 progress = int((idx * 100) / total)
                 self["progress"].setValue(progress)
                 self["status"].setText(_("Updating {}/{}").format(idx, total))
-                self["info"].setText(_("Processing: {}\n{}").format(filename, url[:50] + "..."))
+                self["info"].setText(_("Processing: {}\n{}").format(
+                    filename, url[:50] + "..."))
 
                 logging.info("[{}/{}] Processing: {}".format(idx, total, url))
 
@@ -583,8 +631,10 @@ class UpdateProgressScreen(Screen):
                     if m3u_content:
                         channels = logic._parse_m3u(m3u_content)
                         if channels:
-                            bouquet_content = logic._generate_bouquet(filename, channels, source_date)
-                            logic._write_bouquet_file(filename, bouquet_content)
+                            bouquet_content = logic._generate_bouquet(
+                                filename, channels, source_date)
+                            logic._write_bouquet_file(
+                                filename, bouquet_content)
 
             self["progress"].setValue(100)
             self["status"].setText(_("Completed!"))
@@ -627,7 +677,10 @@ class BouquetUpdaterScreen(ConfigListScreen, Screen):
     def __init__(self, session):
         Screen.__init__(self, session)
 
-        self["title"] = Label("{} v{}".format(_("Bouquet Updater"), PLUGIN_VERSION))
+        self["title"] = Label(
+            "{} v{}".format(
+                _("Bouquet Updater"),
+                PLUGIN_VERSION))
         self["info"] = Label(_("Manage automatic M3U bouquet updates"))
         self["key_red"] = Label(_("Exit"))
         self["key_green"] = Label(_("Update"))
@@ -667,7 +720,10 @@ class BouquetUpdaterScreen(ConfigListScreen, Screen):
         return domain_match.group(1) if domain_match else url
 
     def build_screen(self):
-        self.list = [getConfigListEntry(_("Automatic update time"), config.plugins.BouquetUpdater.updatehour)]
+        self.list = [
+            getConfigListEntry(
+                _("Automatic update time"),
+                config.plugins.BouquetUpdater.updatehour)]
 
         try:
             self.source_flags = {}
@@ -677,10 +733,15 @@ class BouquetUpdaterScreen(ConfigListScreen, Screen):
                 key = re.sub(r'[^a-zA-Z0-9]', '_', url + bouquet_file)
                 if not hasattr(config.plugins.BouquetUpdater.sources, key):
                     from Components.config import ConfigYesNo
-                    setattr(config.plugins.BouquetUpdater.sources, key, ConfigYesNo(default=True))
+                    setattr(
+                        config.plugins.BouquetUpdater.sources,
+                        key,
+                        ConfigYesNo(
+                            default=True))
                 flag = getattr(config.plugins.BouquetUpdater.sources, key)
                 self.source_flags[url + '|' + bouquet_file] = flag
-                self.list.append(getConfigListEntry("{} -> {}".format(display, bouquet_file), flag))
+                self.list.append(getConfigListEntry(
+                    "{} -> {}".format(display, bouquet_file), flag))
         except Exception as e:
             logging.error("Error building screen: {}".format(e))
             logging.exception("Stack trace:")
@@ -694,31 +755,46 @@ class BouquetUpdaterScreen(ConfigListScreen, Screen):
                 selected.append(key)
 
         if not selected:
-            self.session.open(MessageBox, _("No source selected!"), MessageBox.TYPE_WARNING, timeout=3)
+            self.session.open(
+                MessageBox,
+                _("No source selected!"),
+                MessageBox.TYPE_WARNING,
+                timeout=3)
             return
 
-        has_resolved = any(VAVOO_RESOLVED_BOUQUET_FILE in key for key in selected)
+        has_resolved = any(
+            VAVOO_RESOLVED_BOUQUET_FILE in key for key in selected)
 
         if has_resolved:
-            msg = _("Starting update of {} bouquets...\n\nWARNING: Vavoo Resolved may take several minutes.\nDo not close the plugin!").format(len(selected))
+            msg = _("Starting update of {} bouquets...\n\nWARNING: Vavoo Resolved may take several minutes.\nDo not close the plugin!").format(
+                len(selected))
         else:
-            msg = _("Starting update of {} bouquets...\n\nPlease wait.").format(len(selected))
+            msg = _("Starting update of {} bouquets...\n\nPlease wait.").format(
+                len(selected))
 
         self.session.open(MessageBox, msg, MessageBox.TYPE_INFO, timeout=3)
-        self.session.openWithCallback(self._update_callback, UpdateProgressScreen, selected)
+        self.session.openWithCallback(
+            self._update_callback,
+            UpdateProgressScreen,
+            selected)
 
     def keySave(self):
         for x in self["config"].list:
             if x[1] and hasattr(x[1], 'save'):
                 x[1].save()
         config.save()
-        self.session.open(MessageBox, _("Settings saved."), MessageBox.TYPE_INFO, timeout=3)
+        self.session.open(
+            MessageBox,
+            _("Settings saved."),
+            MessageBox.TYPE_INFO,
+            timeout=3)
 
     def _update_callback(self, success=None):
         if success:
             msg = _("Update completed!\n\nThe channel list has been reloaded.")
         else:
-            msg = _("Update finished.\n\nCheck the log for details:\n{}").format(LOG_FILE)
+            msg = _("Update finished.\n\nCheck the log for details:\n{}").format(
+                LOG_FILE)
         self.session.open(MessageBox, msg, MessageBox.TYPE_INFO, timeout=5)
 
     def keyCancel(self):
@@ -735,7 +811,8 @@ def session_start(reason, session=None):
     global auto_updater_instance
     if reason == 0:
         setup_logging()
-        logging.info("{} v{} - Session started.".format(PLUGIN_NAME, PLUGIN_VERSION))
+        logging.info(
+            "{} v{} - Session started.".format(PLUGIN_NAME, PLUGIN_VERSION))
         if auto_updater_instance is None:
             auto_updater_instance = AutoUpdater()
             auto_updater_instance.start()
@@ -757,10 +834,9 @@ def Plugins(**kwargs):
             description=_("Automatically update bouquets from M3U lists"),
             where=PluginDescriptor.WHERE_PLUGINMENU,
             icon="plugin.png",
-            fnc=main
-        ),
+            fnc=main),
         PluginDescriptor(
-            where=[PluginDescriptor.WHERE_SESSIONSTART, PluginDescriptor.WHERE_AUTOSTART],
-            fnc=autostart
-        )
-    ]
+            where=[
+                PluginDescriptor.WHERE_SESSIONSTART,
+                PluginDescriptor.WHERE_AUTOSTART],
+            fnc=autostart)]

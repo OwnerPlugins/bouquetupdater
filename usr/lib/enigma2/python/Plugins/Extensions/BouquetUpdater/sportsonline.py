@@ -20,7 +20,14 @@ except ImportError:
 
 SPORTSONLINE_HOST = "sportsonline.vc"
 
-DAYS_EN = ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]
+DAYS_EN = [
+    "MONDAY",
+    "TUESDAY",
+    "WEDNESDAY",
+    "THURSDAY",
+    "FRIDAY",
+    "SATURDAY",
+    "SUNDAY"]
 
 # HDx/BRx channel id -> language label
 HD_LANGS = {
@@ -49,7 +56,9 @@ def _fetch(url):
         r = urlopen(req, timeout=30)
         try:
             content = r.read().decode("utf-8", errors="ignore")
-            logging.info("[sportsonline] Download completed: {} bytes".format(len(content)))
+            logging.info(
+                "[sportsonline] Download completed: {} bytes".format(
+                    len(content)))
             return content
         finally:
             try:
@@ -97,7 +106,8 @@ def _parse_prog(content):
         if line.upper() in DAYS_EN:
             in_today = (line.upper() == today_name)
             if in_today:
-                logging.info("[sportsonline] Section {} found".format(today_name))
+                logging.info(
+                    "[sportsonline] Section {} found".format(today_name))
             channel_map = {}
             continue
 
@@ -109,18 +119,23 @@ def _parse_prog(content):
             ch_id = m.group(1).upper()
             lang = re.sub(r'&amp;', '&', m.group(2).strip())
             channel_map[ch_id] = lang
-            logging.debug("[sportsonline] Channel defined: {} = {}".format(ch_id, lang))
+            logging.debug(
+                "[sportsonline] Channel defined: {} = {}".format(
+                    ch_id, lang))
             continue
 
         m = event_re.match(line)
         if m:
             time_str = m.group(1)
             time_str = _adjust_time_to_italian(time_str)
-            name = re.sub(r'&amp;', '&', re.sub(r'&#39;', "'", m.group(2).strip()))
+            name = re.sub(
+                r'&amp;', '&', re.sub(
+                    r'&#39;', "'", m.group(2).strip()))
             url = m.group(3)
             lang = _lang_from_url(url)
             events.append((time_str, name, url, lang))
-            logging.debug("[sportsonline] Event: {} - {}".format(time_str, name))
+            logging.debug(
+                "[sportsonline] Event: {} - {}".format(time_str, name))
 
     logging.info("[sportsonline] Today's events found: {}".format(len(events)))
     return events
@@ -162,7 +177,9 @@ def process_sportsonline(url, bouquet_filename):
         logging.warning("[sportsonline] No events found for today.")
         return False
 
-    logging.info("[sportsonline] {} events found for today.".format(len(events)))
+    logging.info(
+        "[sportsonline] {} events found for today.".format(
+            len(events)))
     bouquet_content = _generate_bouquet(events)
 
     filepath = "/etc/enigma2/{}".format(bouquet_filename)
@@ -170,10 +187,13 @@ def process_sportsonline(url, bouquet_filename):
         with open(filepath, "w", encoding="utf-8") as f:
             f.write(bouquet_content)
         logging.info("[sportsonline] Bouquet written: {}".format(filepath))
-        logging.info("[sportsonline] ===== PROCESS COMPLETED SUCCESSFULLY =====")
+        logging.info(
+            "[sportsonline] ===== PROCESS COMPLETED SUCCESSFULLY =====")
         return True
     except IOError as e:
-        logging.error("[sportsonline] Error writing {}: {}".format(filepath, e))
+        logging.error(
+            "[sportsonline] Error writing {}: {}".format(
+                filepath, e))
         logging.exception("[sportsonline] Error details:")
         return False
 

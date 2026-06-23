@@ -14,13 +14,20 @@ from Tools.Directories import resolveFilename, SCOPE_PLUGINS
 PluginLanguageDomain = "BouquetUpdater"
 PluginLanguagePath = "Extensions/BouquetUpdater/locale"
 
+
 def localeInit():
     lang = language.getLanguage()[:2]  # e.g., "it", "en"
     os.environ["LANGUAGE"] = lang
-    gettext.bindtextdomain(PluginLanguageDomain, resolveFilename(SCOPE_PLUGINS, PluginLanguagePath))
+    gettext.bindtextdomain(
+        PluginLanguageDomain,
+        resolveFilename(
+            SCOPE_PLUGINS,
+            PluginLanguagePath))
+
 
 def _(txt):
     return gettext.dgettext(PluginLanguageDomain, txt) if txt else ""
+
 
 localeInit()
 language.addCallback(localeInit)

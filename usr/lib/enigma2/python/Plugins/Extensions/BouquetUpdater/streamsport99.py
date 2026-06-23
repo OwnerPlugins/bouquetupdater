@@ -116,7 +116,9 @@ def write_bouquet(filename, content):
             with codecs.open(filepath, 'w', encoding='utf-8') as f:
                 f.write(content)
 
-        logging.info("Bouquet written: {} ({} bytes)".format(filepath, len(content)))
+        logging.info(
+            "Bouquet written: {} ({} bytes)".format(
+                filepath, len(content)))
         return True
     except IOError as e:
         logging.error("IOError writing bouquet: {}".format(e))
