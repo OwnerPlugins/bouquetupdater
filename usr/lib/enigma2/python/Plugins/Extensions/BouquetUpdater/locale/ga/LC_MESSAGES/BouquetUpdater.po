@@ -1,0 +1,78 @@
+# BouquetUpdater translations
+# Copyright (C) 2025 Lululla Team
+# This file is distributed under the same license as the Lululla package.
+# [lululla] <ekekaz@gmail.com>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BouquetUpdater\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-06-23 20:05+0000\n"
+"Last-Translator:  <EMAIL@ADDRESS>\n"
+"Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
+"Language: ga\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n==2 ? 1 : 2;\n"
+
+msgid "Automatic update time"
+msgstr "Am nuashonraithe uathoibríoch"
+
+msgid "Automatically update bouquets from M3U lists"
+msgstr "Nuashonraigh go huathoibríoch bouquets ó liostaí M3U"
+
+msgid "Bouquet Updater"
+msgstr "Nuashonróir Bouquet"
+
+msgid "Completed!"
+msgstr "Críochnaithe!"
+
+msgid "Exit"
+msgstr "Scoir"
+
+msgid "Initializing..."
+msgstr "Ag tosú..."
+
+msgid "Manage automatic M3U bouquet updates"
+msgstr "Bainistigh nuashonruithe uathoibríoch bouquet M3U"
+
+msgid "No source selected!"
+msgstr "Níl aon fhoinse roghnaithe!"
+
+msgid "Other"
+msgstr "Eile"
+
+msgid "Reloading channel list..."
+msgstr "Liosta cainéal á athlódáil…"
+
+msgid "Save"
+msgstr "Sábháil"
+
+msgid "Settings saved."
+msgstr "Socruithe sábháilte."
+
+msgid "Sportsonline"
+msgstr "Spóirt ar líne"
+
+msgid "StreamSport99"
+msgstr "SruthSpóirt99"
+
+msgid "TV List"
+msgstr "Liosta Teilifíse"
+
+msgid "Update"
+msgstr "Nuashonrú"
+
+msgid "Updated on {}"
+msgstr "Nuashonraithe ar {}"
+
+msgid "Updating {}/{}"
+msgstr "{}/{} á nuashonrú"
+
+msgid "Vavoo Italia"
+msgstr "Vavoo an Iodáil"
+
+msgid "Vavoo Italia (Resolved)"
+msgstr "Vavoo Italia (Réitithe)"

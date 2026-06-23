@@ -1,0 +1,78 @@
+# BouquetUpdater translations
+# Copyright (C) 2025 Lululla Team
+# This file is distributed under the same license as the Lululla package.
+# [lululla] <ekekaz@gmail.com>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BouquetUpdater\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-06-23 20:03+0000\n"
+"Last-Translator:  <EMAIL@ADDRESS>\n"
+"Language-Team: Estonian <linux-ee@lists.eenet.ee>\n"
+"Language: et\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Automatic update time"
+msgstr "Automaatne värskendamise aeg"
+
+msgid "Automatically update bouquets from M3U lists"
+msgstr "Värskendage kimpe automaatselt M3U loenditest"
+
+msgid "Bouquet Updater"
+msgstr "Kimpude uuendaja"
+
+msgid "Completed!"
+msgstr "Lõpetatud!"
+
+msgid "Exit"
+msgstr "Välju"
+
+msgid "Initializing..."
+msgstr "Initsialiseerimine..."
+
+msgid "Manage automatic M3U bouquet updates"
+msgstr "Hallake automaatseid M3U kimpude värskendusi"
+
+msgid "No source selected!"
+msgstr "Ühtegi allikat pole valitud!"
+
+msgid "Other"
+msgstr "muud"
+
+msgid "Reloading channel list..."
+msgstr "Kanalite loendi uuesti laadimine..."
+
+msgid "Save"
+msgstr "Salvesta"
+
+msgid "Settings saved."
+msgstr "Seaded salvestatud."
+
+msgid "Sportsonline"
+msgstr ""
+
+msgid "StreamSport99"
+msgstr ""
+
+msgid "TV List"
+msgstr "TV loend"
+
+msgid "Update"
+msgstr "Värskenda"
+
+msgid "Updated on {}"
+msgstr "Värskendatud {}"
+
+msgid "Updating {}/{}"
+msgstr "{}/{} värskendamine"
+
+msgid "Vavoo Italia"
+msgstr "Vavoo Itaalia"
+
+msgid "Vavoo Italia (Resolved)"
+msgstr "Vavoo Italia (lahendatud)"

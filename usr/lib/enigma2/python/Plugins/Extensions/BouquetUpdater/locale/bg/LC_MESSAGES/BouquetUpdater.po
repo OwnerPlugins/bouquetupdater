@@ -1,0 +1,78 @@
+# BouquetUpdater translations
+# Copyright (C) 2025 Lululla Team
+# This file is distributed under the same license as the Lululla package.
+# [lululla] <ekekaz@gmail.com>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BouquetUpdater\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-06-23 20:00+0000\n"
+"Last-Translator:  <EMAIL@ADDRESS>\n"
+"Language-Team: Bulgarian <dict@ludost.net>\n"
+"Language: bg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Automatic update time"
+msgstr "Време за автоматично актуализиране"
+
+msgid "Automatically update bouquets from M3U lists"
+msgstr "Автоматично актуализиране на букети от списъците на M3U"
+
+msgid "Bouquet Updater"
+msgstr "Актуализатор на букети"
+
+msgid "Completed!"
+msgstr "Завършено!"
+
+msgid "Exit"
+msgstr "Изход"
+
+msgid "Initializing..."
+msgstr "Инициализира се..."
+
+msgid "Manage automatic M3U bouquet updates"
+msgstr "Управлявайте автоматичните актуализации на пакета M3U"
+
+msgid "No source selected!"
+msgstr "Няма избран източник!"
+
+msgid "Other"
+msgstr "други"
+
+msgid "Reloading channel list..."
+msgstr "Списъкът с канали се презарежда..."
+
+msgid "Save"
+msgstr "Запазване"
+
+msgid "Settings saved."
+msgstr "Настройките са запазени."
+
+msgid "Sportsonline"
+msgstr ""
+
+msgid "StreamSport99"
+msgstr ""
+
+msgid "TV List"
+msgstr "ТВ списък"
+
+msgid "Update"
+msgstr "Актуализация"
+
+msgid "Updated on {}"
+msgstr "Актуализирано на {}"
+
+msgid "Updating {}/{}"
+msgstr "Актуализиране на {}/{}"
+
+msgid "Vavoo Italia"
+msgstr "Vavoo Италия"
+
+msgid "Vavoo Italia (Resolved)"
+msgstr "Vavoo Italia (решено)"

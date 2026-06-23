@@ -1,0 +1,77 @@
+# BouquetUpdater translations
+# Copyright (C) 2025 Lululla Team
+# This file is distributed under the same license as the Lululla package.
+# [lululla] <ekekaz@gmail.com>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BouquetUpdater\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-06-23 20:20+0000\n"
+"Last-Translator:  <EMAIL@ADDRESS>\n"
+"Language-Team: Urdu <jessbody@gmail.com>\n"
+"Language: ur\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Automatic update time"
+msgstr "خودکار اپ ڈیٹ کا وقت"
+
+msgid "Automatically update bouquets from M3U lists"
+msgstr "M3U فہرستوں سے بکیٹس کو خودکار طور پر اپ ڈیٹ کریں۔"
+
+msgid "Bouquet Updater"
+msgstr "بکی اپڈیٹر"
+
+msgid "Completed!"
+msgstr "مکمل!"
+
+msgid "Exit"
+msgstr "باہر نکلیں۔"
+
+msgid "Initializing..."
+msgstr "شروع ہو رہا ہے..."
+
+msgid "Manage automatic M3U bouquet updates"
+msgstr "خودکار M3U بکی اپ ڈیٹس کا نظم کریں۔"
+
+msgid "No source selected!"
+msgstr "کوئی ذریعہ منتخب نہیں کیا گیا!"
+
+msgid "Other"
+msgstr "دیگر"
+
+msgid "Reloading channel list..."
+msgstr "چینل کی فہرست دوبارہ لوڈ ہو رہی ہے..."
+
+msgid "Save"
+msgstr "محفوظ کریں۔"
+
+msgid "Settings saved."
+msgstr "ترتیبات محفوظ ہو گئیں۔"
+
+msgid "Sportsonline"
+msgstr "سپورٹس آن لائن"
+
+msgid "StreamSport99"
+msgstr ""
+
+msgid "TV List"
+msgstr "ٹی وی کی فہرست"
+
+msgid "Update"
+msgstr "اپڈیٹ کریں۔"
+
+msgid "Updated on {}"
+msgstr "{} کو اپ ڈیٹ کیا گیا"
+
+msgid "Updating {}/{}"
+msgstr "اپ ڈیٹ ہو رہا ہے {}/{}"
+
+msgid "Vavoo Italia"
+msgstr "واوو اٹلی"
+
+msgid "Vavoo Italia (Resolved)"
+msgstr "Vavoo Italia (حل شدہ)"

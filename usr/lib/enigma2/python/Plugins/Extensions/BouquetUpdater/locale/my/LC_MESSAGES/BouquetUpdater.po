@@ -1,0 +1,77 @@
+# BouquetUpdater translations
+# Copyright (C) 2025 Lululla Team
+# This file is distributed under the same license as the Lululla package.
+# [lululla] <ekekaz@gmail.com>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BouquetUpdater\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-06-23 20:12+0000\n"
+"Last-Translator:  <EMAIL@ADDRESS>\n"
+"Language-Team: Burmese\n"
+"Language: my\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Automatic update time"
+msgstr "အလိုအလျောက် အပ်ဒိတ်လုပ်ချိန်"
+
+msgid "Automatically update bouquets from M3U lists"
+msgstr "M3U စာရင်းများမှ ပန်းစည်းများကို အလိုအလျောက် အပ်ဒိတ်လုပ်ပါ။"
+
+msgid "Bouquet Updater"
+msgstr "ပန်းစည်းမွမ်းမံမှု"
+
+msgid "Completed!"
+msgstr "ပြီးပါပြီ။"
+
+msgid "Exit"
+msgstr "ထွက်ပေါက်"
+
+msgid "Initializing..."
+msgstr "စတင်နေသည်..."
+
+msgid "Manage automatic M3U bouquet updates"
+msgstr "အလိုအလျောက် M3U ပန်းစည်းအပ်ဒိတ်များကို စီမံပါ။"
+
+msgid "No source selected!"
+msgstr "အရင်းအမြစ်ကို ရွေးထားခြင်းမရှိပါ။"
+
+msgid "Other"
+msgstr "တခြား"
+
+msgid "Reloading channel list..."
+msgstr "ချန်နယ်စာရင်းကို ပြန်လည်စတင်နေသည်..."
+
+msgid "Save"
+msgstr "သိမ်းဆည်းပါ။"
+
+msgid "Settings saved."
+msgstr "ဆက်တင်များကို သိမ်းဆည်းထားသည်။"
+
+msgid "Sportsonline"
+msgstr ""
+
+msgid "StreamSport99"
+msgstr ""
+
+msgid "TV List"
+msgstr "တီဗီစာရင်း"
+
+msgid "Update"
+msgstr "အပ်ဒိတ်"
+
+msgid "Updated on {}"
+msgstr "{} တွင် အပ်ဒိတ်လုပ်ထားသည်"
+
+msgid "Updating {}/{}"
+msgstr "{}/{} ကို အပ်ဒိတ်လုပ်နေသည်"
+
+msgid "Vavoo Italia"
+msgstr "Vavoo အီတလီ"
+
+msgid "Vavoo Italia (Resolved)"
+msgstr "Vavoo Italia (ဖြေရှင်းထားသည်)"

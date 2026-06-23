@@ -1,0 +1,77 @@
+# BouquetUpdater translations
+# Copyright (C) 2025 Lululla Team
+# This file is distributed under the same license as the Lululla package.
+# [lululla] <ekekaz@gmail.com>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BouquetUpdater\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-06-23 20:14+0000\n"
+"Last-Translator:  <EMAIL@ADDRESS>\n"
+"Language-Team: Pashto\n"
+"Language: ps\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Automatic update time"
+msgstr "د اتوماتیک تازه کولو وخت"
+
+msgid "Automatically update bouquets from M3U lists"
+msgstr "په اتوماتيک ډول د M3U لیستونو څخه ګلدانونه تازه کړئ"
+
+msgid "Bouquet Updater"
+msgstr "د ګلدان تازه کوونکی"
+
+msgid "Completed!"
+msgstr "بشپړ شو!"
+
+msgid "Exit"
+msgstr "وتل"
+
+msgid "Initializing..."
+msgstr "پیل کول..."
+
+msgid "Manage automatic M3U bouquet updates"
+msgstr "د اتوماتیک M3U بوکیټ تازه معلومات اداره کړئ"
+
+msgid "No source selected!"
+msgstr "کومه سرچینه نه ده ټاکل شوې!"
+
+msgid "Other"
+msgstr "نور"
+
+msgid "Reloading channel list..."
+msgstr "د چینل لیست بیا پورته کول..."
+
+msgid "Save"
+msgstr "خوندي کړئ"
+
+msgid "Settings saved."
+msgstr "ترتیبات خوندي شوي."
+
+msgid "Sportsonline"
+msgstr "سپورت آنلاین"
+
+msgid "StreamSport99"
+msgstr ""
+
+msgid "TV List"
+msgstr "د تلویزیون لیست"
+
+msgid "Update"
+msgstr "تازه کول"
+
+msgid "Updated on {}"
+msgstr "په {} تازه شوی"
+
+msgid "Updating {}/{}"
+msgstr "تازه کول {}/{}"
+
+msgid "Vavoo Italia"
+msgstr "واوو ایټالیا"
+
+msgid "Vavoo Italia (Resolved)"
+msgstr "واوو ایټالیا (حل شوی)"

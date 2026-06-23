@@ -1,0 +1,77 @@
+# BouquetUpdater translations
+# Copyright (C) 2025 Lululla Team
+# This file is distributed under the same license as the Lululla package.
+# [lululla] <ekekaz@gmail.com>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BouquetUpdater\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-06-23 20:00+0000\n"
+"Last-Translator:  <EMAIL@ADDRESS>\n"
+"Language-Team: Bosnian <mtodorov@alu.hr>\n"
+"Language: bs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Automatic update time"
+msgstr "Vrijeme automatskog ažuriranja"
+
+msgid "Automatically update bouquets from M3U lists"
+msgstr "Automatski ažuriraj bukete sa M3U lista"
+
+msgid "Bouquet Updater"
+msgstr ""
+
+msgid "Completed!"
+msgstr "Završeno!"
+
+msgid "Exit"
+msgstr "Izađi"
+
+msgid "Initializing..."
+msgstr "Inicijalizacija..."
+
+msgid "Manage automatic M3U bouquet updates"
+msgstr "Upravljajte automatskim ažuriranjima M3U buketa"
+
+msgid "No source selected!"
+msgstr "Nije odabran izvor!"
+
+msgid "Other"
+msgstr "Ostalo"
+
+msgid "Reloading channel list..."
+msgstr "Ponovno učitavanje liste kanala..."
+
+msgid "Save"
+msgstr "Sačuvaj"
+
+msgid "Settings saved."
+msgstr "Postavke su sačuvane."
+
+msgid "Sportsonline"
+msgstr ""
+
+msgid "StreamSport99"
+msgstr ""
+
+msgid "TV List"
+msgstr "TV lista"
+
+msgid "Update"
+msgstr "Ažuriraj"
+
+msgid "Updated on {}"
+msgstr "Ažurirano {}"
+
+msgid "Updating {}/{}"
+msgstr "Ažuriranje {}/{}"
+
+msgid "Vavoo Italia"
+msgstr "Vavoo Italy"
+
+msgid "Vavoo Italia (Resolved)"
+msgstr "Vavoo Italia (riješeno)"

@@ -1,0 +1,77 @@
+# BouquetUpdater translations
+# Copyright (C) 2025 Lululla Team
+# This file is distributed under the same license as the Lululla package.
+# [lululla] <ekekaz@gmail.com>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BouquetUpdater\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-06-23 19:59+0000\n"
+"Last-Translator:  <EMAIL@ADDRESS>\n"
+"Language-Team: Amharic\n"
+"Language: am\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Automatic update time"
+msgstr "ራስ-ሰር የማዘመን ጊዜ"
+
+msgid "Automatically update bouquets from M3U lists"
+msgstr "ከM3U ዝርዝሮች እቅፍ አበባዎችን በራስ-ሰር ያዘምኑ"
+
+msgid "Bouquet Updater"
+msgstr ""
+
+msgid "Completed!"
+msgstr "ተጠናቀቀ!"
+
+msgid "Exit"
+msgstr "ውጣ"
+
+msgid "Initializing..."
+msgstr "በማስጀመር ላይ..."
+
+msgid "Manage automatic M3U bouquet updates"
+msgstr "ራስ-ሰር የM3U እቅፍ ዝማኔዎችን ያስተዳድሩ"
+
+msgid "No source selected!"
+msgstr "ምንም ምንጭ አልተመረጠም!"
+
+msgid "Other"
+msgstr "ሌላ"
+
+msgid "Reloading channel list..."
+msgstr "የሰርጥ ዝርዝርን እንደገና በመጫን ላይ..."
+
+msgid "Save"
+msgstr "አስቀምጥ"
+
+msgid "Settings saved."
+msgstr "ቅንብሮች ተቀምጠዋል።"
+
+msgid "Sportsonline"
+msgstr "ስፖርት ኦንላይን"
+
+msgid "StreamSport99"
+msgstr ""
+
+msgid "TV List"
+msgstr "የቲቪ ዝርዝር"
+
+msgid "Update"
+msgstr "አዘምን"
+
+msgid "Updated on {}"
+msgstr "በ{} ላይ ተዘምኗል"
+
+msgid "Updating {}/{}"
+msgstr "{}/{}ን በማዘመን ላይ"
+
+msgid "Vavoo Italia"
+msgstr "ቫቮ ጣሊያን"
+
+msgid "Vavoo Italia (Resolved)"
+msgstr "ቫቮ ኢታሊያ (ተፈታ)"

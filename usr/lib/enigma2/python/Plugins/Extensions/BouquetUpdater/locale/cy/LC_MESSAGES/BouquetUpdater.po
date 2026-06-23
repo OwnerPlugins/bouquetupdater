@@ -1,0 +1,77 @@
+# BouquetUpdater translations
+# Copyright (C) 2025 Lululla Team
+# This file is distributed under the same license as the Lululla package.
+# [lululla] <ekekaz@gmail.com>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BouquetUpdater\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-06-23 20:01+0000\n"
+"Last-Translator:  <EMAIL@ADDRESS>\n"
+"Language-Team: Welsh\n"
+"Language: cy\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Automatic update time"
+msgstr "Amser diweddaru awtomatig"
+
+msgid "Automatically update bouquets from M3U lists"
+msgstr "Diweddaru tuswau o restrau M3U yn awtomatig"
+
+msgid "Bouquet Updater"
+msgstr "Diweddarwr Bouquet"
+
+msgid "Completed!"
+msgstr "Wedi'i gwblhau!"
+
+msgid "Exit"
+msgstr "Ymadael"
+
+msgid "Initializing..."
+msgstr "Wrthi'n cychwyn..."
+
+msgid "Manage automatic M3U bouquet updates"
+msgstr "Rheoli diweddariadau tusw M3U awtomatig"
+
+msgid "No source selected!"
+msgstr "Dim ffynhonnell wedi'i dewis!"
+
+msgid "Other"
+msgstr "Arall"
+
+msgid "Reloading channel list..."
+msgstr "Wrthi'n ail-lwytho rhestr sianeli..."
+
+msgid "Save"
+msgstr "Arbed"
+
+msgid "Settings saved."
+msgstr "Gosodiadau wedi'u cadw."
+
+msgid "Sportsonline"
+msgstr "Chwaraeonarlein"
+
+msgid "StreamSport99"
+msgstr "FfrwdChwaraeon99"
+
+msgid "TV List"
+msgstr "Rhestr Teledu"
+
+msgid "Update"
+msgstr "Diweddariad"
+
+msgid "Updated on {}"
+msgstr "Diweddarwyd ar {}"
+
+msgid "Updating {}/{}"
+msgstr "Wrthi'n diweddaru {}/}"
+
+msgid "Vavoo Italia"
+msgstr "Vavoo yr Eidal"
+
+msgid "Vavoo Italia (Resolved)"
+msgstr "Vavoo Italia (Penderfynwyd)"

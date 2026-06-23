@@ -1,0 +1,77 @@
+# BouquetUpdater translations
+# Copyright (C) 2025 Lululla Team
+# This file is distributed under the same license as the Lululla package.
+# [lululla] <ekekaz@gmail.com>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BouquetUpdater\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-06-23 20:11+0000\n"
+"Last-Translator:  <EMAIL@ADDRESS>\n"
+"Language-Team: Mongolian <openmn-translation@lists.sourceforge.net>\n"
+"Language: mn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Automatic update time"
+msgstr "Автомат шинэчлэх хугацаа"
+
+msgid "Automatically update bouquets from M3U lists"
+msgstr "M3U жагсаалтаас баглааг автоматаар шинэчлэх"
+
+msgid "Bouquet Updater"
+msgstr "Bouquet шинэчлэгч"
+
+msgid "Completed!"
+msgstr "Дууслаа!"
+
+msgid "Exit"
+msgstr "Гарах"
+
+msgid "Initializing..."
+msgstr "Эхэлж байна..."
+
+msgid "Manage automatic M3U bouquet updates"
+msgstr "M3U баглааг автоматаар шинэчлэхийг удирдах"
+
+msgid "No source selected!"
+msgstr "Сонгосон эх сурвалж байхгүй!"
+
+msgid "Other"
+msgstr "Бусад"
+
+msgid "Reloading channel list..."
+msgstr "Сувгийн жагсаалтыг дахин ачаалж байна..."
+
+msgid "Save"
+msgstr "Хадгалах"
+
+msgid "Settings saved."
+msgstr "Тохиргоог хадгалсан."
+
+msgid "Sportsonline"
+msgstr ""
+
+msgid "StreamSport99"
+msgstr ""
+
+msgid "TV List"
+msgstr "ТВ жагсаалт"
+
+msgid "Update"
+msgstr "Шинэчлэх"
+
+msgid "Updated on {}"
+msgstr "{}-д шинэчлэгдсэн"
+
+msgid "Updating {}/{}"
+msgstr "{}/{}-г шинэчилж байна"
+
+msgid "Vavoo Italia"
+msgstr "Ваву Итали"
+
+msgid "Vavoo Italia (Resolved)"
+msgstr "Vavoo Italia (Шийдвэрлэсэн)"

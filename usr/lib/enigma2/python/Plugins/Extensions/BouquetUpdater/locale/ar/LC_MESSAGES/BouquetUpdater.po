@@ -1,0 +1,77 @@
+# BouquetUpdater translations
+# Copyright (C) 2025 Lululla Team
+# This file is distributed under the same license as the Lululla package.
+# [lululla] <ekekaz@gmail.com>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BouquetUpdater\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-06-23 19:59+0000\n"
+"Last-Translator:  <EMAIL@ADDRESS>\n"
+"Language-Team: Arabic <(nothing)>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Automatic update time"
+msgstr "وقت التحديث التلقائي"
+
+msgid "Automatically update bouquets from M3U lists"
+msgstr "تحديث الباقات تلقائيًا من قوائم M3U"
+
+msgid "Bouquet Updater"
+msgstr "محدث الباقة"
+
+msgid "Completed!"
+msgstr "مكتمل!"
+
+msgid "Exit"
+msgstr "مخرج"
+
+msgid "Initializing..."
+msgstr "جارٍ التهيئة..."
+
+msgid "Manage automatic M3U bouquet updates"
+msgstr "إدارة تحديثات باقة M3U التلقائية"
+
+msgid "No source selected!"
+msgstr "لم يتم تحديد مصدر!"
+
+msgid "Other"
+msgstr "آخر"
+
+msgid "Reloading channel list..."
+msgstr "جارٍ إعادة تحميل قائمة القنوات..."
+
+msgid "Save"
+msgstr "يحفظ"
+
+msgid "Settings saved."
+msgstr "تم حفظ الإعدادات."
+
+msgid "Sportsonline"
+msgstr "سبورتسونلاين"
+
+msgid "StreamSport99"
+msgstr "ستريم سبورت99"
+
+msgid "TV List"
+msgstr "قائمة التلفزيون"
+
+msgid "Update"
+msgstr "تحديث"
+
+msgid "Updated on {}"
+msgstr "تم التحديث بتاريخ {}"
+
+msgid "Updating {}/{}"
+msgstr "جارٍ التحديث {}/{}"
+
+msgid "Vavoo Italia"
+msgstr "فافو إيطاليا"
+
+msgid "Vavoo Italia (Resolved)"
+msgstr "فافو إيطاليا (تم الحل)"

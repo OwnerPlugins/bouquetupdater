@@ -1,0 +1,77 @@
+# BouquetUpdater translations
+# Copyright (C) 2025 Lululla Team
+# This file is distributed under the same license as the Lululla package.
+# [lululla] <ekekaz@gmail.com>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BouquetUpdater\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-06-23 20:07+0000\n"
+"Last-Translator:  <EMAIL@ADDRESS>\n"
+"Language-Team: Icelandic <translation-team-is@lists.sourceforge.net>\n"
+"Language: is\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Automatic update time"
+msgstr "Sjálfvirk uppfærslutími"
+
+msgid "Automatically update bouquets from M3U lists"
+msgstr "Uppfærðu kransa sjálfkrafa frá M3U listum"
+
+msgid "Bouquet Updater"
+msgstr "Vöndauppfærsla"
+
+msgid "Completed!"
+msgstr "Lokið!"
+
+msgid "Exit"
+msgstr "Hætta"
+
+msgid "Initializing..."
+msgstr "Frumstillir..."
+
+msgid "Manage automatic M3U bouquet updates"
+msgstr "Hafa umsjón með sjálfvirkum uppfærslum á M3U vöndum"
+
+msgid "No source selected!"
+msgstr "Engin heimild valin!"
+
+msgid "Other"
+msgstr "Annað"
+
+msgid "Reloading channel list..."
+msgstr "Endurhleður rásarlista..."
+
+msgid "Save"
+msgstr "Vista"
+
+msgid "Settings saved."
+msgstr "Stillingar vistaðar."
+
+msgid "Sportsonline"
+msgstr "Íþróttir á netinu"
+
+msgid "StreamSport99"
+msgstr ""
+
+msgid "TV List"
+msgstr "Sjónvarpslisti"
+
+msgid "Update"
+msgstr "Uppfærsla"
+
+msgid "Updated on {}"
+msgstr "Uppfært þann {}"
+
+msgid "Updating {}/{}"
+msgstr "Uppfærir {}/{}"
+
+msgid "Vavoo Italia"
+msgstr "Vavoo Ítalía"
+
+msgid "Vavoo Italia (Resolved)"
+msgstr "Vavoo Italia (leyst)"

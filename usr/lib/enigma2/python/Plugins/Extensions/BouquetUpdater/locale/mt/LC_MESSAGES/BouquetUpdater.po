@@ -1,0 +1,77 @@
+# BouquetUpdater translations
+# Copyright (C) 2025 Lululla Team
+# This file is distributed under the same license as the Lululla package.
+# [lululla] <ekekaz@gmail.com>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BouquetUpdater\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-06-23 20:12+0000\n"
+"Last-Translator:  <EMAIL@ADDRESS>\n"
+"Language-Team: Maltese <translation-team-mt@lists.sourceforge.net>\n"
+"Language: mt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Automatic update time"
+msgstr "Ħin ta 'aġġornament awtomatiku"
+
+msgid "Automatically update bouquets from M3U lists"
+msgstr "Aġġorna awtomatikament il-bukketti mil-listi M3U"
+
+msgid "Bouquet Updater"
+msgstr "Aġġornatur tal-bukketti"
+
+msgid "Completed!"
+msgstr "Tlesti!"
+
+msgid "Exit"
+msgstr "Ħruġ"
+
+msgid "Initializing..."
+msgstr "Inizjalizzazzjoni..."
+
+msgid "Manage automatic M3U bouquet updates"
+msgstr "Immaniġġja aġġornamenti awtomatiċi tal-bukkett M3U"
+
+msgid "No source selected!"
+msgstr "Ebda sors magħżul!"
+
+msgid "Other"
+msgstr "Oħrajn"
+
+msgid "Reloading channel list..."
+msgstr "Reloading list tal-kanali..."
+
+msgid "Save"
+msgstr "Ħlief"
+
+msgid "Settings saved."
+msgstr "Settings salvati."
+
+msgid "Sportsonline"
+msgstr ""
+
+msgid "StreamSport99"
+msgstr ""
+
+msgid "TV List"
+msgstr "Lista tat-TV"
+
+msgid "Update"
+msgstr "Aġġornament"
+
+msgid "Updated on {}"
+msgstr "Aġġornat fi {}"
+
+msgid "Updating {}/{}"
+msgstr "Aġġornament ta' {}/{}"
+
+msgid "Vavoo Italia"
+msgstr "Vavoo Italja"
+
+msgid "Vavoo Italia (Resolved)"
+msgstr "Vavoo Italia (Risolta)"

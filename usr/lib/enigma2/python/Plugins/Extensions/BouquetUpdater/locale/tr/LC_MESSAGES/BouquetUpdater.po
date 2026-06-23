@@ -1,0 +1,78 @@
+# BouquetUpdater translations
+# Copyright (C) 2025 Lululla Team
+# This file is distributed under the same license as the Lululla package.
+# [lululla] <ekekaz@gmail.com>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BouquetUpdater\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-06-23 20:19+0000\n"
+"Last-Translator:  <EMAIL@ADDRESS>\n"
+"Language-Team: Turkish <gnome-turk@gnome.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Automatic update time"
+msgstr "Otomatik güncelleme süresi"
+
+msgid "Automatically update bouquets from M3U lists"
+msgstr "M3U listelerinden buketleri otomatik olarak güncelle"
+
+msgid "Bouquet Updater"
+msgstr "Buket Güncelleyici"
+
+msgid "Completed!"
+msgstr "Tamamlanmış!"
+
+msgid "Exit"
+msgstr "Çıkış"
+
+msgid "Initializing..."
+msgstr "Başlatılıyor..."
+
+msgid "Manage automatic M3U bouquet updates"
+msgstr "Otomatik M3U buket güncellemelerini yönetin"
+
+msgid "No source selected!"
+msgstr "Kaynak seçilmedi!"
+
+msgid "Other"
+msgstr "Diğer"
+
+msgid "Reloading channel list..."
+msgstr "Kanal listesi yeniden yükleniyor..."
+
+msgid "Save"
+msgstr "Kaydetmek"
+
+msgid "Settings saved."
+msgstr "Ayarlar kaydedildi."
+
+msgid "Sportsonline"
+msgstr "Sporçevrimiçi"
+
+msgid "StreamSport99"
+msgstr ""
+
+msgid "TV List"
+msgstr "TV Listesi"
+
+msgid "Update"
+msgstr "Güncelleme"
+
+msgid "Updated on {}"
+msgstr "{} tarihinde güncellendi"
+
+msgid "Updating {}/{}"
+msgstr "{}/{} güncelleniyor"
+
+msgid "Vavoo Italia"
+msgstr "Vavoo İtalya"
+
+msgid "Vavoo Italia (Resolved)"
+msgstr "Vavoo İtalya (Çözüldü)"

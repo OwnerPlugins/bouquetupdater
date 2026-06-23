@@ -1,0 +1,78 @@
+# BouquetUpdater translations
+# Copyright (C) 2025 Lululla Team
+# This file is distributed under the same license as the Lululla package.
+# [lululla] <ekekaz@gmail.com>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BouquetUpdater\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-06-23 20:20+0000\n"
+"Last-Translator:  <EMAIL@ADDRESS>\n"
+"Language-Team: Vietnamese <translation-team-vi@lists.sourceforge.net>\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Automatic update time"
+msgstr "Thời gian cập nhật tự động"
+
+msgid "Automatically update bouquets from M3U lists"
+msgstr "Tự động cập nhật bó hoa từ danh sách M3U"
+
+msgid "Bouquet Updater"
+msgstr "Trình cập nhật bó hoa"
+
+msgid "Completed!"
+msgstr "Hoàn thành!"
+
+msgid "Exit"
+msgstr "Ra"
+
+msgid "Initializing..."
+msgstr "Đang khởi tạo..."
+
+msgid "Manage automatic M3U bouquet updates"
+msgstr "Quản lý cập nhật bó hoa M3U tự động"
+
+msgid "No source selected!"
+msgstr "Không có nguồn nào được chọn!"
+
+msgid "Other"
+msgstr "Khác"
+
+msgid "Reloading channel list..."
+msgstr "Đang tải lại danh sách kênh..."
+
+msgid "Save"
+msgstr "Cứu"
+
+msgid "Settings saved."
+msgstr "Đã lưu cài đặt."
+
+msgid "Sportsonline"
+msgstr "Thể thao trực tuyến"
+
+msgid "StreamSport99"
+msgstr ""
+
+msgid "TV List"
+msgstr "Danh sách TV"
+
+msgid "Update"
+msgstr "Cập nhật"
+
+msgid "Updated on {}"
+msgstr "Đã cập nhật vào {}"
+
+msgid "Updating {}/{}"
+msgstr "Đang cập nhật {}/{}"
+
+msgid "Vavoo Italia"
+msgstr "Ý"
+
+msgid "Vavoo Italia (Resolved)"
+msgstr "Vavoo Italia (Đã giải quyết)"

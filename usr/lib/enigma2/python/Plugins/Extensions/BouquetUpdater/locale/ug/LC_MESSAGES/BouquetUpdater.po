@@ -1,0 +1,77 @@
+# BouquetUpdater translations
+# Copyright (C) 2025 Lululla Team
+# This file is distributed under the same license as the Lululla package.
+# [lululla] <ekekaz@gmail.com>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BouquetUpdater\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-06-23 20:19+0000\n"
+"Last-Translator:  <EMAIL@ADDRESS>\n"
+"Language-Team: Uighur\n"
+"Language: ug\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Automatic update time"
+msgstr "ئاپتوماتىك يېڭىلاش ۋاقتى"
+
+msgid "Automatically update bouquets from M3U lists"
+msgstr "M3U تىزىملىكىدىن گۈللەرنى ئاپتوماتىك يېڭىلاڭ"
+
+msgid "Bouquet Updater"
+msgstr ""
+
+msgid "Completed!"
+msgstr "تامام!"
+
+msgid "Exit"
+msgstr "چىقىش"
+
+msgid "Initializing..."
+msgstr "Initializing ..."
+
+msgid "Manage automatic M3U bouquet updates"
+msgstr "ئاپتوماتىك M3U گۈللۈك يېڭىلانمىلىرىنى باشقۇرۇڭ"
+
+msgid "No source selected!"
+msgstr "مەنبە تاللانمىدى!"
+
+msgid "Other"
+msgstr "باشقىلىرى"
+
+msgid "Reloading channel list..."
+msgstr "قانال تىزىملىكىنى قايتا يۈكلەۋاتىدۇ ..."
+
+msgid "Save"
+msgstr "ساقلاش"
+
+msgid "Settings saved."
+msgstr "تەڭشەكلەر ساقلاندى."
+
+msgid "Sportsonline"
+msgstr ""
+
+msgid "StreamSport99"
+msgstr ""
+
+msgid "TV List"
+msgstr ""
+
+msgid "Update"
+msgstr "يېڭىلاش"
+
+msgid "Updated on {}"
+msgstr "{} دا يېڭىلاندى"
+
+msgid "Updating {}/{}"
+msgstr "يېڭىلاش {} / {}"
+
+msgid "Vavoo Italia"
+msgstr "Vavoo Italy"
+
+msgid "Vavoo Italia (Resolved)"
+msgstr "Vavoo Italia (ھەل قىلىندى)"

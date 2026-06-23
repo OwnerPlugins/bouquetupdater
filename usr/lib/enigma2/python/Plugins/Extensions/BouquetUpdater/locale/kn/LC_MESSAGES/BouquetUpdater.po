@@ -1,0 +1,77 @@
+# BouquetUpdater translations
+# Copyright (C) 2025 Lululla Team
+# This file is distributed under the same license as the Lululla package.
+# [lululla] <ekekaz@gmail.com>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BouquetUpdater\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-06-23 20:09+0000\n"
+"Last-Translator:  <EMAIL@ADDRESS>\n"
+"Language-Team: Kannada <debian-l10n-kannada@lists.debian.org>\n"
+"Language: kn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Automatic update time"
+msgstr "ಸ್ವಯಂಚಾಲಿತ ನವೀಕರಣ ಸಮಯ"
+
+msgid "Automatically update bouquets from M3U lists"
+msgstr "M3U ಪಟ್ಟಿಗಳಿಂದ ಹೂಗುಚ್ಛಗಳನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ನವೀಕರಿಸಿ"
+
+msgid "Bouquet Updater"
+msgstr "ಬೊಕೆ ಅಪ್ಡೇಟರ್"
+
+msgid "Completed!"
+msgstr "ಪೂರ್ಣಗೊಂಡಿದೆ!"
+
+msgid "Exit"
+msgstr "ನಿರ್ಗಮಿಸಿ"
+
+msgid "Initializing..."
+msgstr "ಪ್ರಾರಂಭಿಸಲಾಗುತ್ತಿದೆ..."
+
+msgid "Manage automatic M3U bouquet updates"
+msgstr "ಸ್ವಯಂಚಾಲಿತ M3U ಪುಷ್ಪಗುಚ್ಛ ನವೀಕರಣಗಳನ್ನು ನಿರ್ವಹಿಸಿ"
+
+msgid "No source selected!"
+msgstr "ಯಾವುದೇ ಮೂಲವನ್ನು ಆಯ್ಕೆ ಮಾಡಲಾಗಿಲ್ಲ!"
+
+msgid "Other"
+msgstr "ಇತರೆ"
+
+msgid "Reloading channel list..."
+msgstr "ಚಾನಲ್ ಪಟ್ಟಿಯನ್ನು ಮರುಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ..."
+
+msgid "Save"
+msgstr "ಉಳಿಸಿ"
+
+msgid "Settings saved."
+msgstr "ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಉಳಿಸಲಾಗಿದೆ."
+
+msgid "Sportsonline"
+msgstr "ಸ್ಪೋರ್ಟ್ಸ್‌ಲೈನ್"
+
+msgid "StreamSport99"
+msgstr ""
+
+msgid "TV List"
+msgstr "ಟಿವಿ ಪಟ್ಟಿ"
+
+msgid "Update"
+msgstr "ನವೀಕರಿಸಿ"
+
+msgid "Updated on {}"
+msgstr "{} ರಂದು ನವೀಕರಿಸಲಾಗಿದೆ"
+
+msgid "Updating {}/{}"
+msgstr "{}/{} ಅನ್ನು ನವೀಕರಿಸಲಾಗುತ್ತಿದೆ"
+
+msgid "Vavoo Italia"
+msgstr "ವಾವೂ ಇಟಲಿ"
+
+msgid "Vavoo Italia (Resolved)"
+msgstr "ವಾವೂ ಇಟಾಲಿಯಾ (ಪರಿಹರಿಸಲಾಗಿದೆ)"

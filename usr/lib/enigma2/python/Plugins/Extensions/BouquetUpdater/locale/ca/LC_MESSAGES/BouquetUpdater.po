@@ -1,0 +1,77 @@
+# BouquetUpdater translations
+# Copyright (C) 2025 Lululla Team
+# This file is distributed under the same license as the Lululla package.
+# [lululla] <ekekaz@gmail.com>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BouquetUpdater\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-06-23 20:00+0000\n"
+"Last-Translator:  <EMAIL@ADDRESS>\n"
+"Language-Team: Catalan <ca@dodds.net>\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Automatic update time"
+msgstr "Temps d'actualització automàtica"
+
+msgid "Automatically update bouquets from M3U lists"
+msgstr "Actualitza automàticament els rams de les llistes M3U"
+
+msgid "Bouquet Updater"
+msgstr "Actualitzador de rams"
+
+msgid "Completed!"
+msgstr "Completat!"
+
+msgid "Exit"
+msgstr "Sortida"
+
+msgid "Initializing..."
+msgstr "Inicialitzant..."
+
+msgid "Manage automatic M3U bouquet updates"
+msgstr "Gestioneu les actualitzacions automàtiques del ram M3U"
+
+msgid "No source selected!"
+msgstr "No s'ha seleccionat cap font!"
+
+msgid "Other"
+msgstr "Altres"
+
+msgid "Reloading channel list..."
+msgstr "S'està tornant a carregar la llista de canals..."
+
+msgid "Save"
+msgstr "Desa"
+
+msgid "Settings saved."
+msgstr "S'ha desat la configuració."
+
+msgid "Sportsonline"
+msgstr ""
+
+msgid "StreamSport99"
+msgstr ""
+
+msgid "TV List"
+msgstr "Llista de TV"
+
+msgid "Update"
+msgstr "Actualització"
+
+msgid "Updated on {}"
+msgstr "Actualitzat el dia {}"
+
+msgid "Updating {}/{}"
+msgstr "S'està actualitzant {}/{}"
+
+msgid "Vavoo Italia"
+msgstr "Vavoo Itàlia"
+
+msgid "Vavoo Italia (Resolved)"
+msgstr "Vavoo Italia (Resolt)"

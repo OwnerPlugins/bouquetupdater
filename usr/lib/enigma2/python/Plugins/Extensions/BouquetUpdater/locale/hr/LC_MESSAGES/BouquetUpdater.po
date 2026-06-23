@@ -1,0 +1,78 @@
+# BouquetUpdater translations
+# Copyright (C) 2025 Lululla Team
+# This file is distributed under the same license as the Lululla package.
+# [lululla] <ekekaz@gmail.com>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BouquetUpdater\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-06-23 20:06+0000\n"
+"Last-Translator:  <EMAIL@ADDRESS>\n"
+"Language-Team: Croatian <lokalizacija@linux.hr>\n"
+"Language: hr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "Automatic update time"
+msgstr "Vrijeme automatskog ažuriranja"
+
+msgid "Automatically update bouquets from M3U lists"
+msgstr "Automatski ažurirajte kitice s M3U popisa"
+
+msgid "Bouquet Updater"
+msgstr "Ažuriranje buketa"
+
+msgid "Completed!"
+msgstr "Završeno!"
+
+msgid "Exit"
+msgstr "Izlaz"
+
+msgid "Initializing..."
+msgstr "Inicijalizacija..."
+
+msgid "Manage automatic M3U bouquet updates"
+msgstr "Upravljajte automatskim ažuriranjem M3U buketa"
+
+msgid "No source selected!"
+msgstr "Izvor nije odabran!"
+
+msgid "Other"
+msgstr "ostalo"
+
+msgid "Reloading channel list..."
+msgstr "Ponovno učitavanje popisa kanala..."
+
+msgid "Save"
+msgstr "Uštedjeti"
+
+msgid "Settings saved."
+msgstr "Postavke su spremljene."
+
+msgid "Sportsonline"
+msgstr ""
+
+msgid "StreamSport99"
+msgstr ""
+
+msgid "TV List"
+msgstr "TV lista"
+
+msgid "Update"
+msgstr "Ažurirati"
+
+msgid "Updated on {}"
+msgstr "Ažurirano {}"
+
+msgid "Updating {}/{}"
+msgstr "Ažuriranje {}/{}"
+
+msgid "Vavoo Italia"
+msgstr "Vavoo Italija"
+
+msgid "Vavoo Italia (Resolved)"
+msgstr "Vavoo Italia (riješeno)"

@@ -1,0 +1,77 @@
+# BouquetUpdater translations
+# Copyright (C) 2025 Lululla Team
+# This file is distributed under the same license as the Lululla package.
+# [lululla] <ekekaz@gmail.com>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BouquetUpdater\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-06-23 20:09+0000\n"
+"Last-Translator:  <EMAIL@ADDRESS>\n"
+"Language-Team: Central Khmer\n"
+"Language: km\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Automatic update time"
+msgstr "ពេលវេលាធ្វើបច្ចុប្បន្នភាពដោយស្វ័យប្រវត្តិ"
+
+msgid "Automatically update bouquets from M3U lists"
+msgstr "ធ្វើបច្ចុប្បន្នភាពភួងដោយស្វ័យប្រវត្តិពីបញ្ជី M3U"
+
+msgid "Bouquet Updater"
+msgstr "អ្នកធ្វើបច្ចុប្បន្នភាពភួង"
+
+msgid "Completed!"
+msgstr "ចប់ហើយ!"
+
+msgid "Exit"
+msgstr "ចេញ"
+
+msgid "Initializing..."
+msgstr "កំពុងចាប់ផ្តើម..."
+
+msgid "Manage automatic M3U bouquet updates"
+msgstr "គ្រប់គ្រងការអាប់ដេតភួង M3U ដោយស្វ័យប្រវត្តិ"
+
+msgid "No source selected!"
+msgstr "មិនបានជ្រើសរើសប្រភពទេ!"
+
+msgid "Other"
+msgstr "ផ្សេងៗ"
+
+msgid "Reloading channel list..."
+msgstr "កំពុងផ្ទុកបញ្ជីឆានែលឡើងវិញ..."
+
+msgid "Save"
+msgstr "រក្សាទុក"
+
+msgid "Settings saved."
+msgstr "ការកំណត់ត្រូវបានរក្សាទុក។"
+
+msgid "Sportsonline"
+msgstr "កីឡាតាមអ៊ីនធឺណិត"
+
+msgid "StreamSport99"
+msgstr "ស្ទ្រីមកីឡា ៩៩"
+
+msgid "TV List"
+msgstr "បញ្ជីទូរទស្សន៍"
+
+msgid "Update"
+msgstr "ធ្វើបច្ចុប្បន្នភាព"
+
+msgid "Updated on {}"
+msgstr "បានធ្វើបច្ចុប្បន្នភាពនៅលើ {}"
+
+msgid "Updating {}/{}"
+msgstr "កំពុងអាប់ដេត {}/{}"
+
+msgid "Vavoo Italia"
+msgstr "Vavoo ប្រទេសអ៊ីតាលី"
+
+msgid "Vavoo Italia (Resolved)"
+msgstr "Vavoo Italia (បានដោះស្រាយ)"

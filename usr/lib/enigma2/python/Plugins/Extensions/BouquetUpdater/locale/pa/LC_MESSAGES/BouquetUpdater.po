@@ -1,0 +1,77 @@
+# BouquetUpdater translations
+# Copyright (C) 2025 Lululla Team
+# This file is distributed under the same license as the Lululla package.
+# [lululla] <ekekaz@gmail.com>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BouquetUpdater\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-06-23 20:14+0000\n"
+"Last-Translator:  <EMAIL@ADDRESS>\n"
+"Language-Team: Punjabi <punjabi-l10n@lists.sourceforge.net>\n"
+"Language: pa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Automatic update time"
+msgstr "ਆਟੋਮੈਟਿਕ ਅੱਪਡੇਟ ਟਾਈਮ"
+
+msgid "Automatically update bouquets from M3U lists"
+msgstr "M3U ਸੂਚੀਆਂ ਤੋਂ ਗੁਲਦਸਤੇ ਨੂੰ ਆਟੋਮੈਟਿਕਲੀ ਅੱਪਡੇਟ ਕਰੋ"
+
+msgid "Bouquet Updater"
+msgstr "ਗੁਲਦਸਤਾ ਅੱਪਡੇਟਰ"
+
+msgid "Completed!"
+msgstr "ਪੂਰਾ ਹੋਇਆ!"
+
+msgid "Exit"
+msgstr "ਨਿਕਾਸ"
+
+msgid "Initializing..."
+msgstr "ਸ਼ੁਰੂ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ..."
+
+msgid "Manage automatic M3U bouquet updates"
+msgstr "ਆਟੋਮੈਟਿਕ M3U ਗੁਲਦਸਤੇ ਅੱਪਡੇਟਾਂ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰੋ"
+
+msgid "No source selected!"
+msgstr "ਕੋਈ ਸਰੋਤ ਨਹੀਂ ਚੁਣਿਆ ਗਿਆ!"
+
+msgid "Other"
+msgstr "ਹੋਰ"
+
+msgid "Reloading channel list..."
+msgstr "ਚੈਨਲ ਸੂਚੀ ਨੂੰ ਮੁੜ ਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ..."
+
+msgid "Save"
+msgstr "ਸੇਵ ਕਰੋ"
+
+msgid "Settings saved."
+msgstr "ਸੈਟਿੰਗਾਂ ਰੱਖਿਅਤ ਕੀਤੀਆਂ ਗਈਆਂ।"
+
+msgid "Sportsonline"
+msgstr "ਸਪੋਰਟਸ ਔਨਲਾਈਨ"
+
+msgid "StreamSport99"
+msgstr ""
+
+msgid "TV List"
+msgstr "ਟੀਵੀ ਸੂਚੀ"
+
+msgid "Update"
+msgstr "ਅੱਪਡੇਟ ਕਰੋ"
+
+msgid "Updated on {}"
+msgstr "{} ਨੂੰ ਅੱਪਡੇਟ ਕੀਤਾ ਗਿਆ"
+
+msgid "Updating {}/{}"
+msgstr "ਅੱਪਡੇਟ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ {}/{}"
+
+msgid "Vavoo Italia"
+msgstr "ਵਾਵੂ ਇਟਲੀ"
+
+msgid "Vavoo Italia (Resolved)"
+msgstr "ਵਾਵੂ ਇਟਾਲੀਆ (ਹੱਲ)"

@@ -1,0 +1,77 @@
+# BouquetUpdater translations
+# Copyright (C) 2025 Lululla Team
+# This file is distributed under the same license as the Lululla package.
+# [lululla] <ekekaz@gmail.com>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BouquetUpdater\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-06-23 20:02+0000\n"
+"Last-Translator:  <EMAIL@ADDRESS>\n"
+"Language-Team: Language en-GB\n"
+"Language: en-GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Automatic update time"
+msgstr ""
+
+msgid "Automatically update bouquets from M3U lists"
+msgstr ""
+
+msgid "Bouquet Updater"
+msgstr ""
+
+msgid "Completed!"
+msgstr ""
+
+msgid "Exit"
+msgstr ""
+
+msgid "Initializing..."
+msgstr ""
+
+msgid "Manage automatic M3U bouquet updates"
+msgstr ""
+
+msgid "No source selected!"
+msgstr ""
+
+msgid "Other"
+msgstr ""
+
+msgid "Reloading channel list..."
+msgstr ""
+
+msgid "Save"
+msgstr ""
+
+msgid "Settings saved."
+msgstr ""
+
+msgid "Sportsonline"
+msgstr ""
+
+msgid "StreamSport99"
+msgstr ""
+
+msgid "TV List"
+msgstr ""
+
+msgid "Update"
+msgstr ""
+
+msgid "Updated on {}"
+msgstr ""
+
+msgid "Updating {}/{}"
+msgstr ""
+
+msgid "Vavoo Italia"
+msgstr "Vavoo Italy"
+
+msgid "Vavoo Italia (Resolved)"
+msgstr ""

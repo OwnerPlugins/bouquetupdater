@@ -1,0 +1,77 @@
+# BouquetUpdater translations
+# Copyright (C) 2025 Lululla Team
+# This file is distributed under the same license as the Lululla package.
+# [lululla] <ekekaz@gmail.com>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BouquetUpdater\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-06-23 20:18+0000\n"
+"Last-Translator:  <EMAIL@ADDRESS>\n"
+"Language-Team: Thai <(nothing)>\n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Automatic update time"
+msgstr "เวลาอัพเดตอัตโนมัติ"
+
+msgid "Automatically update bouquets from M3U lists"
+msgstr "อัปเดตช่อดอกไม้จากรายการ M3U โดยอัตโนมัติ"
+
+msgid "Bouquet Updater"
+msgstr "อัพเดตช่อดอกไม้"
+
+msgid "Completed!"
+msgstr "สมบูรณ์!"
+
+msgid "Exit"
+msgstr "ออก"
+
+msgid "Initializing..."
+msgstr "กำลังเริ่มต้น..."
+
+msgid "Manage automatic M3U bouquet updates"
+msgstr "จัดการการอัปเดตช่อดอกไม้ M3U อัตโนมัติ"
+
+msgid "No source selected!"
+msgstr "ไม่ได้เลือกแหล่งที่มา!"
+
+msgid "Other"
+msgstr "อื่น"
+
+msgid "Reloading channel list..."
+msgstr "กำลังโหลดรายการช่องใหม่..."
+
+msgid "Save"
+msgstr "บันทึก"
+
+msgid "Settings saved."
+msgstr "บันทึกการตั้งค่าแล้ว"
+
+msgid "Sportsonline"
+msgstr "สปอร์ตออนไลน์"
+
+msgid "StreamSport99"
+msgstr "สตรีมสปอร์ต99"
+
+msgid "TV List"
+msgstr "รายการทีวี"
+
+msgid "Update"
+msgstr "อัปเดต"
+
+msgid "Updated on {}"
+msgstr "อัปเดตเมื่อ {}"
+
+msgid "Updating {}/{}"
+msgstr "กำลังอัปเดต {}/{}"
+
+msgid "Vavoo Italia"
+msgstr "วาวู อิตาลี"
+
+msgid "Vavoo Italia (Resolved)"
+msgstr "วาวู อิตาเลีย (แก้ไขแล้ว)"

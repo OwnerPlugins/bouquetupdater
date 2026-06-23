@@ -1,0 +1,77 @@
+# BouquetUpdater translations
+# Copyright (C) 2025 Lululla Team
+# This file is distributed under the same license as the Lululla package.
+# [lululla] <ekekaz@gmail.com>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BouquetUpdater\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-06-23 19:59+0000\n"
+"Last-Translator:  <EMAIL@ADDRESS>\n"
+"Language-Team: Azerbaijani\n"
+"Language: az\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Automatic update time"
+msgstr "Avtomatik yeniləmə vaxtı"
+
+msgid "Automatically update bouquets from M3U lists"
+msgstr "M3U siyahılarından buketləri avtomatik yeniləyin"
+
+msgid "Bouquet Updater"
+msgstr "Buket Yeniləyici"
+
+msgid "Completed!"
+msgstr "Tamamlandı!"
+
+msgid "Exit"
+msgstr "Çıx"
+
+msgid "Initializing..."
+msgstr "Başlanılır..."
+
+msgid "Manage automatic M3U bouquet updates"
+msgstr "Avtomatik M3U buket yeniləmələrini idarə edin"
+
+msgid "No source selected!"
+msgstr "Mənbə seçilməyib!"
+
+msgid "Other"
+msgstr "Digər"
+
+msgid "Reloading channel list..."
+msgstr "Kanal siyahısı yenidən yüklənir..."
+
+msgid "Save"
+msgstr "Saxla"
+
+msgid "Settings saved."
+msgstr "Parametrlər yadda saxlanıldı."
+
+msgid "Sportsonline"
+msgstr ""
+
+msgid "StreamSport99"
+msgstr ""
+
+msgid "TV List"
+msgstr "TV siyahısı"
+
+msgid "Update"
+msgstr "Yeniləyin"
+
+msgid "Updated on {}"
+msgstr "{} tarixində yenilənib"
+
+msgid "Updating {}/{}"
+msgstr "{}/{} yenilənir"
+
+msgid "Vavoo Italia"
+msgstr "Vavoo İtaliya"
+
+msgid "Vavoo Italia (Resolved)"
+msgstr "Vavoo Italia (həll olundu)"

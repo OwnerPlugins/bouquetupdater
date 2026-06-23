@@ -1,0 +1,78 @@
+# BouquetUpdater translations
+# Copyright (C) 2025 Lululla Team
+# This file is distributed under the same license as the Lululla package.
+# [lululla] <ekekaz@gmail.com>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BouquetUpdater\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-06-23 20:07+0000\n"
+"Last-Translator:  <EMAIL@ADDRESS>\n"
+"Language-Team: Hungarian <translation-team-hu@lists.sourceforge.net>\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Automatic update time"
+msgstr "Automatikus frissítési idő"
+
+msgid "Automatically update bouquets from M3U lists"
+msgstr "Csokrok automatikus frissítése az M3U listákról"
+
+msgid "Bouquet Updater"
+msgstr "Csokorfrissítő"
+
+msgid "Completed!"
+msgstr "Elkészült!"
+
+msgid "Exit"
+msgstr "Kijárat"
+
+msgid "Initializing..."
+msgstr "Inicializálás..."
+
+msgid "Manage automatic M3U bouquet updates"
+msgstr "Az M3U csokor automatikus frissítéseinek kezelése"
+
+msgid "No source selected!"
+msgstr "Nincs kiválasztva forrás!"
+
+msgid "Other"
+msgstr "Más"
+
+msgid "Reloading channel list..."
+msgstr "Csatornalista újratöltése..."
+
+msgid "Save"
+msgstr "Megtakarítás"
+
+msgid "Settings saved."
+msgstr "A beállítások elmentve."
+
+msgid "Sportsonline"
+msgstr ""
+
+msgid "StreamSport99"
+msgstr ""
+
+msgid "TV List"
+msgstr "TV lista"
+
+msgid "Update"
+msgstr "Frissítés"
+
+msgid "Updated on {}"
+msgstr "Frissítve ekkor: {}"
+
+msgid "Updating {}/{}"
+msgstr "{}/{} frissítése"
+
+msgid "Vavoo Italia"
+msgstr "Vavoo Olaszország"
+
+msgid "Vavoo Italia (Resolved)"
+msgstr "Vavoo Italia (megoldva)"

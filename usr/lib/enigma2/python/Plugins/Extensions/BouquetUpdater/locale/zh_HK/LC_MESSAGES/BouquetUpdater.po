@@ -1,0 +1,77 @@
+# BouquetUpdater translations
+# Copyright (C) 2025 Lululla Team
+# This file is distributed under the same license as the Lululla package.
+# [lululla] <ekekaz@gmail.com>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BouquetUpdater\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-06-23 20:21+0000\n"
+"Last-Translator:  <EMAIL@ADDRESS>\n"
+"Language-Team: Language zh-HK\n"
+"Language: zh-HK\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Automatic update time"
+msgstr "自動更新時間"
+
+msgid "Automatically update bouquets from M3U lists"
+msgstr "自動更新 M3U 清單中的花束"
+
+msgid "Bouquet Updater"
+msgstr "花束更新器"
+
+msgid "Completed!"
+msgstr "完全的！"
+
+msgid "Exit"
+msgstr "出口"
+
+msgid "Initializing..."
+msgstr "正在初始化..."
+
+msgid "Manage automatic M3U bouquet updates"
+msgstr "管理自動 M3U 花束更新"
+
+msgid "No source selected!"
+msgstr "未選擇來源！"
+
+msgid "Other"
+msgstr "其他"
+
+msgid "Reloading channel list..."
+msgstr "正在重新加載頻道清單..."
+
+msgid "Save"
+msgstr "節省"
+
+msgid "Settings saved."
+msgstr "設定已儲存。"
+
+msgid "Sportsonline"
+msgstr "體育在線"
+
+msgid "StreamSport99"
+msgstr "流體育99"
+
+msgid "TV List"
+msgstr "電視列表"
+
+msgid "Update"
+msgstr "更新"
+
+msgid "Updated on {}"
+msgstr "更新於 {}"
+
+msgid "Updating {}/{}"
+msgstr "正在更新 {}/{}"
+
+msgid "Vavoo Italia"
+msgstr "瓦武義大利"
+
+msgid "Vavoo Italia (Resolved)"
+msgstr "Vavoo 義大利（已解決）"

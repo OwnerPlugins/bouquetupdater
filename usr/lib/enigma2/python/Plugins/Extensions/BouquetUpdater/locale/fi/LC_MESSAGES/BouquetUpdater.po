@@ -1,0 +1,78 @@
+# BouquetUpdater translations
+# Copyright (C) 2025 Lululla Team
+# This file is distributed under the same license as the Lululla package.
+# [lululla] <ekekaz@gmail.com>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BouquetUpdater\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-06-23 20:04+0000\n"
+"Last-Translator:  <EMAIL@ADDRESS>\n"
+"Language-Team: Finnish <translation-team-fi@lists.sourceforge.net>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Automatic update time"
+msgstr "Automaattinen päivitysaika"
+
+msgid "Automatically update bouquets from M3U lists"
+msgstr "Päivitä kukkakimput automaattisesti M3U-luetteloista"
+
+msgid "Bouquet Updater"
+msgstr "Kukkakimppujen päivittäjä"
+
+msgid "Completed!"
+msgstr "Valmis!"
+
+msgid "Exit"
+msgstr "Poistu"
+
+msgid "Initializing..."
+msgstr "Alustetaan..."
+
+msgid "Manage automatic M3U bouquet updates"
+msgstr "Hallitse automaattisia M3U-kimppupäivityksiä"
+
+msgid "No source selected!"
+msgstr "Lähdettä ei ole valittu!"
+
+msgid "Other"
+msgstr "Muut"
+
+msgid "Reloading channel list..."
+msgstr "Ladataan kanavaluetteloa uudelleen..."
+
+msgid "Save"
+msgstr "Tallentaa"
+
+msgid "Settings saved."
+msgstr "Asetukset tallennettu."
+
+msgid "Sportsonline"
+msgstr ""
+
+msgid "StreamSport99"
+msgstr ""
+
+msgid "TV List"
+msgstr "TV-luettelo"
+
+msgid "Update"
+msgstr "Päivittää"
+
+msgid "Updated on {}"
+msgstr "Päivitetty {}"
+
+msgid "Updating {}/{}"
+msgstr "Päivitetään {}/{}"
+
+msgid "Vavoo Italia"
+msgstr ""
+
+msgid "Vavoo Italia (Resolved)"
+msgstr "Vavoo Italia (Ratkaistu)"
