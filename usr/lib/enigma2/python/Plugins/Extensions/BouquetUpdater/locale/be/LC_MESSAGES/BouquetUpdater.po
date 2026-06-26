@@ -69,7 +69,7 @@ msgid "Updated on {}"
 msgstr "Абноўлена {}"
 
 msgid "Updating {}/{}"
-msgstr ""
+msgstr "Абнаўленне {}/{}"
 
 msgid "Vavoo Italia"
 msgstr "Vavoo Італія"
