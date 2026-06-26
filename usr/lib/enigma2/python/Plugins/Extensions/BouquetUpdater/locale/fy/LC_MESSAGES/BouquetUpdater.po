@@ -35,7 +35,7 @@ msgid "Initializing..."
 msgstr "Inisjalisearjen..."
 
 msgid "Manage automatic M3U bouquet updates"
-msgstr ""
+msgstr "Beheare automatyske M3U bouquet updates"
 
 msgid "No source selected!"
 msgstr "Gjin boarne selektearre!"
