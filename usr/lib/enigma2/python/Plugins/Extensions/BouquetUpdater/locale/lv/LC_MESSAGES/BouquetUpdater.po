@@ -49,7 +49,7 @@ msgid "Failed"
 msgstr "Neizdevās"
 
 msgid "Global progress: {}/{}"
-msgstr ""
+msgstr "Globālais progress: {}/{}"
 
 msgid "Initializing..."
 msgstr "Notiek inicializācija..."
@@ -80,7 +80,7 @@ msgid "Sportsonline"
 msgstr ""
 
 msgid "Starting download..."
-msgstr ""
+msgstr "Notiek lejupielādes sākšana..."
 
 msgid "StreamSport99"
 msgstr ""
