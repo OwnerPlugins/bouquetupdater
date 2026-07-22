@@ -23,10 +23,12 @@ try:
     from .sportsonline import process_sportsonline, is_sportsonline_url
     from .vavoo_it import process_vavoo_italia, process_vavoo_italia_resolved, is_vavoo_url, VAVOO_BOUQUET_FILE, VAVOO_RESOLVED_BOUQUET_FILE
     from .streamsport99 import process_streamsport99, is_streamsport99_url
+    from .dlhd import process_dlhd, is_dlhd_url
 except ImportError:
     from sportsonline import process_sportsonline, is_sportsonline_url
     from vavoo_it import process_vavoo_italia, process_vavoo_italia_resolved, is_vavoo_url, VAVOO_BOUQUET_FILE, VAVOO_RESOLVED_BOUQUET_FILE
     from streamsport99 import process_streamsport99, is_streamsport99_url
+    from dlhd import process_dlhd, is_dlhd_url
 
 try:
     from io import open
@@ -453,6 +455,16 @@ class M3UUpdaterLogic:
                         logging.error("StreamSport99: processing failed")
                     continue
 
+                # DLHD
+                if is_dlhd_url(url):
+                    logging.info("Detected type: DLHD")
+                    if process_dlhd(url, filename):
+                        logging.info("DLHD processed successfully")
+                        updated_bouquets.append(filename)
+                    else:
+                        logging.error("DLHD: processing failed")
+                    continue
+
                 # Vavoo Resolved (check bouquet filename)
                 if is_vavoo_url(
                         url) and filename == VAVOO_RESOLVED_BOUQUET_FILE:
@@ -621,6 +633,8 @@ class UpdateProgressScreen(Screen):
                     process_sportsonline(url, filename)
                 elif is_streamsport99_url(url):
                     process_streamsport99(url, filename)
+                elif is_dlhd_url(url):
+                    process_dlhd(url, filename)
                 elif is_vavoo_url(url) and filename == VAVOO_RESOLVED_BOUQUET_FILE:
                     process_vavoo_italia_resolved(filename)
                 elif is_vavoo_url(url):
@@ -711,6 +725,9 @@ class BouquetUpdaterScreen(ConfigListScreen, Screen):
 
         if 'cdnlivetv' in url:
             return _("StreamSport99")
+
+        if is_dlhd_url(url):
+            return _("DLHD Italy")
 
         m3u_match = re.search(r'/([^/]+)\.m3u', url)
         if m3u_match:
