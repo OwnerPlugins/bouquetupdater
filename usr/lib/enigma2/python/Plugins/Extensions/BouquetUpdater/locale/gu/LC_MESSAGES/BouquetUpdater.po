@@ -28,14 +28,33 @@ msgstr "કલગી અપડેટર"
 msgid "Completed!"
 msgstr "પૂર્ણ!"
 
+msgid "Creating bouquet..."
+msgstr "કલગી બનાવી રહ્યાં છીએ..."
+
 msgid "DLHD Italy"
 msgstr "ડીએલએચડી ઇટાલી"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "ચેનલ સૂચિ ફરીથી લોડ કરી રહ્યું છે..."
+
+msgid "Downloading..."
+msgstr "ડાઉનલોડ કરી રહ્યું છે..."
 
 msgid "Exit"
 msgstr "બહાર નીકળો"
 
+msgid "Failed"
+msgstr "નિષ્ફળ"
+
+msgid "Global progress: {}/{}"
+msgstr "વૈશ્વિક પ્રગતિ: {}/{}"
+
 msgid "Initializing..."
 msgstr "પ્રારંભ કરી રહ્યું છે..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "સ્વચાલિત M3U કલગી અપડેટ્સનું સંચાલન કરો"
@@ -46,7 +65,8 @@ msgstr "કોઈ સ્રોત પસંદ કર્યો નથી!"
 msgid "Other"
 msgstr "અન્ય"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "ચેનલ સૂચિ ફરીથી લોડ કરી રહ્યું છે..."
 
 msgid "Save"
@@ -58,23 +78,40 @@ msgstr "સેટિંગ્સ સાચવી."
 msgid "Sportsonline"
 msgstr "સ્પોર્ટસઓનલાઈન"
 
+msgid "Starting download..."
+msgstr "ડાઉનલોડ શરૂ કરી રહ્યાં છીએ..."
+
 msgid "StreamSport99"
 msgstr "સ્ટ્રીમસ્પોર્ટ99"
 
 msgid "TV List"
 msgstr "ટીવી યાદી"
 
+msgid "Unknown channel"
+msgstr "અજાણી ચેનલ"
+
 msgid "Update"
+msgstr "અપડેટ કરો"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "અપડેટ કરો"
 
 msgid "Updated on {}"
 msgstr "{} ના રોજ અપડેટ થયેલ"
 
-msgid "Updating {}/{}"
-msgstr "અપડેટ કરી રહ્યાં છીએ {}/{}"
+msgid "Updating bouquets"
+msgstr "કલગી અપડેટ કરી રહ્યાં છીએ"
 
 msgid "Vavoo Italia"
 msgstr "વાવુ ઇટાલી"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "વાવુ ઇટાલિયા (ઉકેલાયેલ)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "પ્રારંભ કરી રહ્યું છે..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "અપડેટ કરી રહ્યાં છીએ {}/{}"

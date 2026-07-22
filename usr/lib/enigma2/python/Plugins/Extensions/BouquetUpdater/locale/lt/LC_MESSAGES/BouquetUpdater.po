@@ -29,14 +29,33 @@ msgstr "Puokštės atnaujinimo priemonė"
 msgid "Completed!"
 msgstr "Baigta!"
 
+msgid "Creating bouquet..."
+msgstr "Kuriama puokštė..."
+
 msgid "DLHD Italy"
 msgstr "DLHD Italija"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "Iš naujo įkeliamas kanalų sąrašas..."
+
+msgid "Downloading..."
+msgstr "Atsisiunčiama..."
 
 msgid "Exit"
 msgstr "Išeiti"
 
+msgid "Failed"
+msgstr "Nepavyko"
+
+msgid "Global progress: {}/{}"
+msgstr "Pasaulinė pažanga: {}/{}"
+
 msgid "Initializing..."
 msgstr "Inicijuojama..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "Tvarkykite automatinius M3U puokštės atnaujinimus"
@@ -47,7 +66,8 @@ msgstr "Nepasirinktas joks šaltinis!"
 msgid "Other"
 msgstr "Kita"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "Iš naujo įkeliamas kanalų sąrašas..."
 
 msgid "Save"
@@ -59,23 +79,40 @@ msgstr "Nustatymai išsaugoti."
 msgid "Sportsonline"
 msgstr ""
 
+msgid "Starting download..."
+msgstr "Pradedamas atsisiuntimas..."
+
 msgid "StreamSport99"
 msgstr ""
 
 msgid "TV List"
 msgstr "TV sąrašas"
 
+msgid "Unknown channel"
+msgstr "Nežinomas kanalas"
+
 msgid "Update"
+msgstr "Atnaujinti"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "Atnaujinti"
 
 msgid "Updated on {}"
 msgstr "Atnaujinta {}"
 
-msgid "Updating {}/{}"
-msgstr "Atnaujinama {}/{}"
+msgid "Updating bouquets"
+msgstr "Puokščių atnaujinimas"
 
 msgid "Vavoo Italia"
 msgstr "Vavoo Italija"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "Vavoo Italia (išspręsta)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "Inicijuojama..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "Atnaujinama {}/{}"

@@ -28,14 +28,33 @@ msgstr "Mesa a jorn de rams"
 msgid "Completed!"
 msgstr "Completat!"
 
+msgid "Creating bouquet..."
+msgstr "Creant un ramelet..."
+
 msgid "DLHD Italy"
 msgstr "DLHD Itàlia"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "En tornant cargar la lista de canals..."
+
+msgid "Downloading..."
+msgstr "En telecargament..."
 
 msgid "Exit"
 msgstr "Sortida"
 
+msgid "Failed"
+msgstr "Mancat"
+
+msgid "Global progress: {}/{}"
+msgstr "Progrès global : {}/{}"
+
 msgid "Initializing..."
 msgstr "Inicializant..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "Gerir las mesas a jorn automaticas dels rams M3U"
@@ -46,7 +65,8 @@ msgstr "Cap de font seleccionada!"
 msgid "Other"
 msgstr "Autre"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "En tornant cargar la lista de canals..."
 
 msgid "Save"
@@ -58,23 +78,40 @@ msgstr "Paramètres enregistrats."
 msgid "Sportsonline"
 msgstr ""
 
+msgid "Starting download..."
+msgstr "Començant lo telecargament..."
+
 msgid "StreamSport99"
 msgstr ""
 
 msgid "TV List"
 msgstr "Lista de television"
 
+msgid "Unknown channel"
+msgstr "Canal desconegut"
+
 msgid "Update"
+msgstr "Metre al jorn"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "Metre al jorn"
 
 msgid "Updated on {}"
 msgstr "Mesa a jorn sus {}"
 
-msgid "Updating {}/{}"
-msgstr "Mesa a jorn {}/{}"
+msgid "Updating bouquets"
+msgstr "Mesa a jorn dels rams"
 
 msgid "Vavoo Italia"
 msgstr "Vavoo Itàlia"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "Vavoo Italia (Resolgut)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "Inicializant..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "Mesa a jorn {}/{}"

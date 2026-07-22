@@ -29,14 +29,33 @@ msgstr "Buket Güncelleyici"
 msgid "Completed!"
 msgstr "Tamamlanmış!"
 
+msgid "Creating bouquet..."
+msgstr "Buket oluşturuluyor..."
+
 msgid "DLHD Italy"
 msgstr "DLHD İtalya"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "Kanal listesi yeniden yükleniyor..."
+
+msgid "Downloading..."
+msgstr "İndiriliyor..."
 
 msgid "Exit"
 msgstr "Çıkış"
 
+msgid "Failed"
+msgstr "Arızalı"
+
+msgid "Global progress: {}/{}"
+msgstr "Genel ilerleme: {}/{}"
+
 msgid "Initializing..."
 msgstr "Başlatılıyor..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "Otomatik M3U buket güncellemelerini yönetin"
@@ -47,7 +66,8 @@ msgstr "Kaynak seçilmedi!"
 msgid "Other"
 msgstr "Diğer"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "Kanal listesi yeniden yükleniyor..."
 
 msgid "Save"
@@ -59,23 +79,40 @@ msgstr "Ayarlar kaydedildi."
 msgid "Sportsonline"
 msgstr "Sporçevrimiçi"
 
+msgid "Starting download..."
+msgstr "İndirme başlatılıyor..."
+
 msgid "StreamSport99"
 msgstr ""
 
 msgid "TV List"
 msgstr "TV Listesi"
 
+msgid "Unknown channel"
+msgstr "Bilinmeyen kanal"
+
 msgid "Update"
+msgstr "Güncelleme"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "Güncelleme"
 
 msgid "Updated on {}"
 msgstr "{} tarihinde güncellendi"
 
-msgid "Updating {}/{}"
-msgstr "{}/{} güncelleniyor"
+msgid "Updating bouquets"
+msgstr "Buketler güncelleniyor"
 
 msgid "Vavoo Italia"
 msgstr "Vavoo İtalya"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "Vavoo İtalya (Çözüldü)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "Başlatılıyor..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "{}/{} güncelleniyor"

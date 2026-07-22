@@ -28,14 +28,33 @@ msgstr "Ծաղկեփնջերի թարմացնող սարք"
 msgid "Completed!"
 msgstr "Ավարտված է"
 
+msgid "Creating bouquet..."
+msgstr "Ծաղկեփունջի ստեղծում..."
+
 msgid "DLHD Italy"
 msgstr "DLHD Իտալիա"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "Ալիքների ցանկի վերաբեռնում..."
+
+msgid "Downloading..."
+msgstr "Ներբեռնվում է..."
 
 msgid "Exit"
 msgstr "Ելք"
 
+msgid "Failed"
+msgstr "Չհաջողվեց"
+
+msgid "Global progress: {}/{}"
+msgstr "Համաշխարհային առաջընթաց՝ {}/{}"
+
 msgid "Initializing..."
 msgstr "Նախաձեռնվում է..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "Կառավարեք M3U ծաղկեփնջերի ավտոմատ թարմացումները"
@@ -46,7 +65,8 @@ msgstr "Աղբյուր ընտրված չէ:"
 msgid "Other"
 msgstr "Այլ"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "Ալիքների ցանկի վերաբեռնում..."
 
 msgid "Save"
@@ -58,23 +78,40 @@ msgstr "Կարգավորումները պահված են:"
 msgid "Sportsonline"
 msgstr ""
 
+msgid "Starting download..."
+msgstr "Ներբեռնումը սկսվում է..."
+
 msgid "StreamSport99"
 msgstr ""
 
 msgid "TV List"
 msgstr "Հեռուստատեսության ցուցակ"
 
+msgid "Unknown channel"
+msgstr "Անհայտ ալիք"
+
 msgid "Update"
+msgstr "Թարմացնել"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "Թարմացնել"
 
 msgid "Updated on {}"
 msgstr "Թարմացվել է {}-ին"
 
-msgid "Updating {}/{}"
-msgstr "Թարմացվում է {}/{}"
+msgid "Updating bouquets"
+msgstr "Ծաղկեփնջերի թարմացում"
 
 msgid "Vavoo Italia"
 msgstr "Vavoo Իտալիա"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "Vavoo Italia (լուծված)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "Նախաձեռնվում է..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "Թարմացվում է {}/{}"

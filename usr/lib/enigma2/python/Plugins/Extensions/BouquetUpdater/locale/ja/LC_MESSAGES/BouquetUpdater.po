@@ -29,14 +29,33 @@ msgstr "花束アップデーター"
 msgid "Completed!"
 msgstr "完成しました！"
 
+msgid "Creating bouquet..."
+msgstr "花束を作成中..."
+
 msgid "DLHD Italy"
 msgstr "DLHD イタリア"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "チャンネルリストを再読み込み中..."
+
+msgid "Downloading..."
+msgstr "ダウンロード中..."
 
 msgid "Exit"
 msgstr "出口"
 
+msgid "Failed"
+msgstr "失敗した"
+
+msgid "Global progress: {}/{}"
+msgstr "グローバルな進捗状況: {}/{}"
+
 msgid "Initializing..."
 msgstr "初期化中..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "M3U ブーケの自動更新を管理する"
@@ -47,7 +66,8 @@ msgstr "ソースが選択されていません!"
 msgid "Other"
 msgstr "他の"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "チャンネルリストを再読み込み中..."
 
 msgid "Save"
@@ -59,23 +79,40 @@ msgstr "設定が保存されました。"
 msgid "Sportsonline"
 msgstr "スポーツオンライン"
 
+msgid "Starting download..."
+msgstr "ダウンロードを開始しています..."
+
 msgid "StreamSport99"
 msgstr "ストリームスポーツ99"
 
 msgid "TV List"
 msgstr "テレビ番組リスト"
 
+msgid "Unknown channel"
+msgstr "不明なチャンネル"
+
 msgid "Update"
+msgstr "アップデート"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "アップデート"
 
 msgid "Updated on {}"
 msgstr "{} に更新されました"
 
-msgid "Updating {}/{}"
-msgstr "{}/{} を更新しています"
+msgid "Updating bouquets"
+msgstr "花束を更新しています"
 
 msgid "Vavoo Italia"
 msgstr "ヴァブー イタリア"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "Vavoo イタリア (解決済み)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "初期化中..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "{}/{} を更新しています"

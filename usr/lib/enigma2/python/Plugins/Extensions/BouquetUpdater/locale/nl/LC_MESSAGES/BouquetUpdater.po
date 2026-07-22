@@ -29,14 +29,33 @@ msgstr "Boeket-updater"
 msgid "Completed!"
 msgstr "Voltooid!"
 
+msgid "Creating bouquet..."
+msgstr "Boeket maken..."
+
 msgid "DLHD Italy"
 msgstr "DLHD Italië"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "Zenderlijst opnieuw laden..."
+
+msgid "Downloading..."
+msgstr "Downloaden..."
 
 msgid "Exit"
 msgstr "Uitgang"
 
+msgid "Failed"
+msgstr "Mislukt"
+
+msgid "Global progress: {}/{}"
+msgstr "Mondiale vooruitgang: {}/{}"
+
 msgid "Initializing..."
 msgstr "Initialiseren..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "Beheer automatische M3U-boeketupdates"
@@ -47,7 +66,8 @@ msgstr "Geen bron geselecteerd!"
 msgid "Other"
 msgstr "Ander"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "Zenderlijst opnieuw laden..."
 
 msgid "Save"
@@ -59,23 +79,39 @@ msgstr "Instellingen opgeslagen."
 msgid "Sportsonline"
 msgstr "Sportonline"
 
+msgid "Starting download..."
+msgstr "Downloaden starten..."
+
 msgid "StreamSport99"
 msgstr ""
 
 msgid "TV List"
 msgstr "TV-lijst"
 
+msgid "Unknown channel"
+msgstr "Onbekend kanaal"
+
 msgid "Update"
 msgstr ""
+
+msgid "Update failed"
+msgstr "Update mislukt"
 
 msgid "Updated on {}"
 msgstr "Bijgewerkt op {}"
 
-msgid "Updating {}/{}"
-msgstr "Updaten van {}/{}"
+msgid "Updating bouquets"
+msgstr "Boeketten bijwerken"
 
 msgid "Vavoo Italia"
 msgstr "Vavoo Italië"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "Vavoo Italia (opgelost)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "Initialiseren..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "Updaten van {}/{}"

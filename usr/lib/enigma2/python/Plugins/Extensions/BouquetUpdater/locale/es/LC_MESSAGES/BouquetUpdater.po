@@ -29,14 +29,33 @@ msgstr "Actualizador de ramo"
 msgid "Completed!"
 msgstr "¡Terminado!"
 
+msgid "Creating bouquet..."
+msgstr "Creando ramo..."
+
 msgid "DLHD Italy"
 msgstr "DLHD Italia"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "Recargando lista de canales..."
+
+msgid "Downloading..."
+msgstr "Descargando..."
 
 msgid "Exit"
 msgstr "Salida"
 
+msgid "Failed"
+msgstr "Fallido"
+
+msgid "Global progress: {}/{}"
+msgstr "Progreso global: {}/{}"
+
 msgid "Initializing..."
 msgstr "Inicializando..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "Administrar actualizaciones automáticas del ramo M3U"
@@ -47,7 +66,8 @@ msgstr "¡No se seleccionó ninguna fuente!"
 msgid "Other"
 msgstr "Otro"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "Recargando lista de canales..."
 
 msgid "Save"
@@ -59,23 +79,40 @@ msgstr "Configuración guardada."
 msgid "Sportsonline"
 msgstr "deportes en línea"
 
+msgid "Starting download..."
+msgstr "Iniciando descarga..."
+
 msgid "StreamSport99"
 msgstr ""
 
 msgid "TV List"
 msgstr "Lista de televisión"
 
+msgid "Unknown channel"
+msgstr "Canal desconocido"
+
 msgid "Update"
+msgstr "Actualizar"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "Actualizar"
 
 msgid "Updated on {}"
 msgstr "Actualizado el {}"
 
-msgid "Updating {}/{}"
-msgstr "Actualizando {}/{}"
+msgid "Updating bouquets"
+msgstr "Actualizando ramos"
 
 msgid "Vavoo Italia"
 msgstr ""
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "Vavoo Italia (Resuelto)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "Inicializando..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "Actualizando {}/{}"

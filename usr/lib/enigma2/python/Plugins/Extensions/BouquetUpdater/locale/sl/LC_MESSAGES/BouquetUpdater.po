@@ -29,14 +29,33 @@ msgstr "Posodabljanje šopkov"
 msgid "Completed!"
 msgstr "Dokončano!"
 
+msgid "Creating bouquet..."
+msgstr "Ustvarjanje šopka ..."
+
 msgid "DLHD Italy"
 msgstr "DLHD Italija"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "Ponovno nalaganje seznama kanalov ..."
+
+msgid "Downloading..."
+msgstr "Prenašanje ..."
 
 msgid "Exit"
 msgstr "Izhod"
 
+msgid "Failed"
+msgstr "Ni uspelo"
+
+msgid "Global progress: {}/{}"
+msgstr "Globalni napredek: {}/{}"
+
 msgid "Initializing..."
 msgstr "Inicializacija ..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "Upravljajte samodejne posodobitve šopka M3U"
@@ -47,7 +66,8 @@ msgstr "Izbran ni noben vir!"
 msgid "Other"
 msgstr "drugo"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "Ponovno nalaganje seznama kanalov ..."
 
 msgid "Save"
@@ -59,23 +79,40 @@ msgstr "Nastavitve shranjene."
 msgid "Sportsonline"
 msgstr ""
 
+msgid "Starting download..."
+msgstr "Začetek prenosa ..."
+
 msgid "StreamSport99"
 msgstr ""
 
 msgid "TV List"
 msgstr "TV seznam"
 
+msgid "Unknown channel"
+msgstr "Neznani kanal"
+
 msgid "Update"
+msgstr "posodobitev"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "posodobitev"
 
 msgid "Updated on {}"
 msgstr "Posodobljeno {}"
 
-msgid "Updating {}/{}"
-msgstr "Posodabljanje {}/{}"
+msgid "Updating bouquets"
+msgstr "Posodabljanje šopkov"
 
 msgid "Vavoo Italia"
 msgstr "Vavoo Italija"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "Vavoo Italia (razrešeno)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "Inicializacija ..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "Posodabljanje {}/{}"

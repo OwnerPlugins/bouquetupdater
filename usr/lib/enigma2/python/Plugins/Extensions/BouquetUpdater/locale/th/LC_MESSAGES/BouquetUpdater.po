@@ -28,14 +28,33 @@ msgstr "อัพเดตช่อดอกไม้"
 msgid "Completed!"
 msgstr "สมบูรณ์!"
 
+msgid "Creating bouquet..."
+msgstr "กำลังสร้างช่อดอกไม้..."
+
 msgid "DLHD Italy"
 msgstr "ดีแอลเอชดี อิตาลี"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "กำลังโหลดรายการช่องใหม่..."
+
+msgid "Downloading..."
+msgstr "กำลังดาวน์โหลด..."
 
 msgid "Exit"
 msgstr "ออก"
 
+msgid "Failed"
+msgstr "ล้มเหลว"
+
+msgid "Global progress: {}/{}"
+msgstr "ความคืบหน้าทั่วโลก: {}/{}"
+
 msgid "Initializing..."
 msgstr "กำลังเริ่มต้น..."
+
+msgid "MPlusTV"
+msgstr "เอ็มพลัสทีวี"
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "จัดการการอัปเดตช่อดอกไม้ M3U อัตโนมัติ"
@@ -46,7 +65,8 @@ msgstr "ไม่ได้เลือกแหล่งที่มา!"
 msgid "Other"
 msgstr "อื่น"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "กำลังโหลดรายการช่องใหม่..."
 
 msgid "Save"
@@ -58,23 +78,40 @@ msgstr "บันทึกการตั้งค่าแล้ว"
 msgid "Sportsonline"
 msgstr "สปอร์ตออนไลน์"
 
+msgid "Starting download..."
+msgstr "กำลังเริ่มดาวน์โหลด..."
+
 msgid "StreamSport99"
 msgstr "สตรีมสปอร์ต99"
 
 msgid "TV List"
 msgstr "รายการทีวี"
 
+msgid "Unknown channel"
+msgstr "ช่องที่ไม่รู้จัก"
+
 msgid "Update"
+msgstr "อัปเดต"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "อัปเดต"
 
 msgid "Updated on {}"
 msgstr "อัปเดตเมื่อ {}"
 
-msgid "Updating {}/{}"
-msgstr "กำลังอัปเดต {}/{}"
+msgid "Updating bouquets"
+msgstr "อัพเดทช่อดอกไม้"
 
 msgid "Vavoo Italia"
 msgstr "วาวู อิตาลี"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "วาวู อิตาเลีย (แก้ไขแล้ว)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "กำลังเริ่มต้น..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "กำลังอัปเดต {}/{}"

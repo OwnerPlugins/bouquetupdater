@@ -29,14 +29,33 @@ msgstr "Aktualizácia kytice"
 msgid "Completed!"
 msgstr "Dokončené!"
 
+msgid "Creating bouquet..."
+msgstr "Vytvára sa kytica..."
+
 msgid "DLHD Italy"
 msgstr "DLHD Taliansko"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "Opätovné načítavanie zoznamu kanálov..."
+
+msgid "Downloading..."
+msgstr "Sťahuje sa..."
 
 msgid "Exit"
 msgstr "VÝCHOD"
 
+msgid "Failed"
+msgstr "Nepodarilo sa"
+
+msgid "Global progress: {}/{}"
+msgstr "Globálny pokrok: {}/{}"
+
 msgid "Initializing..."
 msgstr "Inicializuje sa..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "Spravujte automatické aktualizácie buketov M3U"
@@ -47,7 +66,8 @@ msgstr "Nie je vybratý žiadny zdroj!"
 msgid "Other"
 msgstr "Iné"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "Opätovné načítavanie zoznamu kanálov..."
 
 msgid "Save"
@@ -59,23 +79,40 @@ msgstr "Nastavenia boli uložené."
 msgid "Sportsonline"
 msgstr ""
 
+msgid "Starting download..."
+msgstr "Spúšťa sa sťahovanie..."
+
 msgid "StreamSport99"
 msgstr ""
 
 msgid "TV List"
 msgstr "TV zoznam"
 
+msgid "Unknown channel"
+msgstr "Neznámy kanál"
+
 msgid "Update"
+msgstr "Aktualizovať"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "Aktualizovať"
 
 msgid "Updated on {}"
 msgstr "Aktualizované dňa {}"
 
-msgid "Updating {}/{}"
-msgstr "Aktualizuje sa {}/{}"
+msgid "Updating bouquets"
+msgstr "Aktualizácia kytíc"
 
 msgid "Vavoo Italia"
 msgstr "Vavoo Taliansko"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "Vavoo Italia (vyriešené)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "Inicializuje sa..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "Aktualizuje sa {}/{}"

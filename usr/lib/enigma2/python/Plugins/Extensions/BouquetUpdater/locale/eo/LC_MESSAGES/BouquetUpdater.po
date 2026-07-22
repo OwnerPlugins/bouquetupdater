@@ -29,14 +29,33 @@ msgstr "Bukedo-Ĝisdatigilo"
 msgid "Completed!"
 msgstr "Kompletigita!"
 
+msgid "Creating bouquet..."
+msgstr "Kreante bukedon..."
+
 msgid "DLHD Italy"
 msgstr "DLHD Italio"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "Reŝargi kanalliston..."
+
+msgid "Downloading..."
+msgstr "Elŝutante..."
 
 msgid "Exit"
 msgstr "Eliro"
 
+msgid "Failed"
+msgstr "Malsukcesis"
+
+msgid "Global progress: {}/{}"
+msgstr "Tutmonda progreso: {}/{}"
+
 msgid "Initializing..."
 msgstr "Komencante..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "Administri aŭtomatajn ĝisdatigojn pri M3U-bukedo"
@@ -47,7 +66,8 @@ msgstr "Neniu fonto elektita!"
 msgid "Other"
 msgstr "Aliaj"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "Reŝargi kanalliston..."
 
 msgid "Save"
@@ -59,23 +79,40 @@ msgstr "Agordoj konservitaj."
 msgid "Sportsonline"
 msgstr ""
 
+msgid "Starting download..."
+msgstr "Komencante elŝuton..."
+
 msgid "StreamSport99"
 msgstr ""
 
 msgid "TV List"
 msgstr "Televida Listo"
 
+msgid "Unknown channel"
+msgstr "Nekonata kanalo"
+
 msgid "Update"
+msgstr "Ĝisdatigo"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "Ĝisdatigo"
 
 msgid "Updated on {}"
 msgstr "Ĝisdatigita je {}"
 
-msgid "Updating {}/{}"
-msgstr "Ĝisdatigante {}/{}"
+msgid "Updating bouquets"
+msgstr "Ĝisdatigante bukedojn"
 
 msgid "Vavoo Italia"
 msgstr "Vavoo Italio"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "Vavoo Italia (solvita)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "Komencante..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "Ĝisdatigante {}/{}"

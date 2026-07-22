@@ -28,14 +28,33 @@ msgstr "Навсозии букет"
 msgid "Completed!"
 msgstr "Ба итмом расид!"
 
+msgid "Creating bouquet..."
+msgstr "Эҷоди гулдастаҳо..."
+
 msgid "DLHD Italy"
 msgstr "DLHD Италия"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "Рӯйхати каналҳо аз нав бор карда мешавад..."
+
+msgid "Downloading..."
+msgstr "Зеркашӣ карда мешавад..."
 
 msgid "Exit"
 msgstr "Баромадгоҳ"
 
+msgid "Failed"
+msgstr "Муваффақ шуд"
+
+msgid "Global progress: {}/{}"
+msgstr "Пешрафти ҷаҳонӣ: {}/{}"
+
 msgid "Initializing..."
 msgstr "Оғози кор..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "Навсозии автоматии гулдастаи M3U-ро идора кунед"
@@ -46,7 +65,8 @@ msgstr "Ягон манбаъ интихоб нашудааст!"
 msgid "Other"
 msgstr "Дигар"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "Рӯйхати каналҳо аз нав бор карда мешавад..."
 
 msgid "Save"
@@ -58,23 +78,40 @@ msgstr "Танзимот захира карда шуд."
 msgid "Sportsonline"
 msgstr ""
 
+msgid "Starting download..."
+msgstr "Оғози зеркашӣ..."
+
 msgid "StreamSport99"
 msgstr ""
 
 msgid "TV List"
 msgstr "Рӯйхати телевизион"
 
+msgid "Unknown channel"
+msgstr "Канали номаълум"
+
 msgid "Update"
+msgstr "Навсозӣ"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "Навсозӣ"
 
 msgid "Updated on {}"
 msgstr "Навсозӣ дар {}"
 
-msgid "Updating {}/{}"
-msgstr "Навсозии {}/{}"
+msgid "Updating bouquets"
+msgstr "Навсозии гулдастаҳо"
 
 msgid "Vavoo Italia"
 msgstr "Ваву Италия"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "Vavoo Italia (ҳал карда шудааст)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "Оғози кор..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "Навсозии {}/{}"

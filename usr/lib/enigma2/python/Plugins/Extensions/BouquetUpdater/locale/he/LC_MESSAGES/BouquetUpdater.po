@@ -29,14 +29,33 @@ msgstr "עדכון זרים"
 msgid "Completed!"
 msgstr "הושלם!"
 
+msgid "Creating bouquet..."
+msgstr "יוצר זר..."
+
 msgid "DLHD Italy"
 msgstr "DLHD איטליה"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "טוען מחדש את רשימת הערוצים..."
+
+msgid "Downloading..."
+msgstr "מוריד..."
 
 msgid "Exit"
 msgstr "יְצִיאָה"
 
+msgid "Failed"
+msgstr "נִכשָׁל"
+
+msgid "Global progress: {}/{}"
+msgstr "התקדמות גלובלית: {}/{}"
+
 msgid "Initializing..."
 msgstr "מאתחל..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "נהל עדכונים אוטומטיים של זר M3U"
@@ -47,7 +66,8 @@ msgstr "לא נבחר מקור!"
 msgid "Other"
 msgstr "אַחֵר"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "טוען מחדש את רשימת הערוצים..."
 
 msgid "Save"
@@ -59,23 +79,40 @@ msgstr "ההגדרות נשמרו."
 msgid "Sportsonline"
 msgstr "ספורט אונליין"
 
+msgid "Starting download..."
+msgstr "מתחיל להוריד..."
+
 msgid "StreamSport99"
 msgstr ""
 
 msgid "TV List"
 msgstr "רשימת טלוויזיה"
 
+msgid "Unknown channel"
+msgstr "ערוץ לא ידוע"
+
 msgid "Update"
+msgstr "לְעַדְכֵּן"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "לְעַדְכֵּן"
 
 msgid "Updated on {}"
 msgstr "עודכן ב-{}"
 
-msgid "Updating {}/{}"
-msgstr "מעדכן את {}/{}"
+msgid "Updating bouquets"
+msgstr "עדכון זרי פרחים"
 
 msgid "Vavoo Italia"
 msgstr "Vavoo איטליה"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "Vavoo Italia (נפתר)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "מאתחל..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "מעדכן את {}/{}"

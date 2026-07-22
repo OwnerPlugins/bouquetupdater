@@ -28,14 +28,33 @@ msgstr "Buket täzelenmesi"
 msgid "Completed!"
 msgstr "Tamamlandy!"
 
+msgid "Creating bouquet..."
+msgstr "Buket döretmek ..."
+
 msgid "DLHD Italy"
 msgstr "DLHD Italiýa"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "Kanal sanawyny täzeden ýüklemek ..."
+
+msgid "Downloading..."
+msgstr "Ingüklemek ..."
 
 msgid "Exit"
 msgstr "Çyk"
 
+msgid "Failed"
+msgstr "Şowsuz"
+
+msgid "Global progress: {}/{}"
+msgstr "Global ösüş: {} / {}"
+
 msgid "Initializing..."
 msgstr "Başlamak ..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "Awtomatiki M3U buket täzelenmelerini dolandyryň"
@@ -46,7 +65,8 @@ msgstr "Çeşme saýlanmady!"
 msgid "Other"
 msgstr "Beýlekiler"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "Kanal sanawyny täzeden ýüklemek ..."
 
 msgid "Save"
@@ -58,23 +78,40 @@ msgstr "Sazlamalar saklandy"
 msgid "Sportsonline"
 msgstr ""
 
+msgid "Starting download..."
+msgstr "Göçürip başlamak ..."
+
 msgid "StreamSport99"
 msgstr ""
 
 msgid "TV List"
 msgstr "Telewizor sanawy"
 
+msgid "Unknown channel"
+msgstr "Näbelli kanal"
+
 msgid "Update"
+msgstr "Täzelen"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "Täzelen"
 
 msgid "Updated on {}"
 msgstr "{On täzelendi"
 
-msgid "Updating {}/{}"
-msgstr "{} / {Update täzelenmek"
+msgid "Updating bouquets"
+msgstr "Buketleri täzelemek"
 
 msgid "Vavoo Italia"
 msgstr "Wavoo Italiýa"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "“Vavoo Italia” (çözüldi)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "Başlamak ..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "{} / {Update täzelenmek"

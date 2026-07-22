@@ -29,14 +29,33 @@ msgstr "Csokorfrissítő"
 msgid "Completed!"
 msgstr "Elkészült!"
 
+msgid "Creating bouquet..."
+msgstr "Csokor készítése..."
+
 msgid "DLHD Italy"
 msgstr "DLHD Olaszország"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "Csatornalista újratöltése..."
+
+msgid "Downloading..."
+msgstr "Letöltés..."
 
 msgid "Exit"
 msgstr "Kijárat"
 
+msgid "Failed"
+msgstr "Sikertelen"
+
+msgid "Global progress: {}/{}"
+msgstr "Globális fejlődés: {}/{}"
+
 msgid "Initializing..."
 msgstr "Inicializálás..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "Az M3U csokor automatikus frissítéseinek kezelése"
@@ -47,7 +66,8 @@ msgstr "Nincs kiválasztva forrás!"
 msgid "Other"
 msgstr "Más"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "Csatornalista újratöltése..."
 
 msgid "Save"
@@ -59,23 +79,40 @@ msgstr "A beállítások elmentve."
 msgid "Sportsonline"
 msgstr ""
 
+msgid "Starting download..."
+msgstr "Letöltés indítása..."
+
 msgid "StreamSport99"
 msgstr ""
 
 msgid "TV List"
 msgstr "TV lista"
 
+msgid "Unknown channel"
+msgstr "Ismeretlen csatorna"
+
 msgid "Update"
+msgstr "Frissítés"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "Frissítés"
 
 msgid "Updated on {}"
 msgstr "Frissítve ekkor: {}"
 
-msgid "Updating {}/{}"
-msgstr "{}/{} frissítése"
+msgid "Updating bouquets"
+msgstr "Csokrok frissítése"
 
 msgid "Vavoo Italia"
 msgstr "Vavoo Olaszország"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "Vavoo Italia (megoldva)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "Inicializálás..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "{}/{} frissítése"

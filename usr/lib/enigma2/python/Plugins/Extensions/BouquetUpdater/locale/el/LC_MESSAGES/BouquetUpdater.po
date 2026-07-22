@@ -29,14 +29,33 @@ msgstr "Ενημερωτής ανθοδέσμης"
 msgid "Completed!"
 msgstr "Ολοκληρώθηκε το!"
 
+msgid "Creating bouquet..."
+msgstr "Δημιουργία ανθοδέσμης..."
+
 msgid "DLHD Italy"
 msgstr "DLHD Ιταλία"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "Επαναφόρτωση λίστας καναλιών..."
+
+msgid "Downloading..."
+msgstr "Λήψη..."
 
 msgid "Exit"
 msgstr "Εξοδος"
 
+msgid "Failed"
+msgstr "Αποτυχημένος"
+
+msgid "Global progress: {}/{}"
+msgstr "Παγκόσμια πρόοδος: {}/{}"
+
 msgid "Initializing..."
 msgstr "Αρχικοποίηση..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "Διαχειριστείτε αυτόματες ενημερώσεις ανθοδέσμης M3U"
@@ -47,7 +66,8 @@ msgstr "Δεν έχει επιλεγεί πηγή!"
 msgid "Other"
 msgstr "Αλλος"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "Επαναφόρτωση λίστας καναλιών..."
 
 msgid "Save"
@@ -59,23 +79,40 @@ msgstr "Οι ρυθμίσεις αποθηκεύτηκαν."
 msgid "Sportsonline"
 msgstr ""
 
+msgid "Starting download..."
+msgstr "Έναρξη λήψης..."
+
 msgid "StreamSport99"
 msgstr ""
 
 msgid "TV List"
 msgstr "Λίστα τηλεόρασης"
 
+msgid "Unknown channel"
+msgstr "Άγνωστο κανάλι"
+
 msgid "Update"
+msgstr "Εκσυγχρονίζω"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "Εκσυγχρονίζω"
 
 msgid "Updated on {}"
 msgstr "Ενημερώθηκε στις {}"
 
-msgid "Updating {}/{}"
-msgstr "Ενημέρωση {}/{}"
+msgid "Updating bouquets"
+msgstr "Ενημέρωση ανθοδέσμων"
 
 msgid "Vavoo Italia"
 msgstr "Vavoo Ιταλία"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "Vavoo Italia (Επιλύθηκε)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "Αρχικοποίηση..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "Ενημέρωση {}/{}"

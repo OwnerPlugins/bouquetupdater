@@ -28,14 +28,33 @@ msgstr ""
 msgid "Completed!"
 msgstr "Voltooi!"
 
+msgid "Creating bouquet..."
+msgstr "Skep tans boeket..."
+
 msgid "DLHD Italy"
 msgstr "DLHD Italië"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "Herlaai tans kanaallys …"
+
+msgid "Downloading..."
+msgstr "Laai tans af..."
 
 msgid "Exit"
 msgstr "Verlaat"
 
+msgid "Failed"
+msgstr "Misluk"
+
+msgid "Global progress: {}/{}"
+msgstr "Wêreldwye vordering: {}/{}"
+
 msgid "Initializing..."
 msgstr "Inisialiseer tans …"
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "Bestuur outomatiese M3U-boeketopdaterings"
@@ -46,7 +65,8 @@ msgstr "Geen bron gekies nie!"
 msgid "Other"
 msgstr "Ander"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "Herlaai tans kanaallys …"
 
 msgid "Save"
@@ -58,23 +78,40 @@ msgstr "Instellings gestoor."
 msgid "Sportsonline"
 msgstr "Sport aanlyn"
 
+msgid "Starting download..."
+msgstr "Begin tans aflaai..."
+
 msgid "StreamSport99"
 msgstr ""
 
 msgid "TV List"
 msgstr "TV lys"
 
+msgid "Unknown channel"
+msgstr "Onbekende kanaal"
+
 msgid "Update"
+msgstr "Dateer op"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "Dateer op"
 
 msgid "Updated on {}"
 msgstr "Opgedateer op {}"
 
-msgid "Updating {}/{}"
-msgstr "Dateer tans {}/{} op"
+msgid "Updating bouquets"
+msgstr "Opdatering van ruikers"
 
 msgid "Vavoo Italia"
 msgstr "Vavoo Italië"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "Vavoo Italia (opgelos)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "Inisialiseer tans …"
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "Dateer tans {}/{} op"

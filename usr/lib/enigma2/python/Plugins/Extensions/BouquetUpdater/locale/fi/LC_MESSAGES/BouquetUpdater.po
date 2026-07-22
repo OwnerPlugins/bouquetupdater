@@ -29,14 +29,33 @@ msgstr "Kukkakimppujen päivittäjä"
 msgid "Completed!"
 msgstr "Valmis!"
 
+msgid "Creating bouquet..."
+msgstr "Luodaan kimppua..."
+
 msgid "DLHD Italy"
 msgstr "DLHD Italia"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "Ladataan kanavaluetteloa uudelleen..."
+
+msgid "Downloading..."
+msgstr "Ladataan..."
 
 msgid "Exit"
 msgstr "Poistu"
 
+msgid "Failed"
+msgstr "Epäonnistui"
+
+msgid "Global progress: {}/{}"
+msgstr "Maailmanlaajuinen edistys: {}/{}"
+
 msgid "Initializing..."
 msgstr "Alustetaan..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "Hallitse automaattisia M3U-kimppupäivityksiä"
@@ -47,7 +66,8 @@ msgstr "Lähdettä ei ole valittu!"
 msgid "Other"
 msgstr "Muut"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "Ladataan kanavaluetteloa uudelleen..."
 
 msgid "Save"
@@ -59,23 +79,40 @@ msgstr "Asetukset tallennettu."
 msgid "Sportsonline"
 msgstr ""
 
+msgid "Starting download..."
+msgstr "Aloitetaan lataus..."
+
 msgid "StreamSport99"
 msgstr ""
 
 msgid "TV List"
 msgstr "TV-luettelo"
 
+msgid "Unknown channel"
+msgstr "Tuntematon kanava"
+
 msgid "Update"
+msgstr "Päivittää"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "Päivittää"
 
 msgid "Updated on {}"
 msgstr "Päivitetty {}"
 
-msgid "Updating {}/{}"
-msgstr "Päivitetään {}/{}"
+msgid "Updating bouquets"
+msgstr "Kimppujen päivittäminen"
 
 msgid "Vavoo Italia"
 msgstr ""
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "Vavoo Italia (Ratkaistu)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "Alustetaan..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "Päivitetään {}/{}"

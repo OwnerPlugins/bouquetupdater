@@ -28,14 +28,33 @@ msgstr "به روز رسانی دسته گل"
 msgid "Completed!"
 msgstr "تکمیل شد!"
 
+msgid "Creating bouquet..."
+msgstr "ایجاد دسته گل ..."
+
 msgid "DLHD Italy"
 msgstr "DLHD ایتالیا"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "در حال بارگیری مجدد لیست کانال..."
+
+msgid "Downloading..."
+msgstr "در حال دانلود..."
 
 msgid "Exit"
 msgstr "خارج شوید"
 
+msgid "Failed"
+msgstr "شکست خورد"
+
+msgid "Global progress: {}/{}"
+msgstr "پیشرفت جهانی: {}/{}"
+
 msgid "Initializing..."
 msgstr "در حال شروع..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "مدیریت به روز رسانی خودکار دسته گل M3U"
@@ -46,7 +65,8 @@ msgstr "هیچ منبعی انتخاب نشده است!"
 msgid "Other"
 msgstr "دیگر"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "در حال بارگیری مجدد لیست کانال..."
 
 msgid "Save"
@@ -58,23 +78,40 @@ msgstr "تنظیمات ذخیره شد."
 msgid "Sportsonline"
 msgstr "ورزش آنلاین"
 
+msgid "Starting download..."
+msgstr "شروع دانلود..."
+
 msgid "StreamSport99"
 msgstr ""
 
 msgid "TV List"
 msgstr "لیست تلویزیون"
 
+msgid "Unknown channel"
+msgstr "کانال ناشناس"
+
 msgid "Update"
+msgstr "به روز رسانی"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "به روز رسانی"
 
 msgid "Updated on {}"
 msgstr "به روز شده در {}"
 
-msgid "Updating {}/{}"
-msgstr "در حال به‌روزرسانی {}/{}"
+msgid "Updating bouquets"
+msgstr "به روز رسانی دسته گل ها"
 
 msgid "Vavoo Italia"
 msgstr "واوو ایتالیا"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "Vavoo Italia (حل شده)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "در حال شروع..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "در حال به‌روزرسانی {}/{}"

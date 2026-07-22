@@ -29,14 +29,33 @@ msgstr "Trình cập nhật bó hoa"
 msgid "Completed!"
 msgstr "Hoàn thành!"
 
+msgid "Creating bouquet..."
+msgstr "Tạo bó hoa..."
+
 msgid "DLHD Italy"
 msgstr "DLHD Ý"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "Đang tải lại danh sách kênh..."
+
+msgid "Downloading..."
+msgstr "Đang tải xuống..."
 
 msgid "Exit"
 msgstr "Ra"
 
+msgid "Failed"
+msgstr "Thất bại"
+
+msgid "Global progress: {}/{}"
+msgstr "Tiến trình toàn cầu: {}/{}"
+
 msgid "Initializing..."
 msgstr "Đang khởi tạo..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "Quản lý cập nhật bó hoa M3U tự động"
@@ -47,7 +66,8 @@ msgstr "Không có nguồn nào được chọn!"
 msgid "Other"
 msgstr "Khác"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "Đang tải lại danh sách kênh..."
 
 msgid "Save"
@@ -59,23 +79,40 @@ msgstr "Đã lưu cài đặt."
 msgid "Sportsonline"
 msgstr "Thể thao trực tuyến"
 
+msgid "Starting download..."
+msgstr "Đang bắt đầu tải xuống..."
+
 msgid "StreamSport99"
 msgstr ""
 
 msgid "TV List"
 msgstr "Danh sách TV"
 
+msgid "Unknown channel"
+msgstr "Kênh không xác định"
+
 msgid "Update"
+msgstr "Cập nhật"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "Cập nhật"
 
 msgid "Updated on {}"
 msgstr "Đã cập nhật vào {}"
 
-msgid "Updating {}/{}"
-msgstr "Đang cập nhật {}/{}"
+msgid "Updating bouquets"
+msgstr "Đang cập nhật bó hoa"
 
 msgid "Vavoo Italia"
 msgstr "Ý"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "Vavoo Italia (Đã giải quyết)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "Đang khởi tạo..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "Đang cập nhật {}/{}"

@@ -28,14 +28,33 @@ msgstr "בוקיי ופּדאַטער"
 msgid "Completed!"
 msgstr "געענדיקט!"
 
+msgid "Creating bouquet..."
+msgstr "שאפן בוקיי..."
+
 msgid "DLHD Italy"
 msgstr "DLHD איטאליע"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "רילאָודינג קאַנאַל רשימה ..."
+
+msgid "Downloading..."
+msgstr "דאַונלאָודינג..."
 
 msgid "Exit"
 msgstr "אַרויסגאַנג"
 
+msgid "Failed"
+msgstr "ניט אַנדערש"
+
+msgid "Global progress: {}/{}"
+msgstr "גלאבאלע פּראָגרעס: {}/{}"
+
 msgid "Initializing..."
 msgstr "ינישאַליזינג ..."
+
+msgid "MPlusTV"
+msgstr "MplusTV"
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "פירן אָטאַמאַטיק דערהייַנטיקונגען פון M3U בוקיי"
@@ -46,7 +65,8 @@ msgstr "קיין מקור אויסגעקליבן!"
 msgid "Other"
 msgstr "אנדערע"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "רילאָודינג קאַנאַל רשימה ..."
 
 msgid "Save"
@@ -58,23 +78,40 @@ msgstr "סעטטינגס געראטעוועט."
 msgid "Sportsonline"
 msgstr "ספּאָרט אָנליין"
 
+msgid "Starting download..."
+msgstr "סטאַרטינג אראפקאפיע ..."
+
 msgid "StreamSport99"
 msgstr ""
 
 msgid "TV List"
 msgstr "טעלעוויזיע רשימה"
 
+msgid "Unknown channel"
+msgstr "אומבאַקאַנט קאַנאַל"
+
 msgid "Update"
+msgstr "דערהייַנטיקן"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "דערהייַנטיקן"
 
 msgid "Updated on {}"
 msgstr "דערהייַנטיקט אויף {}"
 
-msgid "Updating {}/{}"
-msgstr "דערהייַנטיקט {}/{}"
+msgid "Updating bouquets"
+msgstr "אַפּדייטינג באָוקייז"
 
 msgid "Vavoo Italia"
 msgstr "Vavoo איטאליע"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "Vavoo Italia (רעסאַלווד)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "ינישאַליזינג ..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "דערהייַנטיקט {}/{}"

@@ -28,14 +28,33 @@ msgstr "Actualitzador de rams"
 msgid "Completed!"
 msgstr "Completat!"
 
+msgid "Creating bouquet..."
+msgstr "Creant ram..."
+
 msgid "DLHD Italy"
 msgstr "DLHD Itàlia"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "S'està tornant a carregar la llista de canals..."
+
+msgid "Downloading..."
+msgstr "S'està baixant..."
 
 msgid "Exit"
 msgstr "Sortida"
 
+msgid "Failed"
+msgstr "Ha fallat"
+
+msgid "Global progress: {}/{}"
+msgstr "Progrés global: {}/{}"
+
 msgid "Initializing..."
 msgstr "Inicialitzant..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "Gestioneu les actualitzacions automàtiques del ram M3U"
@@ -46,7 +65,8 @@ msgstr "No s'ha seleccionat cap font!"
 msgid "Other"
 msgstr "Altres"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "S'està tornant a carregar la llista de canals..."
 
 msgid "Save"
@@ -58,23 +78,40 @@ msgstr "S'ha desat la configuració."
 msgid "Sportsonline"
 msgstr ""
 
+msgid "Starting download..."
+msgstr "S'està iniciant la descàrrega..."
+
 msgid "StreamSport99"
 msgstr ""
 
 msgid "TV List"
 msgstr "Llista de TV"
 
+msgid "Unknown channel"
+msgstr "Canal desconegut"
+
 msgid "Update"
+msgstr "Actualització"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "Actualització"
 
 msgid "Updated on {}"
 msgstr "Actualitzat el dia {}"
 
-msgid "Updating {}/{}"
-msgstr "S'està actualitzant {}/{}"
+msgid "Updating bouquets"
+msgstr "Actualització de rams"
 
 msgid "Vavoo Italia"
 msgstr "Vavoo Itàlia"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "Vavoo Italia (Resolt)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "Inicialitzant..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "S'està actualitzant {}/{}"
