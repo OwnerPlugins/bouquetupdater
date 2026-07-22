@@ -642,7 +642,7 @@ class UpdateProgressScreen(Screen):
         self["status"] = Label(_("Initializing..."))
         self["overall"] = ProgressBar()
         self["overall"].setValue(0)
-        for index, (_, filename) in enumerate(self.sources_to_process):
+        for index, (source_url, filename) in enumerate(self.sources_to_process):
             self["source{}".format(index)] = Label(
                 "{} - {}".format(filename, _("Waiting...")))
             self["bar{}".format(index)] = ProgressBar()
@@ -717,7 +717,7 @@ class UpdateProgressScreen(Screen):
             while True:
                 event = self.events.get_nowait()
                 if event[0] == "progress":
-                    _, index, percent, status = event
+                    event_type, index, percent, status = event
                     filename = self.sources_to_process[index][1]
                     self.progress_values[index] = percent
                     self["bar{}".format(index)].setValue(percent)
@@ -860,17 +860,6 @@ class BouquetUpdaterScreen(ConfigListScreen, Screen):
                 timeout=3)
             return
 
-        has_resolved = any(
-            VAVOO_RESOLVED_BOUQUET_FILE in key for key in selected)
-
-        if has_resolved:
-            msg = _("Starting update of {} bouquets...\n\nWARNING: Vavoo Resolved may take several minutes.\nDo not close the plugin!").format(
-                len(selected))
-        else:
-            msg = _("Starting update of {} bouquets...\n\nPlease wait.").format(
-                len(selected))
-
-        self.session.open(MessageBox, msg, MessageBox.TYPE_INFO, timeout=3)
         self.session.openWithCallback(
             self._update_callback,
             UpdateProgressScreen,
