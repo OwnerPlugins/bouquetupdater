@@ -1,7 +1,7 @@
 #!/bin/bash
 ## setup command=wget -q --no-check-certificate https://raw.githubusercontent.com/OwnerPlugins/bouquetupdater/main/installer.sh -O - | /bin/bash
 
-version='3.0.2.0'
+version='3.1.0'
 changelog="Code refactor"
 
 TMPPATH=/tmp/bouquetupdater-install

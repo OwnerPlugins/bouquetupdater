@@ -43,7 +43,7 @@ except ImportError:
     from urllib2 import urlopen, Request
 
 PLUGIN_NAME = _("Bouquet Updater")
-PLUGIN_VERSION = "3.0.10"
+PLUGIN_VERSION = "3.1.0"
 PLUGIN_PATH = os.path.dirname(os.path.abspath(__file__))
 CONFIG_FILE = os.path.join(PLUGIN_PATH, 'bouquet_updater.conf')
 LOG_FILE = os.path.join(PLUGIN_PATH, 'bouqUPDlog.txt')
