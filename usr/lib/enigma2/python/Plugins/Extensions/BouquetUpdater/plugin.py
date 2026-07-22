@@ -642,7 +642,8 @@ class UpdateProgressScreen(Screen):
         self["status"] = Label(_("Initializing..."))
         self["overall"] = ProgressBar()
         self["overall"].setValue(0)
-        for index, (source_url, filename) in enumerate(self.sources_to_process):
+        for index, (source_url, filename) in enumerate(
+                self.sources_to_process):
             self["source{}".format(index)] = Label(
                 "{} - {}".format(filename, _("Waiting...")))
             self["bar{}".format(index)] = ProgressBar()
