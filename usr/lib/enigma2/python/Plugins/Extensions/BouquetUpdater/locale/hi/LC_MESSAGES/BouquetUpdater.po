@@ -28,11 +28,33 @@ msgstr "गुलदस्ता अद्यतनकर्ता"
 msgid "Completed!"
 msgstr "पुरा होना!"
 
+msgid "Creating bouquet..."
+msgstr "गुलदस्ता बनाया जा रहा है..."
+
+msgid "DLHD Italy"
+msgstr "डीएलएचडी इटली"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "चैनल सूची पुनः लोड हो रही है..."
+
+msgid "Downloading..."
+msgstr "डाउनलोड हो रहा है..."
+
 msgid "Exit"
 msgstr "बाहर निकलना"
 
+msgid "Failed"
+msgstr "असफल"
+
+msgid "Global progress: {}/{}"
+msgstr "वैश्विक प्रगति: {}/{}"
+
 msgid "Initializing..."
 msgstr "प्रारंभ किया जा रहा है..."
+
+msgid "MPlusTV"
+msgstr "एमप्लसटीवी"
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "स्वचालित M3U बुके अपडेट प्रबंधित करें"
@@ -43,7 +65,8 @@ msgstr "कोई स्रोत चयनित नहीं!"
 msgid "Other"
 msgstr "अन्य"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "चैनल सूची पुनः लोड हो रही है..."
 
 msgid "Save"
@@ -55,23 +78,40 @@ msgstr "सेटिंग्स को सहेजा गया।"
 msgid "Sportsonline"
 msgstr "स्पोर्ट्सऑनलाइन"
 
+msgid "Starting download..."
+msgstr "डाउनलोड शुरू करना..."
+
 msgid "StreamSport99"
 msgstr "स्ट्रीमस्पोर्ट99"
 
 msgid "TV List"
 msgstr "टीवी सूची"
 
+msgid "Unknown channel"
+msgstr "अज्ञात चैनल"
+
 msgid "Update"
+msgstr "अद्यतन"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "अद्यतन"
 
 msgid "Updated on {}"
 msgstr "को अपडेट {}"
 
-msgid "Updating {}/{}"
-msgstr "अद्यतन किया जा रहा है {}/{}"
+msgid "Updating bouquets"
+msgstr "गुलदस्ते अद्यतन कर रहा है"
 
 msgid "Vavoo Italia"
 msgstr "वावू इटली"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "वावू इटालिया (समाधान)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "प्रारंभ किया जा रहा है..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "अद्यतन किया जा रहा है {}/{}"

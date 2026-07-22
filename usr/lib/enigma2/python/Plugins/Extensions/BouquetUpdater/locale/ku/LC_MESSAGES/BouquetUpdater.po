@@ -28,11 +28,33 @@ msgstr ""
 msgid "Completed!"
 msgstr "Temam kirin!"
 
+msgid "Creating bouquet..."
+msgstr "Çêkirina bûkê..."
+
+msgid "DLHD Italy"
+msgstr "DLHD Îtalya"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "Lîsteya kanalan ji nû ve bar dike..."
+
+msgid "Downloading..."
+msgstr "Daxistin..."
+
 msgid "Exit"
 msgstr "Derî"
 
+msgid "Failed"
+msgstr "Bi ser neket"
+
+msgid "Global progress: {}/{}"
+msgstr "Pêşkeftina gerdûnî: {}/{}"
+
 msgid "Initializing..."
 msgstr "Destpêkirin..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "Nûvekirinên bûkê M3U yên otomatîkî birêve bibin"
@@ -43,7 +65,8 @@ msgstr "Tu çavkanî nehat hilbijartin!"
 msgid "Other"
 msgstr "Yên din"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "Lîsteya kanalan ji nû ve bar dike..."
 
 msgid "Save"
@@ -55,23 +78,40 @@ msgstr "Mîhengên xilas kirin."
 msgid "Sportsonline"
 msgstr ""
 
+msgid "Starting download..."
+msgstr "Daxistin dest pê dike..."
+
 msgid "StreamSport99"
 msgstr ""
 
 msgid "TV List"
 msgstr "Lîsteya TV"
 
+msgid "Unknown channel"
+msgstr "Kanala nenas"
+
 msgid "Update"
+msgstr "Nûvekirin"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "Nûvekirin"
 
 msgid "Updated on {}"
 msgstr "Rojanekirin li ser {}"
 
-msgid "Updating {}/{}"
-msgstr "Nûvekirin {}/{}"
+msgid "Updating bouquets"
+msgstr "Nûvekirina bûk"
 
 msgid "Vavoo Italia"
 msgstr "Vavoo Îtalya"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "Vavoo Italia (Çareserî)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "Destpêkirin..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "Nûvekirin {}/{}"

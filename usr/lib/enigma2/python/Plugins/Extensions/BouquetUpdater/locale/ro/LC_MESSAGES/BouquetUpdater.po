@@ -29,11 +29,33 @@ msgstr "Actualizator de buchet"
 msgid "Completed!"
 msgstr "Finalizat!"
 
+msgid "Creating bouquet..."
+msgstr "Se creează un buchet..."
+
+msgid "DLHD Italy"
+msgstr "DLHD Italia"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "Se reîncarcă lista de canale..."
+
+msgid "Downloading..."
+msgstr "Se descarcă..."
+
 msgid "Exit"
 msgstr "Ieșire"
 
+msgid "Failed"
+msgstr "A eșuat"
+
+msgid "Global progress: {}/{}"
+msgstr "Progres global: {}/{}"
+
 msgid "Initializing..."
 msgstr "Se inițializează..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "Gestionați actualizările automate ale buchet M3U"
@@ -44,7 +66,8 @@ msgstr "Nicio sursă selectată!"
 msgid "Other"
 msgstr "Alte"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "Se reîncarcă lista de canale..."
 
 msgid "Save"
@@ -56,23 +79,40 @@ msgstr "Setările au fost salvate."
 msgid "Sportsonline"
 msgstr ""
 
+msgid "Starting download..."
+msgstr "Se începe descărcarea..."
+
 msgid "StreamSport99"
 msgstr ""
 
 msgid "TV List"
 msgstr "Lista TV"
 
+msgid "Unknown channel"
+msgstr "Canal necunoscut"
+
 msgid "Update"
+msgstr "Actualizare"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "Actualizare"
 
 msgid "Updated on {}"
 msgstr "Actualizat pe {}"
 
-msgid "Updating {}/{}"
-msgstr "Se actualizează {}/{}"
+msgid "Updating bouquets"
+msgstr "Actualizarea buchetelor"
 
 msgid "Vavoo Italia"
 msgstr ""
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "Vavoo Italia (Rezolvat)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "Se inițializează..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "Se actualizează {}/{}"

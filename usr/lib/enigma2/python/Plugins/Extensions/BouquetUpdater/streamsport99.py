@@ -3,8 +3,9 @@ from __future__ import absolute_import
 
 import json
 import logging
+from datetime import datetime
 
-# from . import _
+from . import _
 
 try:
     from urllib.request import urlopen, Request
@@ -91,7 +92,13 @@ def parse_events(data):
 
 
 def generate_bouquet(channels):
-    lines = ["#NAME StreamSport99\n"]
+    date_str = datetime.now().strftime("%d.%m.%Y")
+    lines = [
+        "#NAME StreamSport99\n",
+        "#SERVICE 1:64:0:0:0:0:0:0:0:0:\n",
+        "#DESCRIPTION --- {} ---\n".format(
+            _("Updated on {}").format(date_str)),
+    ]
 
     for ch in channels:
         service_line = "#SERVICE 4097:0:1:{}:0:0:0:0:0:0:{}:{}".format(

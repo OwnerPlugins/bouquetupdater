@@ -29,11 +29,33 @@ msgstr "Kimpude uuendaja"
 msgid "Completed!"
 msgstr "Lõpetatud!"
 
+msgid "Creating bouquet..."
+msgstr "Kimbu loomine..."
+
+msgid "DLHD Italy"
+msgstr "DLHD Itaalia"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "Kanalite loendi uuesti laadimine..."
+
+msgid "Downloading..."
+msgstr "Allalaadimine..."
+
 msgid "Exit"
 msgstr "Välju"
 
+msgid "Failed"
+msgstr "Ebaõnnestunud"
+
+msgid "Global progress: {}/{}"
+msgstr "Ülemaailmne edu: {}/{}"
+
 msgid "Initializing..."
 msgstr "Initsialiseerimine..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "Hallake automaatseid M3U kimpude värskendusi"
@@ -44,7 +66,8 @@ msgstr "Ühtegi allikat pole valitud!"
 msgid "Other"
 msgstr "muud"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "Kanalite loendi uuesti laadimine..."
 
 msgid "Save"
@@ -56,23 +79,40 @@ msgstr "Seaded salvestatud."
 msgid "Sportsonline"
 msgstr ""
 
+msgid "Starting download..."
+msgstr "Allalaadimise alustamine..."
+
 msgid "StreamSport99"
 msgstr ""
 
 msgid "TV List"
 msgstr "TV loend"
 
+msgid "Unknown channel"
+msgstr "Tundmatu kanal"
+
 msgid "Update"
+msgstr "Värskenda"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "Värskenda"
 
 msgid "Updated on {}"
 msgstr "Värskendatud {}"
 
-msgid "Updating {}/{}"
-msgstr "{}/{} värskendamine"
+msgid "Updating bouquets"
+msgstr "Kimpude värskendamine"
 
 msgid "Vavoo Italia"
 msgstr "Vavoo Itaalia"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "Vavoo Italia (lahendatud)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "Initsialiseerimine..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "{}/{} värskendamine"

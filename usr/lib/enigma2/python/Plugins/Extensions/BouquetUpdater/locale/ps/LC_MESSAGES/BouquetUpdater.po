@@ -28,11 +28,33 @@ msgstr "د ګلدان تازه کوونکی"
 msgid "Completed!"
 msgstr "بشپړ شو!"
 
+msgid "Creating bouquet..."
+msgstr "د ګلدستې جوړول..."
+
+msgid "DLHD Italy"
+msgstr "DLHD ایټالیا"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "د چینل لیست بیا پورته کول..."
+
+msgid "Downloading..."
+msgstr "کښته کول..."
+
 msgid "Exit"
 msgstr "وتل"
 
+msgid "Failed"
+msgstr "ناکام شو"
+
+msgid "Global progress: {}/{}"
+msgstr "نړیوال پرمختګ: {}/{}"
+
 msgid "Initializing..."
 msgstr "پیل کول..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "د اتوماتیک M3U بوکیټ تازه معلومات اداره کړئ"
@@ -43,7 +65,8 @@ msgstr "کومه سرچینه نه ده ټاکل شوې!"
 msgid "Other"
 msgstr "نور"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "د چینل لیست بیا پورته کول..."
 
 msgid "Save"
@@ -55,23 +78,40 @@ msgstr "ترتیبات خوندي شوي."
 msgid "Sportsonline"
 msgstr "سپورت آنلاین"
 
+msgid "Starting download..."
+msgstr "ډاونلوډ پیل کیږي..."
+
 msgid "StreamSport99"
 msgstr ""
 
 msgid "TV List"
 msgstr "د تلویزیون لیست"
 
+msgid "Unknown channel"
+msgstr "نامعلوم چینل"
+
 msgid "Update"
+msgstr "تازه کول"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "تازه کول"
 
 msgid "Updated on {}"
 msgstr "په {} تازه شوی"
 
-msgid "Updating {}/{}"
-msgstr "تازه کول {}/{}"
+msgid "Updating bouquets"
+msgstr "د ګلدانونو تازه کول"
 
 msgid "Vavoo Italia"
 msgstr "واوو ایټالیا"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "واوو ایټالیا (حل شوی)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "پیل کول..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "تازه کول {}/{}"

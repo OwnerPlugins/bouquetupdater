@@ -28,11 +28,33 @@ msgstr "Vöndauppfærsla"
 msgid "Completed!"
 msgstr "Lokið!"
 
+msgid "Creating bouquet..."
+msgstr "Er að búa til vönd..."
+
+msgid "DLHD Italy"
+msgstr "DLHD Ítalía"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "Endurhleður rásarlista..."
+
+msgid "Downloading..."
+msgstr "Sækir..."
+
 msgid "Exit"
 msgstr "Hætta"
 
+msgid "Failed"
+msgstr "Mistókst"
+
+msgid "Global progress: {}/{}"
+msgstr "Alþjóðlegar framfarir: {}/{}"
+
 msgid "Initializing..."
 msgstr "Frumstillir..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "Hafa umsjón með sjálfvirkum uppfærslum á M3U vöndum"
@@ -43,7 +65,8 @@ msgstr "Engin heimild valin!"
 msgid "Other"
 msgstr "Annað"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "Endurhleður rásarlista..."
 
 msgid "Save"
@@ -55,23 +78,40 @@ msgstr "Stillingar vistaðar."
 msgid "Sportsonline"
 msgstr "Íþróttir á netinu"
 
+msgid "Starting download..."
+msgstr "Er að hefja niðurhal..."
+
 msgid "StreamSport99"
 msgstr ""
 
 msgid "TV List"
 msgstr "Sjónvarpslisti"
 
+msgid "Unknown channel"
+msgstr "Óþekkt rás"
+
 msgid "Update"
+msgstr "Uppfærsla"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "Uppfærsla"
 
 msgid "Updated on {}"
 msgstr "Uppfært þann {}"
 
-msgid "Updating {}/{}"
-msgstr "Uppfærir {}/{}"
+msgid "Updating bouquets"
+msgstr "Uppfærsla kransa"
 
 msgid "Vavoo Italia"
 msgstr "Vavoo Ítalía"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "Vavoo Italia (leyst)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "Frumstillir..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "Uppfærir {}/{}"

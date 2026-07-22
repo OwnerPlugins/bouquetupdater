@@ -28,11 +28,33 @@ msgstr "អ្នកធ្វើបច្ចុប្បន្នភាពភួ
 msgid "Completed!"
 msgstr "ចប់ហើយ!"
 
+msgid "Creating bouquet..."
+msgstr "ការបង្កើតភួង..."
+
+msgid "DLHD Italy"
+msgstr "DLHD អ៊ីតាលី"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "កំពុងផ្ទុកបញ្ជីឆានែលឡើងវិញ..."
+
+msgid "Downloading..."
+msgstr "កំពុងទាញយក..."
+
 msgid "Exit"
 msgstr "ចេញ"
 
+msgid "Failed"
+msgstr "បរាជ័យ"
+
+msgid "Global progress: {}/{}"
+msgstr "វឌ្ឍនភាពសកល៖ {}/{}"
+
 msgid "Initializing..."
 msgstr "កំពុងចាប់ផ្តើម..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "គ្រប់គ្រងការអាប់ដេតភួង M3U ដោយស្វ័យប្រវត្តិ"
@@ -43,7 +65,8 @@ msgstr "មិនបានជ្រើសរើសប្រភពទេ!"
 msgid "Other"
 msgstr "ផ្សេងៗ"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "កំពុងផ្ទុកបញ្ជីឆានែលឡើងវិញ..."
 
 msgid "Save"
@@ -55,23 +78,40 @@ msgstr "ការកំណត់ត្រូវបានរក្សាទុក
 msgid "Sportsonline"
 msgstr "កីឡាតាមអ៊ីនធឺណិត"
 
+msgid "Starting download..."
+msgstr "កំពុងចាប់ផ្តើមទាញយក..."
+
 msgid "StreamSport99"
 msgstr "ស្ទ្រីមកីឡា ៩៩"
 
 msgid "TV List"
 msgstr "បញ្ជីទូរទស្សន៍"
 
+msgid "Unknown channel"
+msgstr "ឆានែលមិនស្គាល់"
+
 msgid "Update"
+msgstr "ធ្វើបច្ចុប្បន្នភាព"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "ធ្វើបច្ចុប្បន្នភាព"
 
 msgid "Updated on {}"
 msgstr "បានធ្វើបច្ចុប្បន្នភាពនៅលើ {}"
 
-msgid "Updating {}/{}"
-msgstr "កំពុងអាប់ដេត {}/{}"
+msgid "Updating bouquets"
+msgstr "ការធ្វើបច្ចុប្បន្នភាពភួង"
 
 msgid "Vavoo Italia"
 msgstr "Vavoo ប្រទេសអ៊ីតាលី"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "Vavoo Italia (បានដោះស្រាយ)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "កំពុងចាប់ផ្តើម..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "កំពុងអាប់ដេត {}/{}"

@@ -28,11 +28,33 @@ msgstr "Pembaruan Buket"
 msgid "Completed!"
 msgstr "Selesai!"
 
+msgid "Creating bouquet..."
+msgstr "Membuat karangan bunga..."
+
+msgid "DLHD Italy"
+msgstr "DLHD Italia"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "Memuat ulang daftar saluran..."
+
+msgid "Downloading..."
+msgstr "Mengunduh..."
+
 msgid "Exit"
 msgstr "KELUAR"
 
+msgid "Failed"
+msgstr "Gagal"
+
+msgid "Global progress: {}/{}"
+msgstr "Kemajuan global: {}/{}"
+
 msgid "Initializing..."
 msgstr "Menginisialisasi..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "Kelola pembaruan buket M3U otomatis"
@@ -43,7 +65,8 @@ msgstr "Tidak ada sumber yang dipilih!"
 msgid "Other"
 msgstr "Lainnya"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "Memuat ulang daftar saluran..."
 
 msgid "Save"
@@ -55,23 +78,40 @@ msgstr "Pengaturan disimpan."
 msgid "Sportsonline"
 msgstr "Olahraga online"
 
+msgid "Starting download..."
+msgstr "Mulai mengunduh..."
+
 msgid "StreamSport99"
 msgstr "AliranOlahraga99"
 
 msgid "TV List"
 msgstr "Daftar TV"
 
+msgid "Unknown channel"
+msgstr "Saluran tidak dikenal"
+
 msgid "Update"
+msgstr "Memperbarui"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "Memperbarui"
 
 msgid "Updated on {}"
 msgstr "Diperbarui pada {}"
 
-msgid "Updating {}/{}"
-msgstr "Memperbarui {}/{}"
+msgid "Updating bouquets"
+msgstr "Memperbarui karangan bunga"
 
 msgid "Vavoo Italia"
 msgstr ""
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "Vavoo Italia (Terselesaikan)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "Menginisialisasi..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "Memperbarui {}/{}"

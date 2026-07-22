@@ -28,11 +28,33 @@ msgstr "මල් කළඹ යාවත්කාලීන කරන්නා"
 msgid "Completed!"
 msgstr "සම්පූර්ණයි!"
 
+msgid "Creating bouquet..."
+msgstr "මල් කළඹක් නිර්මාණය කරමින්..."
+
+msgid "DLHD Italy"
+msgstr "DLHD ඉතාලිය"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "නාලිකා ලැයිස්තුව නැවත පූරණය කරමින්..."
+
+msgid "Downloading..."
+msgstr "බාගනිමින්..."
+
 msgid "Exit"
 msgstr "පිටවෙන්න"
 
+msgid "Failed"
+msgstr "අසාර්ථකයි"
+
+msgid "Global progress: {}/{}"
+msgstr "ගෝලීය ප්‍රගතිය: {}/{}"
+
 msgid "Initializing..."
 msgstr "ආරම්භ කරමින්..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "ස්වයංක්‍රීය M3U මල් කළඹ යාවත්කාලීන කළමනාකරණය කරන්න"
@@ -43,7 +65,8 @@ msgstr "මූලාශ්‍රයක් තෝරාගෙන නැත!"
 msgid "Other"
 msgstr "වෙනත්"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "නාලිකා ලැයිස්තුව නැවත පූරණය කරමින්..."
 
 msgid "Save"
@@ -55,23 +78,40 @@ msgstr "සැකසීම් සුරකින ලදී."
 msgid "Sportsonline"
 msgstr ""
 
+msgid "Starting download..."
+msgstr "බාගැනීම ආරම්භ කරමින්..."
+
 msgid "StreamSport99"
 msgstr ""
 
 msgid "TV List"
 msgstr "රූපවාහිනී ලැයිස්තුව"
 
+msgid "Unknown channel"
+msgstr "නොදන්නා නාලිකාව"
+
 msgid "Update"
+msgstr "යාවත්කාලීන කරන්න"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "යාවත්කාලීන කරන්න"
 
 msgid "Updated on {}"
 msgstr "{} දින යාවත්කාලීන කරන ලදී"
 
-msgid "Updating {}/{}"
-msgstr "{}/{} යාවත්කාලීන කරමින්"
+msgid "Updating bouquets"
+msgstr "මල් කළඹ යාවත්කාලීන කිරීම"
 
 msgid "Vavoo Italia"
 msgstr "Vavoo ඉතාලිය"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "Vavoo Italia (විසඳා ඇත)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "ආරම්භ කරමින්..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "{}/{} යාවත්කාලීන කරමින්"

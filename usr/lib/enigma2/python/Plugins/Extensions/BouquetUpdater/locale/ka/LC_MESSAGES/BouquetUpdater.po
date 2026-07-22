@@ -28,11 +28,33 @@ msgstr "თაიგულის განახლება"
 msgid "Completed!"
 msgstr "დასრულდა!"
 
+msgid "Creating bouquet..."
+msgstr "თაიგულის შექმნა..."
+
+msgid "DLHD Italy"
+msgstr "DLHD იტალია"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "არხების სიის გადატვირთვა..."
+
+msgid "Downloading..."
+msgstr "მიმდინარეობს ჩამოტვირთვა..."
+
 msgid "Exit"
 msgstr "გასვლა"
 
+msgid "Failed"
+msgstr "ვერ მოხერხდა"
+
+msgid "Global progress: {}/{}"
+msgstr "გლობალური პროგრესი: {}/{}"
+
 msgid "Initializing..."
 msgstr "მიმდინარეობს ინიცირება..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "მართეთ M3U ბუკეტის ავტომატური განახლებები"
@@ -43,7 +65,8 @@ msgstr "წყარო არ არის შერჩეული!"
 msgid "Other"
 msgstr "სხვა"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "არხების სიის გადატვირთვა..."
 
 msgid "Save"
@@ -55,23 +78,40 @@ msgstr "პარამეტრები შენახულია."
 msgid "Sportsonline"
 msgstr ""
 
+msgid "Starting download..."
+msgstr "ჩამოტვირთვა იწყება..."
+
 msgid "StreamSport99"
 msgstr ""
 
 msgid "TV List"
 msgstr "სატელევიზიო სია"
 
+msgid "Unknown channel"
+msgstr "უცნობი არხი"
+
 msgid "Update"
+msgstr "განახლება"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "განახლება"
 
 msgid "Updated on {}"
 msgstr "განახლებულია {}-ზე"
 
-msgid "Updating {}/{}"
-msgstr "მიმდინარეობს {}/{} განახლება"
+msgid "Updating bouquets"
+msgstr "თაიგულების განახლება"
 
 msgid "Vavoo Italia"
 msgstr "ვავოო იტალია"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "Vavoo Italia (გადაწყვეტილი)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "მიმდინარეობს ინიცირება..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "მიმდინარეობს {}/{} განახლება"

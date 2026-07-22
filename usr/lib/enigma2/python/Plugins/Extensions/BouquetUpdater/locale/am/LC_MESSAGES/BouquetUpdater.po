@@ -28,11 +28,33 @@ msgstr ""
 msgid "Completed!"
 msgstr "ተጠናቀቀ!"
 
+msgid "Creating bouquet..."
+msgstr "እቅፍ አበባን በመፍጠር ላይ..."
+
+msgid "DLHD Italy"
+msgstr "DLHD ጣሊያን"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "የሰርጥ ዝርዝርን እንደገና በመጫን ላይ..."
+
+msgid "Downloading..."
+msgstr "በማውረድ ላይ..."
+
 msgid "Exit"
 msgstr "ውጣ"
 
+msgid "Failed"
+msgstr "አልተሳካም።"
+
+msgid "Global progress: {}/{}"
+msgstr "ሁለንተናዊ እድገት፡ {}/{}"
+
 msgid "Initializing..."
 msgstr "በማስጀመር ላይ..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "ራስ-ሰር የM3U እቅፍ ዝማኔዎችን ያስተዳድሩ"
@@ -43,7 +65,8 @@ msgstr "ምንም ምንጭ አልተመረጠም!"
 msgid "Other"
 msgstr "ሌላ"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "የሰርጥ ዝርዝርን እንደገና በመጫን ላይ..."
 
 msgid "Save"
@@ -55,23 +78,40 @@ msgstr "ቅንብሮች ተቀምጠዋል።"
 msgid "Sportsonline"
 msgstr "ስፖርት ኦንላይን"
 
+msgid "Starting download..."
+msgstr "ማውረድ በመጀመር ላይ..."
+
 msgid "StreamSport99"
 msgstr ""
 
 msgid "TV List"
 msgstr "የቲቪ ዝርዝር"
 
+msgid "Unknown channel"
+msgstr "ያልታወቀ ቻናል"
+
 msgid "Update"
+msgstr "አዘምን"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "አዘምን"
 
 msgid "Updated on {}"
 msgstr "በ{} ላይ ተዘምኗል"
 
-msgid "Updating {}/{}"
-msgstr "{}/{}ን በማዘመን ላይ"
+msgid "Updating bouquets"
+msgstr "እቅፍ አበባዎችን በማዘመን ላይ"
 
 msgid "Vavoo Italia"
 msgstr "ቫቮ ጣሊያን"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "ቫቮ ኢታሊያ (ተፈታ)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "በማስጀመር ላይ..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "{}/{}ን በማዘመን ላይ"

@@ -28,11 +28,33 @@ msgstr "بکی اپڈیٹر"
 msgid "Completed!"
 msgstr "مکمل!"
 
+msgid "Creating bouquet..."
+msgstr "گلدستہ بنایا جا رہا ہے..."
+
+msgid "DLHD Italy"
+msgstr "ڈی ایل ایچ ڈی اٹلی"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "چینل کی فہرست دوبارہ لوڈ ہو رہی ہے..."
+
+msgid "Downloading..."
+msgstr "ڈاؤن لوڈ ہو رہا ہے..."
+
 msgid "Exit"
 msgstr "باہر نکلیں۔"
 
+msgid "Failed"
+msgstr "ناکام"
+
+msgid "Global progress: {}/{}"
+msgstr "عالمی ترقی: {}/{}"
+
 msgid "Initializing..."
 msgstr "شروع ہو رہا ہے..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "خودکار M3U بکی اپ ڈیٹس کا نظم کریں۔"
@@ -43,7 +65,8 @@ msgstr "کوئی ذریعہ منتخب نہیں کیا گیا!"
 msgid "Other"
 msgstr "دیگر"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "چینل کی فہرست دوبارہ لوڈ ہو رہی ہے..."
 
 msgid "Save"
@@ -55,23 +78,40 @@ msgstr "ترتیبات محفوظ ہو گئیں۔"
 msgid "Sportsonline"
 msgstr "سپورٹس آن لائن"
 
+msgid "Starting download..."
+msgstr "ڈاؤن لوڈ شروع ہو رہا ہے..."
+
 msgid "StreamSport99"
 msgstr ""
 
 msgid "TV List"
 msgstr "ٹی وی کی فہرست"
 
+msgid "Unknown channel"
+msgstr "نامعلوم چینل"
+
 msgid "Update"
+msgstr "اپڈیٹ کریں۔"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "اپڈیٹ کریں۔"
 
 msgid "Updated on {}"
 msgstr "{} کو اپ ڈیٹ کیا گیا"
 
-msgid "Updating {}/{}"
-msgstr "اپ ڈیٹ ہو رہا ہے {}/{}"
+msgid "Updating bouquets"
+msgstr "گلدستے کو اپ ڈیٹ کرنا"
 
 msgid "Vavoo Italia"
 msgstr "واوو اٹلی"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "Vavoo Italia (حل شدہ)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "شروع ہو رہا ہے..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "اپ ڈیٹ ہو رہا ہے {}/{}"

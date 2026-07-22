@@ -28,11 +28,33 @@ msgstr "Bouquet eguneratzailea"
 msgid "Completed!"
 msgstr "Osatu!"
 
+msgid "Creating bouquet..."
+msgstr "Sorta sorta sortzen..."
+
+msgid "DLHD Italy"
+msgstr "DLHD Italia"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "Kanalen zerrenda birkargatzen..."
+
+msgid "Downloading..."
+msgstr "Deskargatzen..."
+
 msgid "Exit"
 msgstr "Irten"
 
+msgid "Failed"
+msgstr "Huts egin du"
+
+msgid "Global progress: {}/{}"
+msgstr "Aurrerapen globala: {}/{}"
+
 msgid "Initializing..."
 msgstr "Hasieratzen..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "Kudeatu M3U sortaren eguneratze automatikoak"
@@ -43,7 +65,8 @@ msgstr "Ez da iturririk hautatu!"
 msgid "Other"
 msgstr "Bestela"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "Kanalen zerrenda birkargatzen..."
 
 msgid "Save"
@@ -55,23 +78,40 @@ msgstr "Ezarpenak gorde dira."
 msgid "Sportsonline"
 msgstr ""
 
+msgid "Starting download..."
+msgstr "Deskargatzen hasten..."
+
 msgid "StreamSport99"
 msgstr ""
 
 msgid "TV List"
 msgstr "Telebistako Zerrenda"
 
+msgid "Unknown channel"
+msgstr "Kanal ezezaguna"
+
 msgid "Update"
+msgstr "Eguneratu"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "Eguneratu"
 
 msgid "Updated on {}"
 msgstr "{} egunean eguneratua"
 
-msgid "Updating {}/{}"
-msgstr "{}/{} eguneratzen"
+msgid "Updating bouquets"
+msgstr "Sorteak eguneratzen"
 
 msgid "Vavoo Italia"
 msgstr ""
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "Vavoo Italia (Ebatzia)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "Hasieratzen..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "{}/{} eguneratzen"

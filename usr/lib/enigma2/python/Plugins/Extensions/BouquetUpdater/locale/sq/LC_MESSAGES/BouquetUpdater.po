@@ -28,11 +28,33 @@ msgstr "Përditësues buqetë"
 msgid "Completed!"
 msgstr "E përfunduar!"
 
+msgid "Creating bouquet..."
+msgstr "Po krijohet buqeta..."
+
+msgid "DLHD Italy"
+msgstr "DLHD Itali"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "Lista e kanaleve po rifreskohet..."
+
+msgid "Downloading..."
+msgstr "Po shkarkohet..."
+
 msgid "Exit"
 msgstr "Dilni"
 
+msgid "Failed"
+msgstr "Dështoi"
+
+msgid "Global progress: {}/{}"
+msgstr "Progresi global: {}/{}"
+
 msgid "Initializing..."
 msgstr "Po inicializohet..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "Menaxho përditësimet automatike të buqetës M3U"
@@ -43,7 +65,8 @@ msgstr "Asnjë burim i zgjedhur!"
 msgid "Other"
 msgstr "Të tjera"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "Lista e kanaleve po rifreskohet..."
 
 msgid "Save"
@@ -55,23 +78,40 @@ msgstr "Cilësimet u ruajtën."
 msgid "Sportsonline"
 msgstr ""
 
+msgid "Starting download..."
+msgstr "Po fillon shkarkimi..."
+
 msgid "StreamSport99"
 msgstr ""
 
 msgid "TV List"
 msgstr "Lista e TV"
 
+msgid "Unknown channel"
+msgstr "Kanal i panjohur"
+
 msgid "Update"
+msgstr "Përditëso"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "Përditëso"
 
 msgid "Updated on {}"
 msgstr "Përditësuar më {}"
 
-msgid "Updating {}/{}"
-msgstr "Po përditëson {}/{}"
+msgid "Updating bouquets"
+msgstr "Përditësimi i buqetave"
 
 msgid "Vavoo Italia"
 msgstr "Vavoo Itali"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "Vavoo Italia (e zgjidhur)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "Po inicializohet..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "Po përditëson {}/{}"

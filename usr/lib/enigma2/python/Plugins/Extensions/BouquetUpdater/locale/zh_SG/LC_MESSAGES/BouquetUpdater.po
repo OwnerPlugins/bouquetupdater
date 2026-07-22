@@ -28,11 +28,33 @@ msgstr "花束更新器"
 msgid "Completed!"
 msgstr "完全的！"
 
+msgid "Creating bouquet..."
+msgstr "正在制作花束..."
+
+msgid "DLHD Italy"
+msgstr "DLHD 意大利"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "正在重新加载频道列表..."
+
+msgid "Downloading..."
+msgstr "正在下载..."
+
 msgid "Exit"
 msgstr "出口"
 
+msgid "Failed"
+msgstr "失败的"
+
+msgid "Global progress: {}/{}"
+msgstr "全局进度：{}/{}"
+
 msgid "Initializing..."
 msgstr "正在初始化..."
+
+msgid "MPlusTV"
+msgstr "MPlus电视"
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "管理自动 M3U 花束更新"
@@ -43,7 +65,8 @@ msgstr "未选择来源！"
 msgid "Other"
 msgstr "其他"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "正在重新加载频道列表..."
 
 msgid "Save"
@@ -55,23 +78,40 @@ msgstr "设置已保存。"
 msgid "Sportsonline"
 msgstr "体育在线"
 
+msgid "Starting download..."
+msgstr "开始下载..."
+
 msgid "StreamSport99"
 msgstr "流体育99"
 
 msgid "TV List"
 msgstr "电视列表"
 
+msgid "Unknown channel"
+msgstr "未知频道"
+
 msgid "Update"
+msgstr "更新"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "更新"
 
 msgid "Updated on {}"
 msgstr "更新于 {}"
 
-msgid "Updating {}/{}"
-msgstr "正在更新 {}/{}"
+msgid "Updating bouquets"
+msgstr "更新花束"
 
 msgid "Vavoo Italia"
 msgstr "瓦武意大利"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "Vavoo 意大利（已解决）"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "正在初始化..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "正在更新 {}/{}"

@@ -14,7 +14,13 @@ from enigma import eTimer, eDVBDB
 import os
 import re
 import logging
+import threading
 from datetime import datetime
+
+try:
+    from queue import Queue, Empty
+except ImportError:
+    from Queue import Queue, Empty
 
 # Import gettext function from __init__
 from . import _
@@ -23,10 +29,14 @@ try:
     from .sportsonline import process_sportsonline, is_sportsonline_url
     from .vavoo_it import process_vavoo_italia, process_vavoo_italia_resolved, is_vavoo_url, VAVOO_BOUQUET_FILE, VAVOO_RESOLVED_BOUQUET_FILE
     from .streamsport99 import process_streamsport99, is_streamsport99_url
+    from .dlhd import process_dlhd, is_dlhd_url
+    from .mplustv import process_mplustv, is_mplustv_url
 except ImportError:
     from sportsonline import process_sportsonline, is_sportsonline_url
     from vavoo_it import process_vavoo_italia, process_vavoo_italia_resolved, is_vavoo_url, VAVOO_BOUQUET_FILE, VAVOO_RESOLVED_BOUQUET_FILE
     from streamsport99 import process_streamsport99, is_streamsport99_url
+    from dlhd import process_dlhd, is_dlhd_url
+    from mplustv import process_mplustv, is_mplustv_url
 
 try:
     from io import open
@@ -41,7 +51,7 @@ except ImportError:
     from urllib2 import urlopen, Request
 
 PLUGIN_NAME = _("Bouquet Updater")
-PLUGIN_VERSION = "3.0.10"
+PLUGIN_VERSION = "3.1.0"
 PLUGIN_PATH = os.path.dirname(os.path.abspath(__file__))
 CONFIG_FILE = os.path.join(PLUGIN_PATH, 'bouquet_updater.conf')
 LOG_FILE = os.path.join(PLUGIN_PATH, 'bouqUPDlog.txt')
@@ -453,6 +463,26 @@ class M3UUpdaterLogic:
                         logging.error("StreamSport99: processing failed")
                     continue
 
+                # DLHD
+                if is_dlhd_url(url):
+                    logging.info("Detected type: DLHD")
+                    if process_dlhd(url, filename):
+                        logging.info("DLHD processed successfully")
+                        updated_bouquets.append(filename)
+                    else:
+                        logging.error("DLHD: processing failed")
+                    continue
+
+                # MPlusTV
+                if is_mplustv_url(url):
+                    logging.info("Detected type: MPLUSTV")
+                    if process_mplustv(url, filename):
+                        logging.info("MPlusTV processed successfully")
+                        updated_bouquets.append(filename)
+                    else:
+                        logging.error("MPlusTV: processing failed")
+                    continue
+
                 # Vavoo Resolved (check bouquet filename)
                 if is_vavoo_url(
                         url) and filename == VAVOO_RESOLVED_BOUQUET_FILE:
@@ -582,79 +612,142 @@ class AutoUpdater:
 
 
 class UpdateProgressScreen(Screen):
-    skin = """
-        <screen position="center,center" size="600,200" title="Updating...">
-            <widget name="status" position="20,20" size="560,30" font="Regular;22" halign="center" valign="center" transparent="1" />
-            <widget name="progress" position="20,60" size="560,30" />
-            <widget name="info" position="20,100" size="560,80" font="Regular;18" halign="center" valign="top" transparent="1" />
-        </screen>
-    """
-
     def __init__(self, session, selected_urls):
+        logic = M3UUpdaterLogic()
+        self.sources_to_process = [
+            (url, filename) for url, filename in logic.sources
+            if (url + '|' + filename) in selected_urls]
+        self.logic = logic
+        self.events = Queue()
+        self.updated_filenames = []
+        self.progress_values = [0] * len(self.sources_to_process)
+        self.finished = False
+        self.row_count = len(self.sources_to_process)
+        screen_height = min(650, 125 + max(self.row_count, 1) * 58)
+        widgets = [
+            '<widget name="status" position="20,15" size="680,28" font="Regular;22" halign="center" valign="center" transparent="1" />',
+            '<widget name="overall" position="20,48" size="680,20" />',
+        ]
+        for index in range(self.row_count):
+            y_pos = 82 + index * 58
+            widgets.append(
+                '<widget name="source{}" position="20,{}" size="680,25" font="Regular;18" valign="center" transparent="1" />'.format(
+                    index, y_pos))
+            widgets.append(
+                '<widget name="bar{}" position="20,{}" size="680,18" />'.format(
+                    index, y_pos + 29))
+        self.skin = '<screen position="center,center" size="720,{}" title="{}">{}</screen>'.format(
+            screen_height, _("Updating bouquets"), ''.join(widgets))
         Screen.__init__(self, session)
         self["status"] = Label(_("Initializing..."))
-        self["progress"] = ProgressBar()
-        self["info"] = Label("")
-        self.selected_urls = selected_urls
+        self["overall"] = ProgressBar()
+        self["overall"].setValue(0)
+        for index, (source_url, filename) in enumerate(
+                self.sources_to_process):
+            self["source{}".format(index)] = Label(
+                "{} - {}".format(filename, _("Waiting...")))
+            self["bar{}".format(index)] = ProgressBar()
+            self["bar{}".format(index)].setValue(0)
         self.timer = eTimer()
-        self.timer.callback.append(self.start_update)
+        self.timer.callback.append(self._poll_events)
         self.timer.start(100, True)
 
-    def start_update(self):
+    def _queue_progress(self, index, percent, status):
+        self.events.put(("progress", index, percent, status))
+
+    def _process_source(self, index, url, filename):
+        self._queue_progress(index, 5, _("Starting download..."))
+        if is_sportsonline_url(url):
+            result = process_sportsonline(url, filename)
+        elif is_streamsport99_url(url):
+            result = process_streamsport99(url, filename)
+        elif is_dlhd_url(url):
+            result = process_dlhd(url, filename)
+        elif is_mplustv_url(url):
+            result = process_mplustv(
+                url, filename,
+                lambda percent, status: self._queue_progress(
+                    index, percent, status))
+        elif is_vavoo_url(url) and filename == VAVOO_RESOLVED_BOUQUET_FILE:
+            result = process_vavoo_italia_resolved(filename)
+        elif is_vavoo_url(url):
+            result = process_vavoo_italia(filename)
+        else:
+            self._queue_progress(index, 20, _("Downloading..."))
+            source_date = self.logic._get_github_last_modified(url)
+            content = self.logic._download_m3u(url)
+            result = False
+            if content:
+                self._queue_progress(index, 55, _("Processing channels..."))
+                channels = self.logic._parse_m3u(content)
+                if channels:
+                    self._queue_progress(index, 80, _("Creating bouquet..."))
+                    bouquet = self.logic._generate_bouquet(
+                        filename, channels, source_date)
+                    result = self.logic._write_bouquet_file(filename, bouquet)
+        if result:
+            self.updated_filenames.append(filename)
+        self._queue_progress(
+            index, 100, _("Completed!") if result else _("Failed"))
+
+    def _worker(self):
         try:
-            logic = M3UUpdaterLogic()
-            sources_to_process = [
-                (url, fn) for url, fn in logic.sources if (
-                    url + '|' + fn) in self.selected_urls]
-            total = len(sources_to_process)
-
-            for idx, (url, filename) in enumerate(sources_to_process, 1):
-                progress = int((idx * 100) / total)
-                self["progress"].setValue(progress)
-                self["status"].setText(_("Updating {}/{}").format(idx, total))
-                self["info"].setText(_("Processing: {}\n{}").format(
-                    filename, url[:50] + "..."))
-
-                logging.info("[{}/{}] Processing: {}".format(idx, total, url))
-
-                if is_sportsonline_url(url):
-                    process_sportsonline(url, filename)
-                elif is_streamsport99_url(url):
-                    process_streamsport99(url, filename)
-                elif is_vavoo_url(url) and filename == VAVOO_RESOLVED_BOUQUET_FILE:
-                    process_vavoo_italia_resolved(filename)
-                elif is_vavoo_url(url):
-                    process_vavoo_italia(filename)
-                else:
-                    source_date = logic._get_github_last_modified(url)
-                    m3u_content = logic._download_m3u(url)
-                    if m3u_content:
-                        channels = logic._parse_m3u(m3u_content)
-                        if channels:
-                            bouquet_content = logic._generate_bouquet(
-                                filename, channels, source_date)
-                            logic._write_bouquet_file(
-                                filename, bouquet_content)
-
-            self["progress"].setValue(100)
-            self["status"].setText(_("Completed!"))
-            self["info"].setText(_("Reloading channel list..."))
-
-            updated_filenames = [fn for _, fn in sources_to_process]
-            if updated_filenames:
-                logic._update_bouquets_tv(updated_filenames)
-
-            logic._reload_bouquets()
-            logic._save_last_run()
-
-            import time
-            time.sleep(1)
-
-            self.close(True)
+            for index, (url, filename) in enumerate(self.sources_to_process):
+                try:
+                    self._process_source(index, url, filename)
+                except Exception as error:
+                    logging.error("Update error for %s: %s", filename, error)
+                    logging.exception("Source update stack trace:")
+                    self._queue_progress(index, 100, _("Failed"))
+            self.events.put(("finished", bool(self.updated_filenames)))
         except Exception as e:
             logging.error("Update error: {}".format(e))
             logging.exception("Stack trace:")
-            self.close(False)
+            self.events.put(("finished", False))
+
+    def _start_worker(self):
+        worker = threading.Thread(target=self._worker)
+        worker.daemon = True
+        worker.start()
+
+    def _poll_events(self):
+        if not hasattr(self, "worker_started"):
+            self.worker_started = True
+            self._start_worker()
+        try:
+            while True:
+                event = self.events.get_nowait()
+                if event[0] == "progress":
+                    event_type, index, percent, status = event
+                    filename = self.sources_to_process[index][1]
+                    self.progress_values[index] = percent
+                    self["bar{}".format(index)].setValue(percent)
+                    self["source{}".format(index)].setText(
+                        "{} - {}".format(filename, status))
+                elif event[0] == "finished":
+                    self._finish_update(event[1])
+        except Empty:
+            pass
+        if not self.finished:
+            total = max(self.row_count, 1)
+            progress_sum = sum(self.progress_values)
+            self["overall"].setValue(int(progress_sum / total))
+            completed = sum(
+                1 for percent in self.progress_values if percent >= 100)
+            self["status"].setText(
+                _("Global progress: {}/{}").format(completed, self.row_count))
+            self.timer.start(100, True)
+
+    def _finish_update(self, success):
+        self.finished = True
+        self["overall"].setValue(100)
+        self["status"].setText(
+            _("Completed!") if success else _("Update failed"))
+        if self.updated_filenames:
+            self.logic._update_bouquets_tv(self.updated_filenames)
+        self.logic._reload_bouquets()
+        self.logic._save_last_run()
+        self.close(success)
 
 
 class BouquetUpdaterScreen(ConfigListScreen, Screen):
@@ -712,6 +805,12 @@ class BouquetUpdaterScreen(ConfigListScreen, Screen):
         if 'cdnlivetv' in url:
             return _("StreamSport99")
 
+        if is_dlhd_url(url):
+            return _("DLHD Italy")
+
+        if is_mplustv_url(url):
+            return _("MPlusTV")
+
         m3u_match = re.search(r'/([^/]+)\.m3u', url)
         if m3u_match:
             return m3u_match.group(1)
@@ -762,17 +861,6 @@ class BouquetUpdaterScreen(ConfigListScreen, Screen):
                 timeout=3)
             return
 
-        has_resolved = any(
-            VAVOO_RESOLVED_BOUQUET_FILE in key for key in selected)
-
-        if has_resolved:
-            msg = _("Starting update of {} bouquets...\n\nWARNING: Vavoo Resolved may take several minutes.\nDo not close the plugin!").format(
-                len(selected))
-        else:
-            msg = _("Starting update of {} bouquets...\n\nPlease wait.").format(
-                len(selected))
-
-        self.session.open(MessageBox, msg, MessageBox.TYPE_INFO, timeout=3)
         self.session.openWithCallback(
             self._update_callback,
             UpdateProgressScreen,

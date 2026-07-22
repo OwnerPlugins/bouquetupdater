@@ -28,11 +28,33 @@ msgstr "Ажурирач на букети"
 msgid "Completed!"
 msgstr "Завршено!"
 
+msgid "Creating bouquet..."
+msgstr "Создавање букет..."
+
+msgid "DLHD Italy"
+msgstr "DLHD Италија"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "Се вчитува списокот со канали..."
+
+msgid "Downloading..."
+msgstr "Се презема..."
+
 msgid "Exit"
 msgstr "Излезете"
 
+msgid "Failed"
+msgstr "Неуспешно"
+
+msgid "Global progress: {}/{}"
+msgstr "Глобален напредок: {}/{}"
+
 msgid "Initializing..."
 msgstr "Се иницијализира..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "Управувајте со автоматско ажурирање на букетот M3U"
@@ -43,7 +65,8 @@ msgstr "Нема избран извор!"
 msgid "Other"
 msgstr "Друго"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "Се вчитува списокот со канали..."
 
 msgid "Save"
@@ -55,23 +78,40 @@ msgstr "Поставките се зачувани."
 msgid "Sportsonline"
 msgstr "Спортсонлајн"
 
+msgid "Starting download..."
+msgstr "Почнува преземањето..."
+
 msgid "StreamSport99"
 msgstr ""
 
 msgid "TV List"
 msgstr "Список на ТВ"
 
+msgid "Unknown channel"
+msgstr "Непознат канал"
+
 msgid "Update"
+msgstr "Ажурирање"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "Ажурирање"
 
 msgid "Updated on {}"
 msgstr "Ажурирано на {}"
 
-msgid "Updating {}/{}"
-msgstr "Се ажурира {}/{}"
+msgid "Updating bouquets"
+msgstr "Ажурирање на букети"
 
 msgid "Vavoo Italia"
 msgstr "Vavoo Италија"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "Vavoo Italia (решено)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "Се иницијализира..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "Се ажурира {}/{}"

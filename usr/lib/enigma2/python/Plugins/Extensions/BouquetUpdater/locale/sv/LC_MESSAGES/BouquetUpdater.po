@@ -29,11 +29,33 @@ msgstr "Bukettuppdatering"
 msgid "Completed!"
 msgstr "Avslutad!"
 
+msgid "Creating bouquet..."
+msgstr "Skapar bukett..."
+
+msgid "DLHD Italy"
+msgstr "DLHD Italien"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "Laddar om kanallistan..."
+
+msgid "Downloading..."
+msgstr "Laddar ned..."
+
 msgid "Exit"
 msgstr "Utgång"
 
+msgid "Failed"
+msgstr "Misslyckades"
+
+msgid "Global progress: {}/{}"
+msgstr "Globala framsteg: {}/{}"
+
 msgid "Initializing..."
 msgstr "Initierar..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "Hantera automatiska M3U-bukettuppdateringar"
@@ -44,7 +66,8 @@ msgstr "Ingen källa har valts!"
 msgid "Other"
 msgstr "Andra"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "Laddar om kanallistan..."
 
 msgid "Save"
@@ -56,23 +79,40 @@ msgstr "Inställningar sparade."
 msgid "Sportsonline"
 msgstr ""
 
+msgid "Starting download..."
+msgstr "Börjar ladda ner..."
+
 msgid "StreamSport99"
 msgstr ""
 
 msgid "TV List"
 msgstr "TV-lista"
 
+msgid "Unknown channel"
+msgstr "Okänd kanal"
+
 msgid "Update"
+msgstr "Uppdatera"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "Uppdatera"
 
 msgid "Updated on {}"
 msgstr "Uppdaterad den {}"
 
-msgid "Updating {}/{}"
-msgstr "Uppdaterar {}/{}"
+msgid "Updating bouquets"
+msgstr "Uppdatering av buketter"
 
 msgid "Vavoo Italia"
 msgstr "Vavoo Italien"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "Vavoo Italia (löst)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "Initierar..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "Uppdaterar {}/{}"

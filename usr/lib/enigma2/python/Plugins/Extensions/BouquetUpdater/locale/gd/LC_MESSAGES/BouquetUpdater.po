@@ -28,11 +28,33 @@ msgstr "Ùrachadh bouquet"
 msgid "Completed!"
 msgstr "Crìochnaichte!"
 
+msgid "Creating bouquet..."
+msgstr "A' cruthachadh bouquet..."
+
+msgid "DLHD Italy"
+msgstr "DLHD an Eadailt"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "A luchdachadh a-nuas liosta de sianalan TBH. ."
+
+msgid "Downloading..."
+msgstr "A' luchdachadh sìos..."
+
 msgid "Exit"
 msgstr "Ar-a-mach"
 
+msgid "Failed"
+msgstr "Dh'fhàillig"
+
+msgid "Global progress: {}/{}"
+msgstr "Adhartas cruinneil: {}/}"
+
 msgid "Initializing..."
 msgstr "A' tòiseachadh..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "Stiùirich ùrachaidhean bouquet M3U fèin-ghluasadach"
@@ -43,7 +65,8 @@ msgstr "Chan eil stòr air a thaghadh!"
 msgid "Other"
 msgstr "Eile"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "A luchdachadh a-nuas liosta de sianalan TBH. ."
 
 msgid "Save"
@@ -55,23 +78,40 @@ msgstr "Roghainnean air an sàbhaladh."
 msgid "Sportsonline"
 msgstr "Air-loidhne spòrs"
 
+msgid "Starting download..."
+msgstr "A 'tòiseachadh air an luchdachadh sìos ..."
+
 msgid "StreamSport99"
 msgstr "Sruth spòrs99"
 
 msgid "TV List"
 msgstr "Liosta Tbh"
 
+msgid "Unknown channel"
+msgstr "Sianal neo-aithnichte"
+
 msgid "Update"
+msgstr "Ùraich"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "Ùraich"
 
 msgid "Updated on {}"
 msgstr "Air ùrachadh air {}"
 
-msgid "Updating {}/{}"
-msgstr "Ag ùrachadh {}/}"
+msgid "Updating bouquets"
+msgstr "Ag ùrachadh bouquets"
 
 msgid "Vavoo Italia"
 msgstr "Vavoo an Eadailt"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "Vavoo Italia (Fuasgladh)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "A' tòiseachadh..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "Ag ùrachadh {}/}"

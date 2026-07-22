@@ -3,7 +3,7 @@
 from __future__ import absolute_import
 
 __license__ = "GPL-v2"
-__version__ = "3.0.2.0"
+__version__ = "3.1.0"
 
 import os
 import gettext

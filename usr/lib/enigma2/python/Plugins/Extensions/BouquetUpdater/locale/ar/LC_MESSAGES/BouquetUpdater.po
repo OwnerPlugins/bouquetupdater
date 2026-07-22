@@ -28,11 +28,33 @@ msgstr "محدث الباقة"
 msgid "Completed!"
 msgstr "مكتمل!"
 
+msgid "Creating bouquet..."
+msgstr "صنع باقة..."
+
+msgid "DLHD Italy"
+msgstr "DLHD إيطاليا"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "جارٍ إعادة تحميل قائمة القنوات..."
+
+msgid "Downloading..."
+msgstr "جارٍ التنزيل..."
+
 msgid "Exit"
 msgstr "مخرج"
 
+msgid "Failed"
+msgstr "فشل"
+
+msgid "Global progress: {}/{}"
+msgstr "التقدم العالمي: {}/{}"
+
 msgid "Initializing..."
 msgstr "جارٍ التهيئة..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "إدارة تحديثات باقة M3U التلقائية"
@@ -43,7 +65,8 @@ msgstr "لم يتم تحديد مصدر!"
 msgid "Other"
 msgstr "آخر"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "جارٍ إعادة تحميل قائمة القنوات..."
 
 msgid "Save"
@@ -55,23 +78,40 @@ msgstr "تم حفظ الإعدادات."
 msgid "Sportsonline"
 msgstr "سبورتسونلاين"
 
+msgid "Starting download..."
+msgstr "جارٍ بدء التنزيل..."
+
 msgid "StreamSport99"
 msgstr "ستريم سبورت99"
 
 msgid "TV List"
 msgstr "قائمة التلفزيون"
 
+msgid "Unknown channel"
+msgstr "قناة غير معروفة"
+
 msgid "Update"
+msgstr "تحديث"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "تحديث"
 
 msgid "Updated on {}"
 msgstr "تم التحديث بتاريخ {}"
 
-msgid "Updating {}/{}"
-msgstr "جارٍ التحديث {}/{}"
+msgid "Updating bouquets"
+msgstr "تحديث الباقات"
 
 msgid "Vavoo Italia"
 msgstr "فافو إيطاليا"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "فافو إيطاليا (تم الحل)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "جارٍ التهيئة..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "جارٍ التحديث {}/{}"

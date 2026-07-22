@@ -28,11 +28,33 @@ msgstr "Bouquet шинэчлэгч"
 msgid "Completed!"
 msgstr "Дууслаа!"
 
+msgid "Creating bouquet..."
+msgstr "Баглаа үүсгэж байна..."
+
+msgid "DLHD Italy"
+msgstr "DLHD Итали"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "Сувгийн жагсаалтыг дахин ачаалж байна..."
+
+msgid "Downloading..."
+msgstr "Татаж авч байна..."
+
 msgid "Exit"
 msgstr "Гарах"
 
+msgid "Failed"
+msgstr "Амжилтгүй"
+
+msgid "Global progress: {}/{}"
+msgstr "Дэлхийн ахиц дэвшил: {}/{}"
+
 msgid "Initializing..."
 msgstr "Эхэлж байна..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "M3U баглааг автоматаар шинэчлэхийг удирдах"
@@ -43,7 +65,8 @@ msgstr "Сонгосон эх сурвалж байхгүй!"
 msgid "Other"
 msgstr "Бусад"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "Сувгийн жагсаалтыг дахин ачаалж байна..."
 
 msgid "Save"
@@ -55,23 +78,40 @@ msgstr "Тохиргоог хадгалсан."
 msgid "Sportsonline"
 msgstr ""
 
+msgid "Starting download..."
+msgstr "Татаж авч байна..."
+
 msgid "StreamSport99"
 msgstr ""
 
 msgid "TV List"
 msgstr "ТВ жагсаалт"
 
+msgid "Unknown channel"
+msgstr "Үл мэдэгдэх суваг"
+
 msgid "Update"
+msgstr "Шинэчлэх"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "Шинэчлэх"
 
 msgid "Updated on {}"
 msgstr "{}-д шинэчлэгдсэн"
 
-msgid "Updating {}/{}"
-msgstr "{}/{}-г шинэчилж байна"
+msgid "Updating bouquets"
+msgstr "Баглаа шинэчилж байна"
 
 msgid "Vavoo Italia"
 msgstr "Ваву Итали"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "Vavoo Italia (Шийдвэрлэсэн)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "Эхэлж байна..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "{}/{}-г шинэчилж байна"

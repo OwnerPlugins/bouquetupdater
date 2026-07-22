@@ -28,11 +28,33 @@ msgstr "ପୁଷ୍ପ ଅପଡେଟର୍ |"
 msgid "Completed!"
 msgstr "ସମାପ୍ତ!"
 
+msgid "Creating bouquet..."
+msgstr "ପୁଷ୍ପ ସୃଷ୍ଟି ..."
+
+msgid "DLHD Italy"
+msgstr "DLHD ଇଟାଲୀ |"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "ଚ୍ୟାନେଲ ତାଲିକା ପୁନ elo ଲୋଡ୍ କରୁଛି ..."
+
+msgid "Downloading..."
+msgstr "ଡାଉନଲୋଡ୍ ..."
+
 msgid "Exit"
 msgstr "ପ୍ରସ୍ଥାନ"
 
+msgid "Failed"
+msgstr "ବିଫଳ"
+
+msgid "Global progress: {}/{}"
+msgstr "ବିଶ୍ୱ ପ୍ରଗତି: {} / {}"
+
 msgid "Initializing..."
 msgstr "ଆରମ୍ଭ ..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "ସ୍ୱୟଂଚାଳିତ M3U ପୁଷ୍ପ ଅଦ୍ୟତନଗୁଡିକ ପରିଚାଳନା କରନ୍ତୁ |"
@@ -43,7 +65,8 @@ msgstr "କ source ଣସି ଉତ୍ସ ଚୟନ ହୋଇନାହିଁ!"
 msgid "Other"
 msgstr "ଅନ୍ୟମାନେ |"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "ଚ୍ୟାନେଲ ତାଲିକା ପୁନ elo ଲୋଡ୍ କରୁଛି ..."
 
 msgid "Save"
@@ -55,23 +78,40 @@ msgstr "ସେଟିଂସମୂହ ସଞ୍ଚୟ ହୋଇଛି |"
 msgid "Sportsonline"
 msgstr "ସ୍ପୋର୍ଟସନ୍ ଲାଇନ୍ |"
 
+msgid "Starting download..."
+msgstr "ଡାଉନଲୋଡ୍ ଆରମ୍ଭ ..."
+
 msgid "StreamSport99"
 msgstr ""
 
 msgid "TV List"
 msgstr "ଟିଭି ତାଲିକା |"
 
+msgid "Unknown channel"
+msgstr "ଅଜ୍ଞାତ ଚ୍ୟାନେଲ |"
+
 msgid "Update"
+msgstr "ଅଦ୍ୟତନ କରନ୍ତୁ |"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "ଅଦ୍ୟତନ କରନ୍ତୁ |"
 
 msgid "Updated on {}"
 msgstr "{On ରେ ଅଦ୍ୟତନ କରାଯାଇଛି"
 
-msgid "Updating {}/{}"
-msgstr "{} / {Update ଅଦ୍ୟତନ କରୁଛି"
+msgid "Updating bouquets"
+msgstr "ପୁଷ୍ପଗୁଚ୍ଛ ଅଦ୍ୟତନ କରିବା |"
 
 msgid "Vavoo Italia"
 msgstr "ଭାଭୋ ଇଟାଲୀ |"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "ଭାଭୋ ଇଟାଲୀ (ସମାଧାନ)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "ଆରମ୍ଭ ..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "{} / {Update ଅଦ୍ୟତନ କରୁଛି"

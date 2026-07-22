@@ -7,6 +7,9 @@
 
 
 
+
+
+
 msgid "Automatic update time"
 msgstr ""
 
@@ -19,10 +22,31 @@ msgstr ""
 msgid "Completed!"
 msgstr ""
 
+msgid "Creating bouquet..."
+msgstr ""
+
+msgid "DLHD Italy"
+msgstr ""
+
+msgid "Downloading channels {}/{}"
+msgstr ""
+
+msgid "Downloading..."
+msgstr ""
+
 msgid "Exit"
 msgstr ""
 
+msgid "Failed"
+msgstr ""
+
+msgid "Global progress: {}/{}"
+msgstr ""
+
 msgid "Initializing..."
+msgstr ""
+
+msgid "MPlusTV"
 msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
@@ -34,7 +58,7 @@ msgstr ""
 msgid "Other"
 msgstr ""
 
-msgid "Reloading channel list..."
+msgid "Processing channels..."
 msgstr ""
 
 msgid "Save"
@@ -46,23 +70,35 @@ msgstr ""
 msgid "Sportsonline"
 msgstr ""
 
+msgid "Starting download..."
+msgstr ""
+
 msgid "StreamSport99"
 msgstr ""
 
 msgid "TV List"
 msgstr ""
 
+msgid "Unknown channel"
+msgstr ""
+
 msgid "Update"
+msgstr ""
+
+msgid "Update failed"
 msgstr ""
 
 msgid "Updated on {}"
 msgstr ""
 
-msgid "Updating {}/{}"
+msgid "Updating bouquets"
 msgstr ""
 
 msgid "Vavoo Italia"
 msgstr ""
 
 msgid "Vavoo Italia (Resolved)"
+msgstr ""
+
+msgid "Waiting..."
 msgstr ""

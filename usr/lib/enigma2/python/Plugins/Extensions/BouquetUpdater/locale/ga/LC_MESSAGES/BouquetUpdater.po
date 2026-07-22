@@ -29,11 +29,33 @@ msgstr "Nuashonróir Bouquet"
 msgid "Completed!"
 msgstr "Críochnaithe!"
 
+msgid "Creating bouquet..."
+msgstr "bouquet á cruthú..."
+
+msgid "DLHD Italy"
+msgstr "DLHD an Iodáil"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "Liosta cainéal á athlódáil…"
+
+msgid "Downloading..."
+msgstr "Ag íosluchtú..."
+
 msgid "Exit"
 msgstr "Scoir"
 
+msgid "Failed"
+msgstr "Theip"
+
+msgid "Global progress: {}/{}"
+msgstr "Dul chun cinn domhanda: {}/{}"
+
 msgid "Initializing..."
 msgstr "Ag tosú..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "Bainistigh nuashonruithe uathoibríoch bouquet M3U"
@@ -44,7 +66,8 @@ msgstr "Níl aon fhoinse roghnaithe!"
 msgid "Other"
 msgstr "Eile"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "Liosta cainéal á athlódáil…"
 
 msgid "Save"
@@ -56,23 +79,40 @@ msgstr "Socruithe sábháilte."
 msgid "Sportsonline"
 msgstr "Spóirt ar líne"
 
+msgid "Starting download..."
+msgstr "Íosluchtaigh ag tosú.. ."
+
 msgid "StreamSport99"
 msgstr "SruthSpóirt99"
 
 msgid "TV List"
 msgstr "Liosta Teilifíse"
 
+msgid "Unknown channel"
+msgstr "Cainéal anaithnid"
+
 msgid "Update"
+msgstr "Nuashonrú"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "Nuashonrú"
 
 msgid "Updated on {}"
 msgstr "Nuashonraithe ar {}"
 
-msgid "Updating {}/{}"
-msgstr "{}/{} á nuashonrú"
+msgid "Updating bouquets"
+msgstr "bouquets á nuashonrú"
 
 msgid "Vavoo Italia"
 msgstr "Vavoo an Iodáil"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "Vavoo Italia (Réitithe)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "Ag tosú..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "{}/{} á nuashonrú"

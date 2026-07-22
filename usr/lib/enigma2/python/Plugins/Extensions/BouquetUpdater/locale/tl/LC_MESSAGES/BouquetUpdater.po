@@ -28,11 +28,33 @@ msgstr ""
 msgid "Completed!"
 msgstr "Nakumpleto!"
 
+msgid "Creating bouquet..."
+msgstr "Gumagawa ng bouquet..."
+
+msgid "DLHD Italy"
+msgstr ""
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "Nire-reload ang listahan ng channel..."
+
+msgid "Downloading..."
+msgstr "Dina-download..."
+
 msgid "Exit"
 msgstr "Lumabas"
 
+msgid "Failed"
+msgstr "Nabigo"
+
+msgid "Global progress: {}/{}"
+msgstr "Global na pag-unlad: {}/{}"
+
 msgid "Initializing..."
 msgstr "Sinisimulan..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "Pamahalaan ang mga awtomatikong M3U bouquet update"
@@ -43,7 +65,8 @@ msgstr "Walang napiling pinagmulan!"
 msgid "Other"
 msgstr "Iba pa"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "Nire-reload ang listahan ng channel..."
 
 msgid "Save"
@@ -55,23 +78,39 @@ msgstr "Na-save ang mga setting."
 msgid "Sportsonline"
 msgstr ""
 
+msgid "Starting download..."
+msgstr "Sinisimulan ang pag-download..."
+
 msgid "StreamSport99"
 msgstr ""
 
 msgid "TV List"
 msgstr "Listahan ng TV"
 
+msgid "Unknown channel"
+msgstr "Hindi kilalang channel"
+
 msgid "Update"
 msgstr ""
+
+msgid "Update failed"
+msgstr "Nabigo ang pag-update"
 
 msgid "Updated on {}"
 msgstr "Na-update noong {}"
 
-msgid "Updating {}/{}"
-msgstr "Ina-update ang {}/{}"
+msgid "Updating bouquets"
+msgstr "Pag-update ng mga bouquet"
 
 msgid "Vavoo Italia"
 msgstr "Vavoo Italy"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "Vavoo Italia (Naresolba)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "Sinisimulan..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "Ina-update ang {}/{}"

@@ -21,7 +21,7 @@
 
 # ⭐️ BouquetUpdater
 
-**Version:** 3.0.2.0
+**Version:** 3.1.0
 **License:** GPL-v2
 
 ---

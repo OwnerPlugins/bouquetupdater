@@ -28,11 +28,33 @@ msgstr "Diweddarwr Bouquet"
 msgid "Completed!"
 msgstr "Wedi'i gwblhau!"
 
+msgid "Creating bouquet..."
+msgstr "Wrthi'n creu tusw..."
+
+msgid "DLHD Italy"
+msgstr "DLHD yr Eidal"
+
+#, fuzzy
+msgid "Downloading channels {}/{}"
+msgstr "Wrthi'n ail-lwytho rhestr sianeli..."
+
+msgid "Downloading..."
+msgstr "Wrthi'n llwytho i lawr..."
+
 msgid "Exit"
 msgstr "Ymadael"
 
+msgid "Failed"
+msgstr "Wedi methu"
+
+msgid "Global progress: {}/{}"
+msgstr "Cynnydd byd-eang: {/}"
+
 msgid "Initializing..."
 msgstr "Wrthi'n cychwyn..."
+
+msgid "MPlusTV"
+msgstr ""
 
 msgid "Manage automatic M3U bouquet updates"
 msgstr "Rheoli diweddariadau tusw M3U awtomatig"
@@ -43,7 +65,8 @@ msgstr "Dim ffynhonnell wedi'i dewis!"
 msgid "Other"
 msgstr "Arall"
 
-msgid "Reloading channel list..."
+#, fuzzy
+msgid "Processing channels..."
 msgstr "Wrthi'n ail-lwytho rhestr sianeli..."
 
 msgid "Save"
@@ -55,23 +78,40 @@ msgstr "Gosodiadau wedi'u cadw."
 msgid "Sportsonline"
 msgstr "Chwaraeonarlein"
 
+msgid "Starting download..."
+msgstr "Yn dechrau llwytho i lawr..."
+
 msgid "StreamSport99"
 msgstr "FfrwdChwaraeon99"
 
 msgid "TV List"
 msgstr "Rhestr Teledu"
 
+msgid "Unknown channel"
+msgstr "Sianel anhysbys"
+
 msgid "Update"
+msgstr "Diweddariad"
+
+#, fuzzy
+msgid "Update failed"
 msgstr "Diweddariad"
 
 msgid "Updated on {}"
 msgstr "Diweddarwyd ar {}"
 
-msgid "Updating {}/{}"
-msgstr "Wrthi'n diweddaru {}/}"
+msgid "Updating bouquets"
+msgstr "Diweddaru tuswau"
 
 msgid "Vavoo Italia"
 msgstr "Vavoo yr Eidal"
 
 msgid "Vavoo Italia (Resolved)"
 msgstr "Vavoo Italia (Penderfynwyd)"
+
+#, fuzzy
+msgid "Waiting..."
+msgstr "Wrthi'n cychwyn..."
+
+#~ msgid "Updating {}/{}"
+#~ msgstr "Wrthi'n diweddaru {}/}"
