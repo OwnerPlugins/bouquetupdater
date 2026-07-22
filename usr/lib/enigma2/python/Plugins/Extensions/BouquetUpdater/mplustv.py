@@ -47,7 +47,12 @@ def _request(url, headers=None, data=None, timeout=15):
         request_headers.update(headers)
     if data is not None and not isinstance(data, bytes):
         data = data.encode("utf-8")
-    response = urlopen(Request(url, data=data, headers=request_headers), timeout=timeout)
+    response = urlopen(
+        Request(
+            url,
+            data=data,
+            headers=request_headers),
+        timeout=timeout)
     return response.read().decode("utf-8", "ignore")
 
 
