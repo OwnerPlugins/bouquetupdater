@@ -28,6 +28,9 @@ msgstr "তোড়া আপডেটার"
 msgid "Completed!"
 msgstr "সমাপ্ত !"
 
+msgid "DLHD Italy"
+msgstr "ডিএলএইচডি ইতালি"
+
 msgid "Exit"
 msgstr "প্রস্থান করুন"
 

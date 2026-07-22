@@ -28,6 +28,9 @@ msgstr ""
 msgid "Completed!"
 msgstr "ተጠናቀቀ!"
 
+msgid "DLHD Italy"
+msgstr "DLHD ጣሊያን"
+
 msgid "Exit"
 msgstr "ውጣ"
 

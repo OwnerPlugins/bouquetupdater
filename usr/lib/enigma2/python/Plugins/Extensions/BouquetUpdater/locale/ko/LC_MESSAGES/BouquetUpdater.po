@@ -29,6 +29,9 @@ msgstr "부케 업데이터"
 msgid "Completed!"
 msgstr "완전한!"
 
+msgid "DLHD Italy"
+msgstr "DLHD 이탈리아"
+
 msgid "Exit"
 msgstr "출구"
 

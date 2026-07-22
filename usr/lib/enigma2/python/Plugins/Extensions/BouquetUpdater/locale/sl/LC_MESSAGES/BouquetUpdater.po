@@ -29,6 +29,9 @@ msgstr "Posodabljanje šopkov"
 msgid "Completed!"
 msgstr "Dokončano!"
 
+msgid "DLHD Italy"
+msgstr "DLHD Italija"
+
 msgid "Exit"
 msgstr "Izhod"
 

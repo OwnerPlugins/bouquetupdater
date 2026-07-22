@@ -29,6 +29,9 @@ msgstr "Kytice Updater"
 msgid "Completed!"
 msgstr "Hotovo!"
 
+msgid "DLHD Italy"
+msgstr "DLHD Itálie"
+
 msgid "Exit"
 msgstr "Výstup"
 

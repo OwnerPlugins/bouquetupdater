@@ -28,6 +28,9 @@ msgstr "بکی اپڈیٹر"
 msgid "Completed!"
 msgstr "مکمل!"
 
+msgid "DLHD Italy"
+msgstr "ڈی ایل ایچ ڈی اٹلی"
+
 msgid "Exit"
 msgstr "باہر نکلیں۔"
 

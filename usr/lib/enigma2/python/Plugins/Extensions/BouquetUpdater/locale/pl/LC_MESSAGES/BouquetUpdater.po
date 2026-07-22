@@ -29,6 +29,9 @@ msgstr "Aktualizacja bukietów"
 msgid "Completed!"
 msgstr "Zakończony!"
 
+msgid "DLHD Italy"
+msgstr "DLHD Włochy"
+
 msgid "Exit"
 msgstr "Wyjście"
 

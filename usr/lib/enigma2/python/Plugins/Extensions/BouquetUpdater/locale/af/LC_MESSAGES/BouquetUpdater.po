@@ -28,6 +28,9 @@ msgstr ""
 msgid "Completed!"
 msgstr "Voltooi!"
 
+msgid "DLHD Italy"
+msgstr "DLHD Italië"
+
 msgid "Exit"
 msgstr "Verlaat"
 

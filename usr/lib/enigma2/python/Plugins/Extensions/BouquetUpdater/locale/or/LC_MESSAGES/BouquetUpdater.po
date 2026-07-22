@@ -28,6 +28,9 @@ msgstr "ପୁଷ୍ପ ଅପଡେଟର୍ |"
 msgid "Completed!"
 msgstr "ସମାପ୍ତ!"
 
+msgid "DLHD Italy"
+msgstr "DLHD ଇଟାଲୀ |"
+
 msgid "Exit"
 msgstr "ପ୍ରସ୍ଥାନ"
 

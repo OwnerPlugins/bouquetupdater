@@ -29,6 +29,9 @@ msgstr "Trình cập nhật bó hoa"
 msgid "Completed!"
 msgstr "Hoàn thành!"
 
+msgid "DLHD Italy"
+msgstr "DLHD Ý"
+
 msgid "Exit"
 msgstr "Ra"
 

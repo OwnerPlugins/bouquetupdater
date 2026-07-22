@@ -7,6 +7,7 @@
 
 
 
+
 msgid "Automatic update time"
 msgstr ""
 
@@ -17,6 +18,9 @@ msgid "Bouquet Updater"
 msgstr ""
 
 msgid "Completed!"
+msgstr ""
+
+msgid "DLHD Italy"
 msgstr ""
 
 msgid "Exit"

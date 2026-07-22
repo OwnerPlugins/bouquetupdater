@@ -28,6 +28,9 @@ msgstr "Боукует Упдатер"
 msgid "Completed!"
 msgstr "Завршено!"
 
+msgid "DLHD Italy"
+msgstr "ДЛХД Итали"
+
 msgid "Exit"
 msgstr "Изађи"
 

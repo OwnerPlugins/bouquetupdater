@@ -28,6 +28,9 @@ msgstr "به روز رسانی دسته گل"
 msgid "Completed!"
 msgstr "تکمیل شد!"
 
+msgid "DLHD Italy"
+msgstr "DLHD ایتالیا"
+
 msgid "Exit"
 msgstr "خارج شوید"
 

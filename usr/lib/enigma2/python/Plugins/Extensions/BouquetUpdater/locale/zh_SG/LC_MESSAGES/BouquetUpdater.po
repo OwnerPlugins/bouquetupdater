@@ -28,6 +28,9 @@ msgstr "花束更新器"
 msgid "Completed!"
 msgstr "完全的！"
 
+msgid "DLHD Italy"
+msgstr "DLHD 意大利"
+
 msgid "Exit"
 msgstr "出口"
 

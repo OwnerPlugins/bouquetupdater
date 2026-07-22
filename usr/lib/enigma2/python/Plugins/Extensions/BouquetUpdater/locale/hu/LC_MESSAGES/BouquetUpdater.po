@@ -29,6 +29,9 @@ msgstr "Csokorfrissítő"
 msgid "Completed!"
 msgstr "Elkészült!"
 
+msgid "DLHD Italy"
+msgstr "DLHD Olaszország"
+
 msgid "Exit"
 msgstr "Kijárat"
 

@@ -28,6 +28,9 @@ msgstr "ပန်းစည်းမွမ်းမံမှု"
 msgid "Completed!"
 msgstr "ပြီးပါပြီ။"
 
+msgid "DLHD Italy"
+msgstr "DLHD အီတလီ"
+
 msgid "Exit"
 msgstr "ထွက်ပေါက်"
 

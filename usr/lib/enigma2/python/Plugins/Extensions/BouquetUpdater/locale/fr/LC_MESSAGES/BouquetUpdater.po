@@ -29,6 +29,9 @@ msgstr "Mise à jour du bouquet"
 msgid "Completed!"
 msgstr "Complété!"
 
+msgid "DLHD Italy"
+msgstr "DLHD Italie"
+
 msgid "Exit"
 msgstr "Sortie"
 

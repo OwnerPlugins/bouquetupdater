@@ -28,6 +28,9 @@ msgstr "ਗੁਲਦਸਤਾ ਅੱਪਡੇਟਰ"
 msgid "Completed!"
 msgstr "ਪੂਰਾ ਹੋਇਆ!"
 
+msgid "DLHD Italy"
+msgstr "DLHD ਇਟਲੀ"
+
 msgid "Exit"
 msgstr "ਨਿਕਾਸ"
 

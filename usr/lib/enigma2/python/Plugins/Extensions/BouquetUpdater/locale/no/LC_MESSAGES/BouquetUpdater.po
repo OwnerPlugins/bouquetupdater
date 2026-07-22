@@ -29,6 +29,9 @@ msgstr "Bukettoppdatering"
 msgid "Completed!"
 msgstr "Fullført!"
 
+msgid "DLHD Italy"
+msgstr "DLHD Italia"
+
 msgid "Exit"
 msgstr "Gå"
 

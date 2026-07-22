@@ -28,6 +28,9 @@ msgstr "Pembaruan Buket"
 msgid "Completed!"
 msgstr "Selesai!"
 
+msgid "DLHD Italy"
+msgstr "DLHD Italia"
+
 msgid "Exit"
 msgstr "KELUAR"
 

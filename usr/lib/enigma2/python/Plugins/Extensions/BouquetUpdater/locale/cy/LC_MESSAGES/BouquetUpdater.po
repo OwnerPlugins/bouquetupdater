@@ -28,6 +28,9 @@ msgstr "Diweddarwr Bouquet"
 msgid "Completed!"
 msgstr "Wedi'i gwblhau!"
 
+msgid "DLHD Italy"
+msgstr "DLHD yr Eidal"
+
 msgid "Exit"
 msgstr "Ymadael"
 

@@ -28,6 +28,9 @@ msgstr "თაიგულის განახლება"
 msgid "Completed!"
 msgstr "დასრულდა!"
 
+msgid "DLHD Italy"
+msgstr "DLHD იტალია"
+
 msgid "Exit"
 msgstr "გასვლა"
 

@@ -28,6 +28,9 @@ msgstr "Mesa a jorn de rams"
 msgid "Completed!"
 msgstr "Completat!"
 
+msgid "DLHD Italy"
+msgstr "DLHD Itàlia"
+
 msgid "Exit"
 msgstr "Sortida"
 

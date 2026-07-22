@@ -28,6 +28,9 @@ msgstr "బొకే అప్‌డేటర్"
 msgid "Completed!"
 msgstr "పూర్తయింది!"
 
+msgid "DLHD Italy"
+msgstr "DLHD ఇటలీ"
+
 msgid "Exit"
 msgstr "నిష్క్రమించు"
 

@@ -29,6 +29,9 @@ msgstr "Actualizador de ramo"
 msgid "Completed!"
 msgstr "¡Terminado!"
 
+msgid "DLHD Italy"
+msgstr "DLHD Italia"
+
 msgid "Exit"
 msgstr "Salida"
 

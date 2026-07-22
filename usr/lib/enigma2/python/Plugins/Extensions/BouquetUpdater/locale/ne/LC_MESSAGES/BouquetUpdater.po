@@ -28,6 +28,9 @@ msgstr "गुलदस्ता अपडेटर"
 msgid "Completed!"
 msgstr "पूरा भयो!"
 
+msgid "DLHD Italy"
+msgstr "DLHD इटाली"
+
 msgid "Exit"
 msgstr "बाहिर निस्कनुहोस्"
 

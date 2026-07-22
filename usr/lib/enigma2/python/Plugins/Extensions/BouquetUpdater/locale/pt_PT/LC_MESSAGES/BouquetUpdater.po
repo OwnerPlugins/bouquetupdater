@@ -28,6 +28,9 @@ msgstr "Atualizador de buquê"
 msgid "Completed!"
 msgstr "Concluído!"
 
+msgid "DLHD Italy"
+msgstr "DLHD Itália"
+
 msgid "Exit"
 msgstr "Saída"
 

@@ -28,6 +28,9 @@ msgstr "Aġġornatur tal-bukketti"
 msgid "Completed!"
 msgstr "Tlesti!"
 
+msgid "DLHD Italy"
+msgstr "DLHD Italja"
+
 msgid "Exit"
 msgstr "Ħruġ"
 

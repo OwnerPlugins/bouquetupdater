@@ -28,6 +28,9 @@ msgstr "בוקיי ופּדאַטער"
 msgid "Completed!"
 msgstr "געענדיקט!"
 
+msgid "DLHD Italy"
+msgstr "DLHD איטאליע"
+
 msgid "Exit"
 msgstr "אַרויסגאַנג"
 

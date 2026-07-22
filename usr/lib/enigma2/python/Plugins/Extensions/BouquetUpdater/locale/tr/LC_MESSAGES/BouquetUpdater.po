@@ -29,6 +29,9 @@ msgstr "Buket Güncelleyici"
 msgid "Completed!"
 msgstr "Tamamlanmış!"
 
+msgid "DLHD Italy"
+msgstr "DLHD İtalya"
+
 msgid "Exit"
 msgstr "Çıkış"
 

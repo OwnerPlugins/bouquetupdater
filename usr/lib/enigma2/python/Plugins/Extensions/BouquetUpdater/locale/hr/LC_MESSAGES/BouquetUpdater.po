@@ -29,6 +29,9 @@ msgstr "Ažuriranje buketa"
 msgid "Completed!"
 msgstr "Završeno!"
 
+msgid "DLHD Italy"
+msgstr "DLHD Italija"
+
 msgid "Exit"
 msgstr "Izlaz"
 

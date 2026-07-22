@@ -29,6 +29,9 @@ msgstr "Kimpude uuendaja"
 msgid "Completed!"
 msgstr "Lõpetatud!"
 
+msgid "DLHD Italy"
+msgstr "DLHD Itaalia"
+
 msgid "Exit"
 msgstr "Välju"
 

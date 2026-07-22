@@ -28,6 +28,9 @@ msgstr ""
 msgid "Completed!"
 msgstr ""
 
+msgid "DLHD Italy"
+msgstr ""
+
 msgid "Exit"
 msgstr ""
 

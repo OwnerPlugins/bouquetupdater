@@ -28,6 +28,9 @@ msgstr "Buket Yeniləyici"
 msgid "Completed!"
 msgstr "Tamamlandı!"
 
+msgid "DLHD Italy"
+msgstr "DLHD İtaliya"
+
 msgid "Exit"
 msgstr "Çıx"
 

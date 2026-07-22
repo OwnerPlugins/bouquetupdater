@@ -28,6 +28,9 @@ msgstr "Përditësues buqetë"
 msgid "Completed!"
 msgstr "E përfunduar!"
 
+msgid "DLHD Italy"
+msgstr "DLHD Itali"
+
 msgid "Exit"
 msgstr "Dilni"
 

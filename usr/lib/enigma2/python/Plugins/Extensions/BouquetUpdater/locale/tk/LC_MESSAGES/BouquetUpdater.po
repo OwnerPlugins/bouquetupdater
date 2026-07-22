@@ -28,6 +28,9 @@ msgstr "Buket täzelenmesi"
 msgid "Completed!"
 msgstr "Tamamlandy!"
 
+msgid "DLHD Italy"
+msgstr "DLHD Italiýa"
+
 msgid "Exit"
 msgstr "Çyk"
 

@@ -28,6 +28,9 @@ msgstr "د ګلدان تازه کوونکی"
 msgid "Completed!"
 msgstr "بشپړ شو!"
 
+msgid "DLHD Italy"
+msgstr "DLHD ایټالیا"
+
 msgid "Exit"
 msgstr "وتل"
 

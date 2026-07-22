@@ -29,6 +29,9 @@ msgstr "花束アップデーター"
 msgid "Completed!"
 msgstr "完成しました！"
 
+msgid "DLHD Italy"
+msgstr "DLHD イタリア"
+
 msgid "Exit"
 msgstr "出口"
 

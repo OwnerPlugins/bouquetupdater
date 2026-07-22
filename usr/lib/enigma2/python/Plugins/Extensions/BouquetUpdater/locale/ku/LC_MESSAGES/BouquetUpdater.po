@@ -28,6 +28,9 @@ msgstr ""
 msgid "Completed!"
 msgstr "Temam kirin!"
 
+msgid "DLHD Italy"
+msgstr "DLHD Îtalya"
+
 msgid "Exit"
 msgstr "Derî"
 

@@ -28,6 +28,9 @@ msgstr "Bouquet eguneratzailea"
 msgid "Completed!"
 msgstr "Osatu!"
 
+msgid "DLHD Italy"
+msgstr "DLHD Italia"
+
 msgid "Exit"
 msgstr "Irten"
 

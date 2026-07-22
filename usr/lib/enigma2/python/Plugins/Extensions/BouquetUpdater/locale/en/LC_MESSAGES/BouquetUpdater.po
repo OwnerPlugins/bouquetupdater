@@ -29,6 +29,9 @@ msgstr "Bouquet Updater"
 msgid "Completed!"
 msgstr "Completed!"
 
+msgid "DLHD Italy"
+msgstr ""
+
 msgid "Exit"
 msgstr "Exit"
 

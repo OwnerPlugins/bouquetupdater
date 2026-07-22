@@ -29,6 +29,9 @@ msgstr "Actualizator de buchet"
 msgid "Completed!"
 msgstr "Finalizat!"
 
+msgid "DLHD Italy"
+msgstr "DLHD Italia"
+
 msgid "Exit"
 msgstr "Ieșire"
 

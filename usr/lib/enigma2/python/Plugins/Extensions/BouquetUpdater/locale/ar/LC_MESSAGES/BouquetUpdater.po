@@ -28,6 +28,9 @@ msgstr "محدث الباقة"
 msgid "Completed!"
 msgstr "مكتمل!"
 
+msgid "DLHD Italy"
+msgstr "DLHD إيطاليا"
+
 msgid "Exit"
 msgstr "مخرج"
 

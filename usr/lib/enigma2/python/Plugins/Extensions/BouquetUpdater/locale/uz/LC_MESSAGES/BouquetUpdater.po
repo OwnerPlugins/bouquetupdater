@@ -28,6 +28,9 @@ msgstr "Buketni yangilovchi"
 msgid "Completed!"
 msgstr "Bajarildi!"
 
+msgid "DLHD Italy"
+msgstr "DLHD Italiya"
+
 msgid "Exit"
 msgstr "Chiqish"
 

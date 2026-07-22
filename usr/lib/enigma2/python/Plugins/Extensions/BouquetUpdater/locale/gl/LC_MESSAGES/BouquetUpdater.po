@@ -28,6 +28,9 @@ msgstr "Actualizador de ramos"
 msgid "Completed!"
 msgstr "Completado!"
 
+msgid "DLHD Italy"
+msgstr "DLHD Italia"
+
 msgid "Exit"
 msgstr "Saír"
 

@@ -28,6 +28,9 @@ msgstr "Букет жаңартушысы"
 msgid "Completed!"
 msgstr "Аяқталды!"
 
+msgid "DLHD Italy"
+msgstr "DLHD Италия"
+
 msgid "Exit"
 msgstr "Шығу"
 

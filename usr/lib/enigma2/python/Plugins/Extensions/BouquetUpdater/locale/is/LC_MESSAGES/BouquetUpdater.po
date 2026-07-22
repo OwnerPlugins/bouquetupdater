@@ -28,6 +28,9 @@ msgstr "Vöndauppfærsla"
 msgid "Completed!"
 msgstr "Lokið!"
 
+msgid "DLHD Italy"
+msgstr "DLHD Ítalía"
+
 msgid "Exit"
 msgstr "Hætta"
 

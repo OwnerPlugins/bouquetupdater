@@ -28,6 +28,9 @@ msgstr "Ծաղկեփնջերի թարմացնող սարք"
 msgid "Completed!"
 msgstr "Ավարտված է"
 
+msgid "DLHD Italy"
+msgstr "DLHD Իտալիա"
+
 msgid "Exit"
 msgstr "Ելք"
 

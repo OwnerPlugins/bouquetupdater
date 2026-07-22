@@ -29,6 +29,9 @@ msgstr "עדכון זרים"
 msgid "Completed!"
 msgstr "הושלם!"
 
+msgid "DLHD Italy"
+msgstr "DLHD איטליה"
+
 msgid "Exit"
 msgstr "יְצִיאָה"
 

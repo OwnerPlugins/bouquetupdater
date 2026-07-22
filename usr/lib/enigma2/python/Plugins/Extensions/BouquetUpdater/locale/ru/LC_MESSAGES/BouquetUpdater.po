@@ -29,6 +29,9 @@ msgstr "Обновление букетов"
 msgid "Completed!"
 msgstr "Завершенный!"
 
+msgid "DLHD Italy"
+msgstr "DLHD Италия"
+
 msgid "Exit"
 msgstr "Выход"
 

@@ -28,6 +28,9 @@ msgstr "Bouquet шинэчлэгч"
 msgid "Completed!"
 msgstr "Дууслаа!"
 
+msgid "DLHD Italy"
+msgstr "DLHD Итали"
+
 msgid "Exit"
 msgstr "Гарах"
 

@@ -28,6 +28,9 @@ msgstr "Навсозии букет"
 msgid "Completed!"
 msgstr "Ба итмом расид!"
 
+msgid "DLHD Italy"
+msgstr "DLHD Италия"
+
 msgid "Exit"
 msgstr "Баромадгоҳ"
 

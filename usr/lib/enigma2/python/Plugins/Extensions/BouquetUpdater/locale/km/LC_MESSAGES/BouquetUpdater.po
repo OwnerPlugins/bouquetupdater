@@ -28,6 +28,9 @@ msgstr "អ្នកធ្វើបច្ចុប្បន្នភាពភួ
 msgid "Completed!"
 msgstr "ចប់ហើយ!"
 
+msgid "DLHD Italy"
+msgstr "DLHD អ៊ីតាលី"
+
 msgid "Exit"
 msgstr "ចេញ"
 

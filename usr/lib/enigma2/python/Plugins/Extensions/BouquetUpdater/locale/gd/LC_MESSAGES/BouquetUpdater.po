@@ -28,6 +28,9 @@ msgstr "Ùrachadh bouquet"
 msgid "Completed!"
 msgstr "Crìochnaichte!"
 
+msgid "DLHD Italy"
+msgstr "DLHD an Eadailt"
+
 msgid "Exit"
 msgstr "Ar-a-mach"
 

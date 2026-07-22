@@ -28,6 +28,9 @@ msgstr "මල් කළඹ යාවත්කාලීන කරන්නා"
 msgid "Completed!"
 msgstr "සම්පූර්ණයි!"
 
+msgid "DLHD Italy"
+msgstr "DLHD ඉතාලිය"
+
 msgid "Exit"
 msgstr "පිටවෙන්න"
 

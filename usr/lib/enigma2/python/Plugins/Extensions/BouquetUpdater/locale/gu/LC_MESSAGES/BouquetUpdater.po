@@ -28,6 +28,9 @@ msgstr "કલગી અપડેટર"
 msgid "Completed!"
 msgstr "પૂર્ણ!"
 
+msgid "DLHD Italy"
+msgstr "ડીએલએચડી ઇટાલી"
+
 msgid "Exit"
 msgstr "બહાર નીકળો"
 

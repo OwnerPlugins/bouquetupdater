@@ -28,6 +28,9 @@ msgstr "पुष्पगुच्छ अपडेटर"
 msgid "Completed!"
 msgstr "पूर्ण झाले!"
 
+msgid "DLHD Italy"
+msgstr "DLHD इटली"
+
 msgid "Exit"
 msgstr "बाहेर पडा"
 

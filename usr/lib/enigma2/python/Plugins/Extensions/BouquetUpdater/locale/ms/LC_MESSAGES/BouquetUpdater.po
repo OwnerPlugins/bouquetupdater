@@ -28,6 +28,9 @@ msgstr "Pengemaskini Bouquet"
 msgid "Completed!"
 msgstr "Selesai!"
 
+msgid "DLHD Italy"
+msgstr "DLHD Itali"
+
 msgid "Exit"
 msgstr "Keluar"
 

@@ -28,6 +28,9 @@ msgstr "Ажурирач на букети"
 msgid "Completed!"
 msgstr "Завршено!"
 
+msgid "DLHD Italy"
+msgstr "DLHD Италија"
+
 msgid "Exit"
 msgstr "Излезете"
 

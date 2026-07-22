@@ -29,6 +29,9 @@ msgstr "Aktualizácia kytice"
 msgid "Completed!"
 msgstr "Dokončené!"
 
+msgid "DLHD Italy"
+msgstr "DLHD Taliansko"
+
 msgid "Exit"
 msgstr "VÝCHOD"
 

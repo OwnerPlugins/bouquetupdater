@@ -28,6 +28,9 @@ msgstr "പൂച്ചെണ്ട് അപ്ഡേറ്റർ"
 msgid "Completed!"
 msgstr "പൂർത്തിയായി!"
 
+msgid "DLHD Italy"
+msgstr "DLHD ഇറ്റലി"
+
 msgid "Exit"
 msgstr "പുറത്ത്"
 

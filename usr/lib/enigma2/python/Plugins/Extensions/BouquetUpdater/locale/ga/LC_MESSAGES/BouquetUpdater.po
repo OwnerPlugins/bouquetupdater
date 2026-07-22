@@ -29,6 +29,9 @@ msgstr "Nuashonróir Bouquet"
 msgid "Completed!"
 msgstr "Críochnaithe!"
 
+msgid "DLHD Italy"
+msgstr "DLHD an Iodáil"
+
 msgid "Exit"
 msgstr "Scoir"
 

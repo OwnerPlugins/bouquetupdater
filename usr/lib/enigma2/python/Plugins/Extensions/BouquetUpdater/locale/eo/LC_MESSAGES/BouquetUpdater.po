@@ -29,6 +29,9 @@ msgstr "Bukedo-Ĝisdatigilo"
 msgid "Completed!"
 msgstr "Kompletigita!"
 
+msgid "DLHD Italy"
+msgstr "DLHD Italio"
+
 msgid "Exit"
 msgstr "Eliro"
 

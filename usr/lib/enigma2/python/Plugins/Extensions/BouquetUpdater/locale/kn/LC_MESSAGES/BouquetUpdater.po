@@ -28,6 +28,9 @@ msgstr "ಬೊಕೆ ಅಪ್ಡೇಟರ್"
 msgid "Completed!"
 msgstr "ಪೂರ್ಣಗೊಂಡಿದೆ!"
 
+msgid "DLHD Italy"
+msgstr "DLHD ಇಟಲಿ"
+
 msgid "Exit"
 msgstr "ನಿರ್ಗಮಿಸಿ"
 

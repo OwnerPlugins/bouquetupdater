@@ -29,6 +29,9 @@ msgstr "Buketopdatering"
 msgid "Completed!"
 msgstr "Fuldført!"
 
+msgid "DLHD Italy"
+msgstr "DLHD Italien"
+
 msgid "Exit"
 msgstr "Udgang"
 

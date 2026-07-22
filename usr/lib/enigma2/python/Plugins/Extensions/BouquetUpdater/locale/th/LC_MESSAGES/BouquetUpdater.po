@@ -28,6 +28,9 @@ msgstr "อัพเดตช่อดอกไม้"
 msgid "Completed!"
 msgstr "สมบูรณ์!"
 
+msgid "DLHD Italy"
+msgstr "ดีแอลเอชดี อิตาลี"
+
 msgid "Exit"
 msgstr "ออก"
 

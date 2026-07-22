@@ -29,6 +29,9 @@ msgstr "Kukkakimppujen päivittäjä"
 msgid "Completed!"
 msgstr "Valmis!"
 
+msgid "DLHD Italy"
+msgstr "DLHD Italia"
+
 msgid "Exit"
 msgstr "Poistu"
 

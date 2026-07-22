@@ -29,6 +29,9 @@ msgstr "Boeket-updater"
 msgid "Completed!"
 msgstr "Voltooid!"
 
+msgid "DLHD Italy"
+msgstr "DLHD Italië"
+
 msgid "Exit"
 msgstr "Uitgang"
 

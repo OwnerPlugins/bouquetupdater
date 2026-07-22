@@ -29,6 +29,9 @@ msgstr "Puokštės atnaujinimo priemonė"
 msgid "Completed!"
 msgstr "Baigta!"
 
+msgid "DLHD Italy"
+msgstr "DLHD Italija"
+
 msgid "Exit"
 msgstr "Išeiti"
 

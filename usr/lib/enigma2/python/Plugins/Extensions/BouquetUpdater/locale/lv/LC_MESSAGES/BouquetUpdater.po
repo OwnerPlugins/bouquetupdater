@@ -29,6 +29,9 @@ msgstr "Pušķu atjauninātājs"
 msgid "Completed!"
 msgstr "Pabeigts!"
 
+msgid "DLHD Italy"
+msgstr "DLHD Itālija"
+
 msgid "Exit"
 msgstr "Iziet"
 
