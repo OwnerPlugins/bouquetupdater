@@ -1,0 +1,68 @@
+# BouquetUpdater translations
+# Copyright (C) 2025 Lululla Team
+# This file is distributed under the same license as the Lululla package.
+# [lululla] <ekekaz@gmail.com>, 2025.
+#
+
+
+
+
+msgid "Automatic update time"
+msgstr ""
+
+msgid "Automatically update bouquets from M3U lists"
+msgstr ""
+
+msgid "Bouquet Updater"
+msgstr ""
+
+msgid "Completed!"
+msgstr ""
+
+msgid "Exit"
+msgstr ""
+
+msgid "Initializing..."
+msgstr ""
+
+msgid "Manage automatic M3U bouquet updates"
+msgstr ""
+
+msgid "No source selected!"
+msgstr ""
+
+msgid "Other"
+msgstr ""
+
+msgid "Reloading channel list..."
+msgstr ""
+
+msgid "Save"
+msgstr ""
+
+msgid "Settings saved."
+msgstr ""
+
+msgid "Sportsonline"
+msgstr ""
+
+msgid "StreamSport99"
+msgstr ""
+
+msgid "TV List"
+msgstr ""
+
+msgid "Update"
+msgstr ""
+
+msgid "Updated on {}"
+msgstr ""
+
+msgid "Updating {}/{}"
+msgstr ""
+
+msgid "Vavoo Italia"
+msgstr ""
+
+msgid "Vavoo Italia (Resolved)"
+msgstr ""
