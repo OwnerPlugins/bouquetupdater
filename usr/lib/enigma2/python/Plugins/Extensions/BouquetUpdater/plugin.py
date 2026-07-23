@@ -9,7 +9,7 @@ from Components.ActionMap import ActionMap
 from Components.Label import Label
 from Components.ProgressBar import ProgressBar
 from Components.config import config, ConfigSelection, ConfigSubsection, getConfigListEntry
-from enigma import eTimer, eDVBDB
+from enigma import eTimer, eDVBDB, getDesktop
 
 import os
 import re
@@ -611,6 +611,37 @@ class AutoUpdater:
                 self.updating = False
 
 
+# ---- Resolution-aware skin helpers ----
+def get_screen_size():
+    """Return screen width and height in pixels."""
+    desktop = getDesktop(0)
+    return desktop.size().width(), desktop.size().height()
+
+
+def get_resolution_label():
+    """Return a human-readable resolution label."""
+    w, h = get_screen_size()
+    if w >= 3840:
+        return "UHD (4K)"
+    elif w >= 2560:
+        return "WQHD (2K)"
+    elif w >= 1920:
+        return "FHD (1080p)"
+    elif w >= 1280:
+        return "HD (720p)"
+    else:
+        return "SD"
+
+
+def scale_widget(value, base_width=720):
+    """Scale a widget dimension based on current screen width relative to 720p.
+       The upper limit is now 4.0 to properly support WQHD and UHD displays."""
+    w, _ = get_screen_size()
+                                    
+    ratio = max(0.5, min(4.0, w / base_width))   # increased max ratio from 2.0 to 4.0
+    return int(value * ratio)
+
+
 class UpdateProgressScreen(Screen):
     def __init__(self, session, selected_urls):
         logic = M3UUpdaterLogic()
@@ -623,21 +654,42 @@ class UpdateProgressScreen(Screen):
         self.progress_values = [0] * len(self.sources_to_process)
         self.finished = False
         self.row_count = len(self.sources_to_process)
-        screen_height = min(650, 125 + max(self.row_count, 1) * 58)
+
+        # Dynamic screen size based on resolution
+        screen_width, screen_height = get_screen_size()
+        # Base layout for 720p: 720x650 for up to 10 rows
+        base_width = 720
+        base_height = 650
+        # Scale width and height proportionally
+        scaled_width = scale_widget(base_width, base_width)
+        scaled_height = scale_widget(base_height, base_width)
+        # Ensure minimum sizes
+        scaled_width = max(600, min(1920, scaled_width))
+        scaled_height = max(400, min(1080, scaled_height))
+
+        # Adjust height based on number of rows
+        row_height = scale_widget(58)
+        needed_height = scale_widget(125) + self.row_count * row_height
+        if needed_height > scaled_height:
+            scaled_height = needed_height
+
         widgets = [
-            '<widget name="status" position="20,15" size="680,28" font="Regular;22" halign="center" valign="center" transparent="1" />',
-            '<widget name="overall" position="20,48" size="680,20" />',
+            '<widget name="status" position="20,15" size="{},28" font="Regular;22" halign="center" valign="center" transparent="1" />'.format(scaled_width - 40),
+            '<widget name="overall" position="20,48" size="{},20" />'.format(scaled_width - 40),
         ]
         for index in range(self.row_count):
-            y_pos = 82 + index * 58
+            y_pos = scale_widget(82) + index * row_height
+            bar_y = y_pos + scale_widget(29)
             widgets.append(
-                '<widget name="source{}" position="20,{}" size="680,25" font="Regular;18" valign="center" transparent="1" />'.format(
-                    index, y_pos))
+                '<widget name="source{}" position="20,{}" size="{},25" font="Regular;18" valign="center" transparent="1" />'.format(
+                    index, y_pos, scaled_width - 40))
             widgets.append(
-                '<widget name="bar{}" position="20,{}" size="680,18" />'.format(
-                    index, y_pos + 29))
-        self.skin = '<screen position="center,center" size="720,{}" title="{}">{}</screen>'.format(
-            screen_height, _("Updating bouquets"), ''.join(widgets))
+                '<widget name="bar{}" position="20,{}" size="{},18" />'.format(
+                    index, bar_y, scaled_width - 40))
+
+        self.skin = '<screen position="center,center" size="{},{}" title="{}">{}</screen>'.format(
+            scaled_width, scaled_height, _("Updating bouquets"), ''.join(widgets))
+
         Screen.__init__(self, session)
         self["status"] = Label(_("Initializing..."))
         self["overall"] = ProgressBar()
@@ -751,24 +803,38 @@ class UpdateProgressScreen(Screen):
 
 
 class BouquetUpdaterScreen(ConfigListScreen, Screen):
-    skin = """
-        <screen position="center,center" size="720,480" title="Bouquet Updater">
-            <widget name="title" position="20,15" size="680,35" font="Regular;28" halign="left" valign="center" foregroundColor="#00ffffff" transparent="1" />
-            <widget name="info" position="20,55" size="680,25" font="Regular;18" halign="left" valign="center" foregroundColor="#00b0b0b0" transparent="1" />
-            <ePixmap pixmap="skin_default/div-h.png" position="20,85" size="680,2" />
-            <widget name="config" position="20,95" size="680,300" scrollbarMode="showOnDemand" itemHeight="35" font="Regular;20" />
-            <ePixmap pixmap="skin_default/div-h.png" position="20,400" size="680,2" />
-            <ePixmap pixmap="skin_default/buttons/red.png" position="20,420" size="160,40" alphatest="on" />
-            <ePixmap pixmap="skin_default/buttons/green.png" position="190,420" size="160,40" alphatest="on" />
-            <ePixmap pixmap="skin_default/buttons/yellow.png" position="360,420" size="160,40" alphatest="on" />
-            <widget name="key_red" position="20,420" zPosition="1" size="160,40" font="Regular;18" halign="center" valign="center" transparent="1" />
-            <widget name="key_green" position="190,420" zPosition="1" size="160,40" font="Regular;18" halign="center" valign="center" transparent="1" />
-            <widget name="key_yellow" position="360,420" zPosition="1" size="160,40" font="Regular;18" halign="center" valign="center" transparent="1" />
-        </screen>
-    """
-
     def __init__(self, session):
         Screen.__init__(self, session)
+
+        # Get screen resolution for dynamic skin
+        w, h = get_screen_size()
+        # Scale dimensions from 720p base, now with higher scaling factor
+        base_w = 720
+        base_h = 480
+        scaled_w = scale_widget(base_w, base_w)
+        scaled_h = scale_widget(base_h, base_w)
+        scaled_w = max(600, min(1920, scaled_w))
+        scaled_h = max(400, min(1080, scaled_h))
+
+        # Increase font and item height for high-resolution screens
+        item_height = scale_widget(45)
+        font_size = max(18, min(36, scale_widget(30)))  # keep within readable range
+
+        self.skin = """
+            <screen position="center,center" size="{0},{1}" title="Bouquet Updater">
+                <widget name="title" position="20,15" size="{2},35" font="Regular;28" halign="left" valign="center" foregroundColor="#00ffffff" transparent="1" />
+                <widget name="info" position="20,55" size="{2},25" font="Regular;18" halign="left" valign="center" foregroundColor="#00b0b0b0" transparent="1" />
+                <ePixmap pixmap="skin_default/div-h.png" position="20,85" size="{2},2" />
+                <widget name="config" position="20,95" size="{2},{3}" scrollbarMode="showOnDemand" itemHeight="{6}" font="Regular;{7}" />
+                <ePixmap pixmap="skin_default/div-h.png" position="20,{4}" size="{2},2" />
+                <ePixmap pixmap="skin_default/buttons/red.png" position="20,{5}" size="160,40" alphatest="on" />
+                <ePixmap pixmap="skin_default/buttons/green.png" position="190,{5}" size="160,40" alphatest="on" />
+                <ePixmap pixmap="skin_default/buttons/yellow.png" position="360,{5}" size="160,40" alphatest="on" />
+                <widget name="key_red" position="20,{5}" zPosition="1" size="160,40" font="Regular;18" halign="center" valign="center" transparent="1" />
+                <widget name="key_green" position="190,{5}" zPosition="1" size="160,40" font="Regular;18" halign="center" valign="center" transparent="1" />
+                <widget name="key_yellow" position="360,{5}" zPosition="1" size="160,40" font="Regular;18" halign="center" valign="center" transparent="1" />
+            </screen>
+        """.format(scaled_w, scaled_h, scaled_w - 40, scaled_h - 200, scaled_h - 80, scaled_h - 60, item_height, font_size)
 
         self["title"] = Label(
             "{} v{}".format(

@@ -34,6 +34,7 @@ HEADERS = {
 
 
 def is_mplustv_url(url):
+    """Check if the URL belongs to MPlusTV."""
     try:
         host = urlparse(url).netloc.lower().split(':', 1)[0]
     except Exception:
@@ -42,6 +43,7 @@ def is_mplustv_url(url):
 
 
 def _request(url, headers=None, data=None, timeout=15):
+    """Make an HTTP request and return the response text."""
     request_headers = dict(HEADERS)
     if headers:
         request_headers.update(headers)
@@ -57,6 +59,7 @@ def _request(url, headers=None, data=None, timeout=15):
 
 
 def _get_localtv_stream(page_url):
+    """Extract the HLS stream URL from a local-tv.it page."""
     html = _request(page_url)
     match = re.search(
         r'href=["\'](https?://local-tv\.it/player/[^"\']+)["\']',
@@ -73,6 +76,7 @@ def _get_localtv_stream(page_url):
 
 
 def _get_iframe(page_url):
+    """Extract the iframe source URL from a page."""
     html = _request(page_url)
     match = re.search(r'<iframe[^>]+src=["\']([^"\']+)["\']',
                       html, re.IGNORECASE)
@@ -82,6 +86,7 @@ def _get_iframe(page_url):
 
 
 def _get_access_token(referer):
+    """Obtain an OAuth access token from WimTV platform."""
     basic = base64.b64encode(b"www:").decode("ascii")
     body = urlencode({"grant_type": "client_credentials"})
     result = _request(
@@ -96,6 +101,7 @@ def _get_access_token(referer):
 
 
 def _play_wim(iframe_url, token, kind):
+    """Retrieve the stream URL from a WimTV iframe for live or VOD."""
     params = parse_qs(urlparse(iframe_url).query)
     item_id = params.get("cast" if kind == "live" else "vod", [None])[0]
     if not item_id:
@@ -126,6 +132,7 @@ def _play_wim(iframe_url, token, kind):
 
 
 def _cinema_links():
+    """Extract live and VOD links from the Cinema section."""
     html = _request(BASE_URL + "/cinema/")
     links = re.findall(r'href=["\']([^"\']+)["\']', html, re.IGNORECASE)
     live = set()
@@ -142,6 +149,7 @@ def _cinema_links():
 
 
 def _title_from_url(url, kind):
+    """Extract a readable title from a URL."""
     if kind == "vod":
         title = parse_qs(urlparse(url).query).get("title", [""])[0]
     else:
@@ -151,6 +159,7 @@ def _title_from_url(url, kind):
 
 
 def _report_progress(callback, percent, status):
+    """Report progress via the provided callback if available."""
     if callback:
         try:
             callback(percent, status)
@@ -159,6 +168,11 @@ def _report_progress(callback, percent, status):
 
 
 def fetch_channels(source_url=DEFAULT_SOURCE_URL, progress_callback=None):
+    """
+    Fetch all channel groups from MPlusTV.
+
+    Returns a list of tuples (group_name, list of (channel_name, stream_url)).
+    """
     del source_url  # The configured URL identifies this provider.
     groups = []
     _report_progress(progress_callback, 3, _("Starting download..."))
@@ -205,6 +219,7 @@ def fetch_channels(source_url=DEFAULT_SOURCE_URL, progress_callback=None):
 
 
 def generate_bouquet(groups):
+    """Generate the Enigma2 bouquet content from the channel groups."""
     date_str = datetime.now().strftime("%d.%m.%Y %H:%M")
     lines = [
         "#NAME MPlusTV\n",
@@ -228,6 +243,7 @@ def generate_bouquet(groups):
 
 
 def write_bouquet(filename, content):
+    """Write the bouquet content to the Enigma2 bouquet file."""
     path = "/etc/enigma2/{}".format(filename)
     try:
         try:
@@ -245,6 +261,11 @@ def write_bouquet(filename, content):
 
 
 def process_mplustv(url, filename, progress_callback=None):
+    """
+    Main entry point: fetch channels, generate and write the bouquet.
+
+    Returns True on success, False otherwise.
+    """
     try:
         groups = fetch_channels(url, progress_callback)
         total = sum(len(channels) for _, channels in groups)

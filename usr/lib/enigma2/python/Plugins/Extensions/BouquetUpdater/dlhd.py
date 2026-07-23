@@ -18,12 +18,12 @@ except ImportError:
 
 
 def is_dlhd_url(url):
-    """Verifica se l'URL è per DLHD"""
+    """Check if the URL is for DLHD"""
     return 'dlhd.pk' in url or '24-7-channels.php' in url
 
 
 def fetch_page(url):
-    """Scarica la pagina HTML"""
+    """Download the HTML page"""
     req = Request(url, headers={'User-Agent': 'Mozilla/5.0'})
     response = urlopen(req, timeout=15)
     html = response.read().decode('utf-8', errors='ignore')
@@ -31,37 +31,37 @@ def fetch_page(url):
 
 
 def parse_channels(html, base_url):
-    """Estrae i canali italiani e XXX dalla pagina"""
+    """Extract Italian and XXX channels from the page"""
     channels = []
     xxx_channels = []
 
-    # Pattern per estrarre le card
+    # Pattern to extract cards
     # <a class="card" href="/watch.php?id=51" data-title="abc usa" ...>
     #   <div class="card__title">ABC USA</div>
     pattern = r'<a\s+class="card"[^>]*href="([^"]+)"[^>]*data-title="([^"]+)"[^>]*>.*?<div\s+class="card__title">([^<]+)</div>'
 
     matches = re.findall(pattern, html, re.DOTALL | re.IGNORECASE)
 
-    logging.info("Trovate {} card totali".format(len(matches)))
+    logging.info("Found {} total cards".format(len(matches)))
 
-    # Filtra canali italiani e XXX
+    # Filter Italian and XXX channels
     for href, data_title, card_title in matches:
-        # Costruisci URL completo
+        # Build full URL
         if href.startswith('/'):
             full_url = base_url.rstrip('/') + href
         else:
             full_url = href
 
-        # Canali XXX (18+)
+        # XXX channels (18+)
         if '18+' in data_title or '18+' in card_title:
             xxx_channels.append({
                 'name': card_title.strip(),
                 'url': full_url,
                 'data_title': data_title.strip()
             })
-        # Canali italiani
+        # Italian channels
         elif 'italy' in data_title.lower() or 'italy' in card_title.lower():
-            # Rimuovi "Italy" dal nome del canale
+            # Remove "Italy" from the channel name
             clean_name = card_title.strip()
             clean_name = re.sub(
                 r'\s+Italy$',
@@ -80,14 +80,14 @@ def parse_channels(html, base_url):
                 'data_title': data_title.strip()
             })
 
-    logging.info("Trovati {} canali italiani".format(len(channels)))
-    logging.info("Trovati {} canali XXX".format(len(xxx_channels)))
+    logging.info("Found {} Italian channels".format(len(channels)))
+    logging.info("Found {} XXX channels".format(len(xxx_channels)))
 
     return channels, xxx_channels
 
 
 def group_channels(channels):
-    """Organizza i canali per gruppo (Rai, Sky, Mediaset, ecc.)"""
+    """Organizes channels by group (Rai, Sky, Mediaset, etc.)"""
     groups = {
         'RAI': [],
         'Sky Sport': [],
@@ -123,10 +123,10 @@ def group_channels(channels):
         else:
             groups['Altri'].append(channel)
 
-    # Rimuovi gruppi vuoti
+    # Remove empty groups
     groups = {k: v for k, v in groups.items() if v}
 
-    # Ordina i canali all'interno di ogni gruppo
+    # Sort channels within each group
     for group in groups.values():
         group.sort(key=lambda x: x['name'])
 
@@ -134,17 +134,17 @@ def group_channels(channels):
 
 
 def generate_bouquet(groups, xxx_channels, update_date):
-    """Genera il bouquet in formato Enigma2"""
+    """Generates the bouquet in Enigma2 format"""
     lines = ["#NAME DLHD Italy\n"]
 
-    # Intestazione con data aggiornamento
+    # Header with update date
     lines.append("#SERVICE 1:64:0:0:0:0:0:0:0:0:\n")
     lines.append("#DESCRIPTION --- {} ---\n".format(
         _("Updated on {}").format(update_date)))
 
     idx = 1
 
-    # Ordine preferito dei gruppi
+    # Preferred group order
     group_order = ['RAI', 'Mediaset', 'Sky Sport', 'Sky Calcio', 'Sky Cinema',
                    'Sky Altro', 'EuroSport', 'DAZN', 'Altri']
 
@@ -154,12 +154,12 @@ def generate_bouquet(groups, xxx_channels, update_date):
 
         channels = groups[group_name]
 
-        # Separatore gruppo
+        # Group separator
         lines.append("#SERVICE 1:64:0:0:0:0:0:0:0:0:\n")
         display_name = _("Other") if group_name == 'Altri' else group_name
         lines.append("#DESCRIPTION --- {} ---\n".format(display_name))
 
-        # Aggiungi canali del gruppo
+        # Add channels of the group
         for channel in channels:
             service_line = "#SERVICE 4097:0:1:{}:0:0:0:0:0:0:{}:{}\n".format(
                 idx,
@@ -170,12 +170,12 @@ def generate_bouquet(groups, xxx_channels, update_date):
             lines.append("#DESCRIPTION {}\n".format(channel['name']))
             idx += 1
 
-    # Aggiungi gruppo XXX se ci sono canali
+    # Add XXX group if there are channels
     if xxx_channels:
         lines.append("#SERVICE 1:64:0:0:0:0:0:0:0:0:\n")
         lines.append("#DESCRIPTION --- XXX ---\n")
 
-        # Ordina i canali XXX per nome
+        # Sort XXX channels by name
         xxx_channels.sort(key=lambda x: x['name'])
 
         for channel in xxx_channels:
@@ -192,7 +192,7 @@ def generate_bouquet(groups, xxx_channels, update_date):
 
 
 def write_bouquet(filename, content):
-    """Scrive il bouquet su file"""
+    """Writes the bouquet to file"""
     filepath = "/etc/enigma2/{}".format(filename)
     try:
         # Python 2/3 compatibility
@@ -205,56 +205,56 @@ def write_bouquet(filename, content):
                 f.write(content)
 
         logging.info(
-            "Bouquet scritto: {} ({} bytes)".format(
+            "Bouquet written: {} ({} bytes)".format(
                 filepath, len(content)))
         return True
     except IOError as e:
-        logging.error("Errore IOError scrittura bouquet: {}".format(e))
+        logging.error("IOError writing bouquet: {}".format(e))
         logging.exception("Stack trace:")
         return False
     except Exception as e:
-        logging.error("Errore scrittura bouquet: {}".format(e))
+        logging.error("Error writing bouquet: {}".format(e))
         logging.exception("Stack trace:")
         return False
 
 
 def process_dlhd(url, filename):
-    """Processa DLHD e genera il bouquet"""
+    """Processes DLHD and generates the bouquet"""
     try:
-        # Estrai base URL
+        # Extract base URL
         parsed = urlparse(url)
         base_url = "{}://{}".format(
             parsed.scheme if parsed.scheme else 'https',
             parsed.netloc if parsed.netloc else 'dlhd.pk')
 
-        # Se l'URL non punta già alla pagina dei canali, usala
+        # If the URL does not already point to the channels page, use it
         if '24-7-channels.php' not in url:
             url = base_url + '/24-7-channels.php'
 
-        logging.info("Scaricamento pagina DLHD: {}".format(url))
+        logging.info("Downloading DLHD page: {}".format(url))
         html = fetch_page(url)
 
-        logging.info("Parsing canali italiani e XXX...")
+        logging.info("Parsing Italian and XXX channels...")
         channels, xxx_channels = parse_channels(html, base_url)
 
         if not channels and not xxx_channels:
-            logging.warning("Nessun canale trovato")
+            logging.warning("No channels found")
             return 0
 
-        logging.info("Raggruppamento canali italiani...")
+        logging.info("Grouping Italian channels...")
         groups = group_channels(channels)
 
         total_channels = sum(len(ch)
                              for ch in groups.values()) + len(xxx_channels)
         logging.info(
-            "Trovati {} canali totali ({} italiani in {} gruppi + {} XXX)".format(
+            "Found {} total channels ({} Italian in {} groups + {} XXX)".format(
                 total_channels, sum(
                     len(ch) for ch in groups.values()), len(groups), len(xxx_channels)))
 
-        # Data aggiornamento
+        # Update date
         update_date = datetime.now().strftime("%d/%m/%Y %H:%M")
 
-        logging.info("Generazione bouquet...")
+        logging.info("Generating bouquet...")
         bouquet = generate_bouquet(groups, xxx_channels, update_date)
 
         if write_bouquet(filename, bouquet):
@@ -262,7 +262,7 @@ def process_dlhd(url, filename):
         return 0
 
     except Exception as e:
-        logging.error("Errore process_dlhd: {}".format(e))
+        logging.error("Error in process_dlhd: {}".format(e))
         logging.exception("Stack trace:")
         return 0
 
@@ -271,7 +271,7 @@ if __name__ == '__main__':
     import os
     logging.basicConfig(level=logging.INFO)
 
-    # Legge URL dal file di configurazione
+    # Read URL from configuration file
     plugin_path = os.path.dirname(os.path.abspath(__file__))
     config_file = os.path.join(plugin_path, 'bouquet_updater.conf')
 
@@ -292,4 +292,4 @@ if __name__ == '__main__':
     if url:
         process_dlhd(url, filename)
     else:
-        logging.error("URL DLHD non trovato nel file di configurazione")
+        logging.error("DLHD URL not found in configuration file")
