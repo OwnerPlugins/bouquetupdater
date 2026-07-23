@@ -180,3 +180,4 @@ cython_debug/
 .cursorignore
 .cursorindexingignore
 usr/lib/enigma2/python/Plugins/Extensions/BouquetUpdater/bouquet_updater.conf
+*.conf
