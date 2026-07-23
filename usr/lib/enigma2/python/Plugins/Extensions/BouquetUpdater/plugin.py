@@ -637,8 +637,9 @@ def scale_widget(value, base_width=720):
     """Scale a widget dimension based on current screen width relative to 720p.
        The upper limit is now 4.0 to properly support WQHD and UHD displays."""
     w, _ = get_screen_size()
-                                    
-    ratio = max(0.5, min(4.0, w / base_width))   # increased max ratio from 2.0 to 4.0
+
+    # increased max ratio from 2.0 to 4.0
+    ratio = max(0.5, min(4.0, w / base_width))
     return int(value * ratio)
 
 
@@ -673,16 +674,17 @@ class UpdateProgressScreen(Screen):
         if needed_height > scaled_height:
             scaled_height = needed_height
 
-        widgets = [
-            '<widget name="status" position="20,15" size="{},28" font="Regular;22" halign="center" valign="center" transparent="1" />'.format(scaled_width - 40),
-            '<widget name="overall" position="20,48" size="{},20" />'.format(scaled_width - 40),
-        ]
+        widgets = ['<widget name="status" position="20,15" size="{},28" font="Regular;22" halign="center" valign="center" transparent="1" />'.format(
+            scaled_width - 40), '<widget name="overall" position="20,48" size="{},20" />'.format(scaled_width - 40), ]
         for index in range(self.row_count):
             y_pos = scale_widget(82) + index * row_height
             bar_y = y_pos + scale_widget(29)
             widgets.append(
                 '<widget name="source{}" position="20,{}" size="{},25" font="Regular;18" valign="center" transparent="1" />'.format(
-                    index, y_pos, scaled_width - 40))
+                    index,
+                    y_pos,
+                    scaled_width -
+                    40))
             widgets.append(
                 '<widget name="bar{}" position="20,{}" size="{},18" />'.format(
                     index, bar_y, scaled_width - 40))
@@ -818,7 +820,8 @@ class BouquetUpdaterScreen(ConfigListScreen, Screen):
 
         # Increase font and item height for high-resolution screens
         item_height = scale_widget(45)
-        font_size = max(18, min(36, scale_widget(30)))  # keep within readable range
+        # keep within readable range
+        font_size = max(18, min(36, scale_widget(30)))
 
         self.skin = """
             <screen position="center,center" size="{0},{1}" title="Bouquet Updater">
