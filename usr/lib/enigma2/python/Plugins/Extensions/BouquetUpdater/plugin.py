@@ -1,5 +1,9 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import
+from . import _
+from datetime import datetime
+import threading
+import logging
 
 from Plugins.Plugin import PluginDescriptor
 from Screens.Screen import Screen
@@ -13,20 +17,14 @@ from enigma import eTimer, eDVBDB, getDesktop
 
 import os
 import re
-<<<<<<< HEAD
-import logging
-import threading
-from datetime import datetime
+<< << << < HEAD
 
 try:
     from queue import Queue, Empty
 except ImportError:
     from Queue import Queue, Empty
-=======
-import logging
-import threading
-from datetime import datetime
->>>>>>> 0228e354243f2cd9fee97b0614c0b37290710fb3
+== == == =
+>>>>>> > 0228e354243f2cd9fee97b0614c0b37290710fb3
 
 try:
     from queue import Queue, Empty
@@ -34,11 +32,10 @@ except ImportError:
     from Queue import Queue, Empty
 
 # Import gettext function from __init__
-from . import _
 
 try:
     from .sportsonline import process_sportsonline, is_sportsonline_url
-<<<<<<< HEAD
+<< << << < HEAD
     from .vavoo_it import process_vavoo_italia, process_vavoo_italia_resolved, is_vavoo_url, VAVOO_BOUQUET_FILE, VAVOO_RESOLVED_BOUQUET_FILE
     from .streamsport99 import process_streamsport99, is_streamsport99_url
     from .dlhd import process_dlhd, is_dlhd_url
@@ -51,7 +48,7 @@ except ImportError:
     from dlhd import process_dlhd, is_dlhd_url
     from mplustv import process_mplustv, is_mplustv_url
     from jsonlist import discover_json_sources, is_jsonlist_source, json_source_label, process_jsonlist
-=======
+== == == =
     from .vavoo_it import process_vavoo_italia, process_vavoo_italia_resolved, is_vavoo_url, VAVOO_BOUQUET_FILE, VAVOO_RESOLVED_BOUQUET_FILE
     from .streamsport99 import process_streamsport99, is_streamsport99_url
     from .dlhd import process_dlhd, is_dlhd_url
@@ -62,7 +59,7 @@ except ImportError:
     from streamsport99 import process_streamsport99, is_streamsport99_url
     from dlhd import process_dlhd, is_dlhd_url
     from mplustv import process_mplustv, is_mplustv_url
->>>>>>> 0228e354243f2cd9fee97b0614c0b37290710fb3
+>>>>>> > 0228e354243f2cd9fee97b0614c0b37290710fb3
 
 try:
     from io import open
@@ -77,11 +74,11 @@ except ImportError:
     from urllib2 import urlopen, Request
 
 PLUGIN_NAME = _("Bouquet Updater")
-<<<<<<< HEAD
+<< << << < HEAD
 PLUGIN_VERSION = "3.2.0"
-=======
+== == == =
 PLUGIN_VERSION = "3.1.0"
->>>>>>> 0228e354243f2cd9fee97b0614c0b37290710fb3
+>>>>>> > 0228e354243f2cd9fee97b0614c0b37290710fb3
 PLUGIN_PATH = os.path.dirname(os.path.abspath(__file__))
 CONFIG_FILE = os.path.join(PLUGIN_PATH, 'bouquet_updater.conf')
 LOG_FILE = os.path.join(PLUGIN_PATH, 'bouqUPDlog.txt')
@@ -207,7 +204,8 @@ class M3UUpdaterLogic:
                 json_name = source[len("jsonlist://"):].lower()
                 if json_name not in configured_json_names:
                     custom_sources.append((source, filename))
-                    logging.info("Auto-discovered JSON source: %s -> %s", source, filename)
+                    logging.info(
+    "Auto-discovered JSON source: %s -> %s", source, filename)
             return custom_sources
         except Exception as e:
             logging.error("Error reading configuration: {}".format(e))
@@ -508,7 +506,9 @@ class M3UUpdaterLogic:
                         updated_bouquets.append(filename)
                     else:
                         logging.error("StreamSport99: processing failed")
-<<<<<<< HEAD
+
+
+<< << << < HEAD
                     continue
 
                 # DLHD

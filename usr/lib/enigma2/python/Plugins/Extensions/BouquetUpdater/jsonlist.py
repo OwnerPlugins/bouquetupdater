@@ -30,7 +30,8 @@ def _json_directories(plugin_path=None):
 
         # In the package tree PLUGIN_PATH is usr/lib/enigma2/python/Plugins/...
         # Keep the former location for backward compatibility.
-        package_lib = os.path.abspath(os.path.join(plugin_path, "../../../../.."))
+        package_lib = os.path.abspath(
+            os.path.join(plugin_path, "../../../../.."))
         directories.append(os.path.join(package_lib, "jsonListChan"))
     directories.extend(DEFAULT_JSON_DIRS)
 
@@ -61,7 +62,9 @@ def discover_json_sources(plugin_path=None):
         if not os.path.isdir(directory):
             continue
         try:
-            names = sorted(os.listdir(directory), key=lambda value: value.lower())
+            names = sorted(
+                os.listdir(directory),
+                key=lambda value: value.lower())
         except OSError as error:
             logging.error("[jsonlist] Cannot read %s: %s", directory, error)
             continue
@@ -72,7 +75,9 @@ def discover_json_sources(plugin_path=None):
             if key in seen:
                 continue
             seen.add(key)
-            sources.append((JSON_SOURCE_PREFIX + name, bouquet_filename_for(name)))
+            sources.append(
+                (JSON_SOURCE_PREFIX + name,
+                 bouquet_filename_for(name)))
     return sources
 
 
@@ -118,7 +123,8 @@ def _header_string(item):
 
     if not parts and item.get("headers"):
         parts.append(_text(item.get("headers")).lstrip("|&"))
-    if item.get("user_agent") and not any("user-agent=" in p.lower() for p in parts):
+    if item.get("user_agent") and not any(
+            "user-agent=" in p.lower() for p in parts):
         parts.append("User-Agent={}".format(item["user_agent"]))
     if item.get("referer") and not any("referer=" in p.lower() for p in parts):
         parts.append("Referer={}".format(item["referer"]))
@@ -131,24 +137,30 @@ def _load_channels(path):
     with open(path, "r", encoding="utf-8") as handle:
         payload = json.load(handle)
     if isinstance(payload, dict):
-        payload = payload.get("channels") or payload.get("items") or payload.get("data") or []
+        payload = payload.get("channels") or payload.get(
+            "items") or payload.get("data") or []
     if not isinstance(payload, list):
-        raise ValueError("the JSON root must be a list or contain channels/items/data")
+        raise ValueError(
+            "the JSON root must be a list or contain channels/items/data")
 
     channels = []
     for item in payload:
         if not isinstance(item, dict):
             continue
         url = _text(item.get("stream_url") or item.get("url")).strip()
-        name = _text(item.get("channel_title") or item.get("name") or item.get("title")).strip()
+        name = _text(item.get("channel_title") or item.get(
+            "name") or item.get("title")).strip()
         if not url or not name:
             continue
 
-        event_name = _text(item.get("event_name") or item.get("event_title")).strip()
+        event_name = _text(item.get("event_name")
+                           or item.get("event_title")).strip()
         event_time = _text(item.get("event_time")).strip()
-        group = _text(item.get("category") or item.get("event_cat") or event_name).strip()
+        group = _text(item.get("category") or item.get(
+            "event_cat") or event_name).strip()
         if event_name:
-            group = "{} - {}".format(event_time, event_name) if event_time else event_name
+            group = "{} - {}".format(event_time,
+                                     event_name) if event_time else event_name
 
         headers = _header_string(item)
         if headers:
@@ -186,7 +198,9 @@ def process_jsonlist(source, bouquet_filename, plugin_path=None,
         bouquet_name = json_source_label(source)
         output_path = os.path.join(output_directory, bouquet_filename)
         if not os.path.isdir(output_directory):
-            logging.error("[jsonlist] Output directory not found: %s", output_directory)
+            logging.error(
+                "[jsonlist] Output directory not found: %s",
+                output_directory)
             return False
         with open(output_path, "w", encoding="utf-8") as handle:
             handle.write(_generate_bouquet(bouquet_name, channels))
