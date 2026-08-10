@@ -181,7 +181,9 @@ class M3UUpdaterLogic:
                 if json_name not in configured_json_names:
                     custom_sources.append((source, filename))
                     logging.info(
-                        "Auto-discovered JSON source: %s -> %s", source, filename)
+                        "Auto-discovered JSON source: %s -> %s",
+                        source,
+                        filename)
 
             return custom_sources
         except Exception as e:
