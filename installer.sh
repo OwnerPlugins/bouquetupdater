@@ -9,14 +9,12 @@ FILEPATH=/tmp/bouquetupdater-main.tar.gz
 
 echo "installation..."
 
-# Determine plugin path based on architecture
 if [ ! -d /usr/lib64 ]; then
     PLUGINPATH=/usr/lib/enigma2/python/Plugins/Extensions/BouquetUpdater
 else
     PLUGINPATH=/usr/lib64/enigma2/python/Plugins/Extensions/BouquetUpdater
 fi
 
-# Cleanup function
 cleanup() {
     echo "Cleaning up temporary files..."
     [ -d "$TMPPATH" ] && rm -rf "$TMPPATH"
@@ -24,7 +22,6 @@ cleanup() {
     [ -d "/tmp/bouquetupdater-main" ] && rm -rf "/tmp/bouquetupdater-main"
 }
 
-# Detect OS type
 detect_os() {
     if [ -f /var/lib/dpkg/status ]; then
         OSTYPE="DreamOs"
@@ -41,11 +38,9 @@ detect_os() {
 
 detect_os
 
-# Cleanup before starting
 cleanup
 mkdir -p "$TMPPATH"
 
-# Install wget if missing
 if ! command -v wget >/dev/null 2>&1; then
     echo "Installing wget..."
     case "$OSTYPE" in
@@ -62,7 +57,6 @@ if ! command -v wget >/dev/null 2>&1; then
     esac
 fi
 
-# Detect Python version
 if python --version 2>&1 | grep -q '^Python 3\.'; then
     echo "Python3 image detected"
     Packagerequests="python3-requests"
@@ -71,7 +65,6 @@ else
     Packagerequests="python-requests"
 fi
 
-# Install required packages
 install_pkg() {
     local pkg=$1
     if [ -z "$STATUS" ] || ! grep -qs "Package: $pkg" "$STATUS" 2>/dev/null; then
@@ -92,10 +85,8 @@ install_pkg() {
     fi
 }
 
-# Install Python requests
 install_pkg "$Packagerequests"
 
-# Download and extract
 echo "Downloading bouquetupdater..."
 wget --no-check-certificate 'https://github.com/OwnerPlugins/bouquetupdater/archive/refs/heads/main.tar.gz' -O "$FILEPATH"
 if [ $? -ne 0 ]; then
@@ -112,11 +103,9 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-# Install plugin files
 echo "Installing plugin files..."
 mkdir -p "$PLUGINPATH"
 
-# Find the correct directory in the extracted structure
 if [ -d "$TMPPATH/bouquetupdater-main/usr/lib/enigma2/python/Plugins/Extensions/BouquetUpdater" ]; then
     cp -r "$TMPPATH/bouquetupdater-main/usr/lib/enigma2/python/Plugins/Extensions/BouquetUpdater"/* "$PLUGINPATH/" 2>/dev/null
     echo "Copied from standard plugin directory"
@@ -124,7 +113,6 @@ elif [ -d "$TMPPATH/bouquetupdater-main/usr/lib64/enigma2/python/Plugins/Extensi
     cp -r "$TMPPATH/bouquetupdater-main/usr/lib64/enigma2/python/Plugins/Extensions/BouquetUpdater"/* "$PLUGINPATH/" 2>/dev/null
     echo "Copied from lib64 plugin directory"
 elif [ -d "$TMPPATH/bouquetupdater-main/usr" ]; then
-    # Copy entire usr tree
     cp -r "$TMPPATH/bouquetupdater-main/usr"/* /usr/ 2>/dev/null
     echo "Copied entire usr structure"
 else
@@ -137,7 +125,6 @@ fi
 
 sync
 
-# Verify installation
 echo "Verifying installation..."
 if [ -d "$PLUGINPATH" ] && [ -n "$(ls -A "$PLUGINPATH" 2>/dev/null)" ]; then
     echo "Plugin directory found and not empty: $PLUGINPATH"
@@ -149,15 +136,30 @@ else
     exit 1
 fi
 
-# Cleanup
 cleanup
 sync
 
-# System info
 FILE="/etc/image-version"
-box_type=$(head -n 1 /etc/hostname 2>/dev/null || echo "Unknown")
-distro_value=$(grep '^distro=' "$FILE" 2>/dev/null | awk -F '=' '{print $2}')
-distro_version=$(grep '^version=' "$FILE" 2>/dev/null | awk -F '=' '{print $2}')
+box_type=$(sed -n '1p' /etc/hostname 2>/dev/null || echo "Unknown")
+# distro_value=$(grep '^distro=' "$FILE" 2>/dev/null | awk -F '=' '{print $2}')
+# distro_version=$(grep '^version=' "$FILE" 2>/dev/null | awk -F '=' '{print $2}')
+distro_value="Unknown"
+distro_version="Unknown"
+if [ -r /etc/os-release ]; then
+    distro_value=$(grep '^NAME=' /etc/os-release 2>/dev/null | cut -d'"' -f2)
+    distro_version=$(grep '^VERSION_ID=' /etc/os-release 2>/dev/null | cut -d'"' -f2)
+elif [ -r /etc/issue ]; then
+    distro_value=$(head -n 1 /etc/issue 2>/dev/null | awk '{print $1}')
+    distro_version=$(head -n 1 /etc/issue 2>/dev/null | awk '{print $2}')
+elif [ -r /etc/vtiversion.info ]; then
+    distro_value=$(head -n 1 /etc/vtiversion.info 2>/dev/null)
+elif [ -r /etc/issue.net ]; then
+    distro_value=$(head -n 1 /etc/issue.net 2>/dev/null | awk '{print $1}')
+    distro_version=$(head -n 1 /etc/issue.net 2>/dev/null | awk '{print $2}')
+fi
+
+[ -z "$distro_value" ] && distro_value="Unknown"
+[ -z "$distro_version" ] && distro_version="Unknown"
 python_vers=$(python --version 2>&1)
 
 cat <<EOF
@@ -175,6 +177,7 @@ OS SYSTEM: $OSTYPE
 PYTHON: $python_vers
 IMAGE NAME: ${distro_value:-Unknown}
 IMAGE VERSION: ${distro_version:-Unknown}
+PLUGIN VERSION: $version
 EOF
 
 exit 0
